@@ -6,13 +6,15 @@ I started with an adult-focused evidence map of research on memory, learning and
 
 This project also records what I learned using Claude Science and Perplexity to build the corpus. I am interested in how AI research tools behave in a literature-review workflow, what each one finds, what each misses, and where my own judgment changes the result.
 
+While building and checking this corpus, I also built reusable Claude Science skills for source integrity, extraction, full-text retrieval, and construct audits. They are documented separately in [Claude Science skills](https://github.com/aribajahan/claude-science-skills).
+
 ## In this repository
 
 - [Synthesis](synthesis.md) brings together the definitions, evidence, limits, and questions the current corpus leaves open.
 - [Methods](methods.md) explains how the corpus was assembled, coded, and bounded by source access.
 - [Evidence tables](data/) provide the study-level records and project coding behind the synthesis.
 - [Research-tool workflow](research-workflow.md) records what Claude Science and Perplexity each contributed, and the judgment that remained mine.
-- [Question map](question-map/index.html) organizes 50 selected source records by the question each one addresses.
+- [Question map](https://aribajahan.github.io/ai-cognition/question-map/) organizes 50 selected source records by the question each one addresses.
 - Selected analyses will be added as they are prepared for this shared version.
 
 By Ariba Jahan · [aribajahan.com](https://aribajahan.com)
