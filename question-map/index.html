@@ -1,0 +1,1138 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>AI and cognition — question map</title>
+<style>*{box-sizing:border-box}body{font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;margin:0;padding:30px 36px 60px;background:#fbfbfc;color:#1a1a1a}
+h1{font-size:25px;margin:0 0 6px}.sub{color:#555;font-size:13.5px;margin:0 0 20px;max-width:1060px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:11px;max-width:1320px;margin:0 0 10px}
+.card{background:#fff;border:1px solid #e3e6eb;border-radius:6px;padding:11px 13px}
+.card .big{font-size:20px;font-weight:700;color:#12508f;line-height:1.15}
+.card .lab{font-size:12px;font-weight:650;color:#333;margin-top:2px}
+.card .fine{font-size:11px;color:#777;margin-top:4px;line-height:1.4}
+.note{background:#fff8e8;border:1px solid #edd9a3;border-radius:6px;padding:11px 14px;font-size:12.5px;color:#5a4a20;max-width:1320px;margin:12px 0 26px;line-height:1.55}
+.legend{margin:0 0 22px;font-size:12px;color:#555}.legend span{display:inline-block;margin-right:16px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+ul{list-style:none;margin:0;padding-left:26px;position:relative}
+li{position:relative;padding:5px 0 5px 22px}
+li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:1px solid #d5d8dd}
+li:last-child::before{height:24px}
+li::after{content:"";position:absolute;left:0;top:24px;width:20px;border-top:1px solid #d5d8dd}
+ul.root{padding-left:0}ul.root>li{padding-left:0}ul.root>li::before,ul.root>li::after{display:none}
+.bnode{border-left:5px solid var(--c);background:#fff;padding:12px 16px;border-radius:5px;box-shadow:0 1px 3px rgba(0,0,0,.09);margin:26px 0 8px;max-width:1080px}
+.bnode h2{font-size:18px;margin:6px 0 4px}.meta{font-size:12px;color:#666;margin:0}
+.chip{color:#fff;font-size:10px;font-weight:700;letter-spacing:.4px;padding:2px 8px;border-radius:9px;text-transform:uppercase}
+.qnode{font-weight:650;font-size:14px;color:#222;background:#eef1f5;display:inline-block;padding:5px 12px;border-radius:4px}
+.snode{background:#fff;border:1px solid #e2e5ea;border-left:3px solid var(--c);border-radius:5px;padding:11px 15px;max-width:940px}
+.hd{margin-bottom:7px}
+.hd a{color:#12508f;font-weight:700;text-decoration:none;font-size:13.5px}.hd a:hover{text-decoration:underline}
+.v{font-size:11.5px;color:#7a7f87;margin-left:9px}
+.bg{font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:9px;margin-left:6px;text-transform:uppercase;letter-spacing:.3px}
+.pp{background:#fdf1e3;color:#a85e12}.pr{background:#eef5ee;color:#3d6b45}
+.ftx{background:#eaf1f8;color:#12508f}.abs{background:#f3f3f5;color:#8a8a92}
+.f{font-size:14px;color:#111;line-height:1.6}
+.mt{font-size:11.5px;color:#6a6f76;margin-top:9px;padding-top:8px;border-top:1px solid #eef0f3;line-height:1.7}
+.mt b{color:#8a8f96;font-weight:700;text-transform:uppercase;font-size:9.5px;letter-spacing:.3px}
+.mt .off{color:#b6bac0}.mt .off b{color:#c4c8ce}
+.gnode{background:#fff4f2;border:1px dashed #d08a78;color:#9d3d24;font-weight:650;font-size:13px;display:inline-block;padding:7px 13px;border-radius:4px}
+.foot{margin-top:38px;font-size:11.5px;color:#777;max-width:1080px;border-top:1px solid #e2e5ea;padding-top:13px;line-height:1.6}</style>
+<h1>AI and cognition: the question map</h1>
+<p class="sub">A 50-record snapshot from this project's initial evidence corpus. It follows seven questions, the sub-questions each breaks into, and the sources that bear on them. The map has 51 source appearances because one study is relevant to both memory and brain measures. Each node leads with what the study found in plain terms; the gray line underneath carries the method detail. A later independent search surfaced additional leads, which the synthesis discusses separately.</p>
+<div class="cards">
+<div class="card">
+<div class="big">50</div>
+<div class="lab">unique source records in this map</div>
+<div class="fine">51 source appearances · 44 peer-reviewed · 6 preprint</div>
+</div>
+<div class="card">
+<div class="big">22 / 28</div>
+<div class="lab">read in full vs abstract only</div>
+<div class="fine">every study node says which — most blank fields below are abstract-only records</div>
+</div>
+<div class="card">
+<div class="big">107,092</div>
+<div class="lab">people, across the 43 studies whose unit is people</div>
+<div class="fine">7 count something else: colonoscopies, effect sizes, tasks, cases</div>
+</div>
+<div class="card">
+<div class="big">200</div>
+<div class="lab">median participants</div>
+<div class="fine">range 16 to 76,977 · 7 studies under 50 people · 6 at 1,000+</div>
+</div>
+<div class="card">
+<div class="big">24 / 50</div>
+<div class="lab">randomized</div>
+<div class="fine">the other 26 are surveys, before/after comparisons, observational designs or reviews</div>
+</div>
+<div class="card">
+<div class="big">18 / 50</div>
+<div class="lab">measured an outcome after AI access ended</div>
+<div class="fine">29 measured it with AI available · 3 not applicable</div>
+</div>
+<div class="card">
+<div class="big">7 / 50</div>
+<div class="lab">say how long a session lasted</div>
+<div class="fine">where stated they range from 2 minutes to 2 hours (Br&#xFC;gge 2 min; Liu 20 min; Goh 1 h; Kestin 75 min; Bastani 90 min; Allen 60 min; Becker 2.0 h). The rest say &#x27;single session&#x27; without a clock time</div>
+</div>
+<div class="card">
+<div class="big">16 / 15 / 16</div>
+<div class="lab">report age / gender / setting</div>
+<div class="fine">of the 22 read in full, 13 report age</div>
+</div>
+</div>
+<div class="note">
+<b>Two numbers worth reading together.</b> 24 of 50 studies randomized who received AI access, which helps assess whether the comparison is fair. 18 of 50 measured an outcome after AI access ended. That makes an unaided outcome possible, but it does not establish durable ability: an immediate post-test and a later follow-up answer different questions. A study can pass one test and fail the other; the judgment cluster is 8 of 11 randomized and 0 of 11 measured after withdrawal. <b>On blank fields:</b> 22 of these
+papers I read in full and 28 only as abstracts; every node is badged. A blank means absent from the text I retrieved,
+not proof the study never reported it.</div>
+<div class="legend">
+<span>
+<i style="background:#1a4e8a">
+</i>Well evidenced</span>
+<span>
+<i style="background:#b5892a">
+</i>Contested</span>
+<span>
+<i style="background:#c0553b">
+</i>Thin evidence</span>
+<span>
+<i style="background:#8a6fb0">
+</i>Weak method</span>
+<span>
+<i style="background:#fff4f2;border:1px dashed #d08a78">
+</i>Gap — no study</span>
+</div>
+<ul class="root">
+<li class="branch">
+<div class="bnode" style="--c:#c0553b">
+<span class="chip" style="background:#c0553b">Thin evidence</span>
+<h2>Does AI change what you remember?</h2>
+<p class="meta">4 studies shown · 2 randomized · 3 measured an outcome after AI access ended · this map contains no peer-reviewed delayed-recall test of AI-assisted study material in adults</p>
+</div>
+<ul>
+<li>
+<div class="qnode">Can you recall what you produced with AI?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://arxiv.org/abs/2506.08872" target="_blank">Kosmyna et al. 2025</a>
+<span class="v">arXiv (Cornell University)</span>
+<span class="bg pp">preprint</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Kosmyna and colleagues measured brain connectivity, or how strongly different brain regions&#x27; electrical signals sync up, while people wrote essays either alone, with a search engine, or with an LLM (large language model, like ChatGPT). The more outside help people used, the weaker and narrower their brain connectivity became: unaided writers showed the strongest, widest networks, search-engine users were in between, and LLM users showed the weakest coupling overall. In a fourth session, people who had used an LLM first and then switched to writing alone still showed weaker connectivity and under-used alpha and beta brain-wave networks, while people who switched from writing alone to using an LLM recalled more and re-engaged widespread brain regions at the back and front of the head. Behaviorally, 83.3% of the LLM group (15 of 18) couldn&#x27;t correctly quote from the essay they had just written, compared with only 11.1% (2 of 18) in each of the other two groups.</div>
+<div class="mt">
+<b>design</b> Between-subjects, 3 conditions, with a within-subject crossover fourth session; 32-channel EEG &nbsp;·&nbsp; <b>n</b> 54 (18/arm) &nbsp;·&nbsp; <b>age</b> 18 to 39 years old (age M = 22.9, SD = 1.69) &nbsp;·&nbsp; <b>gender</b> 32 female, 19 male, 2 non-binary, 1 preferred not to say &nbsp;·&nbsp; <b>exposure</b> 4 sessions; Sessions 1-3 in assigned condition, Session 4 crossover with conditions swapped (LLM-to-Brain, Brain-to-LLM); study span reported as ~4 months &nbsp;·&nbsp; <b>setting</b> Greater Boston area, USA; recruited from 5 universities (MIT, Wellesley, Harvard, Tufts, Northeastern) &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Preprint, not peer reviewed; 18 per group; one geographic area; authors note fMRI is &#x27;the next step&#x27;</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Can AI put memories in that were never there?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://arxiv.org/abs/2408.04681" target="_blank">Chan et al. 2024</a>
+<span class="v">arXiv (Cornell University)</span>
+<span class="bg pp">preprint</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Researchers had people go through a simulated witness interview using a generative chatbot, a pre-scripted chatbot, a survey, or no interview (control), then checked for false memories, memories of things that didn&#x27;t happen. The generative chatbot produced over 3 times more immediate false memories than the control and 1.7 times more than the survey, and it misled 36.4% of users&#x27; responses during the conversation. A week later, the number of false memories from the generative chatbot stayed the same, and people&#x27;s confidence in these false memories stayed higher than in the control group, suggesting the effect didn&#x27;t fade over time.</div>
+<div class="mt">
+<b>design</b> Four-condition study (control, survey, pre-scripted chatbot, generative chatbot); randomization not reported in text &nbsp;·&nbsp; <b>n</b> 200 &nbsp;·&nbsp; <b>age</b> 18 and above &nbsp;·&nbsp; <b>gender</b> balanced between male and female participants &nbsp;·&nbsp; <b>exposure</b> Participants watched a crime video, then interacted with assigned AI interviewer or survey (session length not reported); false memories assessed immediately and again after one week &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Simulated crime-video paradigm; per-arm sample sizes, randomization, and population details not reported in provided text.</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">What did the pre-AI offloading work find?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.3758/s13423-022-02139-4" target="_blank">Gilbert et al. 2022</a>
+<span class="v">Psychonomic Bulletin &amp; Review</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">People forgot about 45% of the time when they relied on their own memory, but only about 5% of the time when they used an external reminder. Whether someone chose to set a reminder was tied to their beliefs about how good their memory is, not to how good their memory actually was (r = -0.01) — a mismatch the authors link to a broader tendency to lean on reminders based on gut feelings about memory, wanting to avoid effort, and sticking with familiar habits, rather than to any causal harm or benefit from using reminders. This pattern shifts with age: children under about 9 know they might forget but don&#x27;t yet act on that by setting reminders, while older adults tend to be overconfident and under-use reminders and younger adults tend to be underconfident and over-rely on them. The authors note these age-related patterns come from studies comparing different people at one point in time, not from tracking the same people over years, so they&#x27;re less certain.</div>
+<div class="mt">
+<b>design</b> Narrative review summarizing intention-offloading research; not an original study, no randomisation or control condition described &nbsp;·&nbsp; <b>n</b> review &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; not applicable (review or survey)</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Does self-reported offloading split into types?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.3389/fpsyg.2026.1878629" target="_blank">Zhu et al. 2026</a>
+<span class="v">Frontiers in Psychology</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Zhu and colleagues surveyed people three times over a period to see how relying on AI for thinking tasks relates to how people feel about their own thinking. They found two different styles of &quot;cognitive offloading&quot; (letting AI do mental work for you): a dependent style and an autonomous style, and these related to different outcomes down the line. Two separate pathways seemed to explain this: how much people felt they&#x27;d handed over control of their own thinking, and how much they were internally motivated versus just relying on the tool; having stronger metacognitive awareness, meaning noticing and understanding your own thinking, might soften some of the downsides tied to the dependent style. Both styles felt equally helpful in the moment, which suggests that engagement with AI that may be unhelpful in the long run could be hard for users to spot from how it feels right away. No specific numbers, confidence intervals, or effect sizes were reported in the text provided.</div>
+<div class="mt">
+<b>design</b> Exploratory correlational three-wave time-lagged survey; not randomised; no control/comparison condition described. &nbsp;·&nbsp; <b>n</b> 589 &nbsp;·&nbsp; <b>age</b> M = 23.69, SD = 3.24 &nbsp;·&nbsp; <b>gender</b> 51.1% female &nbsp;·&nbsp; <b>exposure</b> three-wave time-lagged survey; specific session length, number of sessions, wave spacing, and delay before outcome measurement: not reported &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Authors position the study as exploratory correlational evidence, not definitive construct validation or causal claims.</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="gap">
+<div class="gnode">GAP IN THIS MAP — no peer-reviewed delayed-recall test of AI-assisted study material in adults. A later search surfaced one unpublished 45-day lead, which remains to be checked.</div>
+</li>
+</ul>
+</li>
+<li class="branch">
+<div class="bnode" style="--c:#b5892a">
+<span class="chip" style="background:#b5892a">Contested</span>
+<h2>Does AI change what you learn?</h2>
+<p class="meta">9 studies shown · 9 randomised · 7 measured the outcome after the AI was withdrawn</p>
+</div>
+<ul>
+<li>
+<div class="qnode">Do purpose-built AI tutors beat normal teaching?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://doi.org/10.1038/s41598-025-97652-6" target="_blank">Kestin et al. 2025</a>
+<span class="v">Scientific Reports</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Students who learned from an AI tutor at home scored higher on post-tests, with a median of 4.5 (out of some total, N = 142), than students who did an in-class active-learning lesson, who scored a median of 3.5 (N = 174). Both groups started from the same combined pre-test baseline, median 2.75 (N = 316), but the AI-tutored group&#x27;s learning gains were over double those of the in-class group. A rank-sum test (a way to compare two groups&#x27; scores) found this difference statistically significant (z = -5.6, p &lt; 10, as printed in the source, though that p-value looks cut off). The authors say this suggests a well-designed AI tutoring system can outperform in-class active learning on measured mastery of the material, though the excerpt provided doesn&#x27;t give their further causal interpretation.</div>
+<div class="mt">
+<b>design</b> Randomized crossover experiment; groups alternated weekly between AI-tutor lesson (home) and in-class active learning lesson, each compared via pre/post-tests. &nbsp;·&nbsp; <b>n</b> 194–316* &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Two lessons in consecutive weeks (crossover); in-class sessions were 75-minute periods (15 minutes on pre/post-tests, assumed 60 minutes on learning); AI group median time on task was 49 minutes, with 70% spending less than 60 minutes and 30% spending more than 60 minutes on task &nbsp;·&nbsp; <b>setting</b> Harvard University, undergraduate physics course; AI lesson completed at home, active learning lesson completed in class &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> p-value for the Mann–Whitney test is garbled in the source text (&#x27;&lt; 10&#x27;), exact significance threshold not reported</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://doi.org/10.1371/journal.pone.0304013" target="_blank">Pardos et al. 2024</a>
+<span class="v">PLoS ONE</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Students who got math hints written by ChatGPT improved their test scores by 17.00 percentage points, from 43.51% correct before to 60.52% after, a gain much bigger than the 1.85% improvement seen with no hints at all (that small change could have been chance, p=0.192). A statistical test comparing all three groups found a real difference between them, and a follow-up comparison confirmed ChatGPT hints beat no hints. Students who got hints from a human tutor improved by 11.62%, a result close enough to ChatGPT&#x27;s that the two weren&#x27;t statistically distinguishable — suggesting AI hints might work about as well as human-tutor hints. But there&#x27;s a catch: the ChatGPT hints were actually wrong, either in their work or final answer, 32% of the time overall, and up to 47% of the time for one topic (Intermediate Algebra); a fix that made the AI check its own consistency nearly eliminated wrong answers for algebra but still left 13% wrong for statistics.</div>
+<div class="mt">
+<b>design</b> Randomized experiment; three-arm (human tutor hint vs ChatGPT hint vs no-hint control), pre-post test, four math subjects. &nbsp;·&nbsp; <b>n</b> 274 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Prior pilot study had limited participation (N = 77) and ceiling effects; current results/effect sizes not reported in provided text.</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://doi.org/10.1186/s12909-024-06399-7" target="_blank">Brügge et al. 2024</a>
+<span class="v">BMC Medical Education</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Medical students who practiced AI-simulated patient conversations and then got ChatGPT feedback made better clinical decisions than students who did the conversations alone, scoring 3.604 on average versus 3.017 for the no-feedback group, F(1,20)=4.436, p=.049. Both groups improved steadily from the first to the fourth practice scenario. The benefit showed up only in two specific skills — &quot;creating context&quot; (p=.046) and &quot;securing information&quot; (p=.018) — but not in &quot;focusing questions,&quot; or asking targeted follow-up questions, (p=.265), which the authors suggest might be because students were already scoring near the top on that skill (a possible ceiling effect).</div>
+<div class="mt">
+<b>design</b> Two-group randomized controlled trial, closed-label (participants blinded); control = AI-simulated patient conversation only, intervention = AI-simulated conversation plus ChatGPT feedback &nbsp;·&nbsp; <b>n</b> 21 &nbsp;·&nbsp; <b>age</b> majority 21 years old (range 19-35 across groups: 19:0/1, 20:1/2, 21:8/3, 22:0/2, 23:0/1, 26:1/1, 35:0/1) &nbsp;·&nbsp; <b>gender</b> Male 3/4, Female 7/7, Diverse 0/0 (by group) &nbsp;·&nbsp; <b>exposure</b> Each participant completed four patient case simulations; control group had a 2-minute break between each case, feedback group received ChatGPT feedback during these breaks instead of a pause; afterward participants completed a survey with no time limit &nbsp;·&nbsp; <b>setting</b> Germany; University of Münster, medical faculty premises (on-site, in-person study) &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Does unguarded access help or hurt?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://doi.org/10.1073/pnas.2422633122" target="_blank">Bastani et al. 2025</a>
+<span class="v">Proceedings of the National Academy of Sciences</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Bastani and colleagues randomly assigned students to practice with a GPT Tutor, a plain GPT Base chatbot, or no AI at all. During practice, GPT Tutor users scored 127% better and GPT Base users scored 48% better than the no-AI control group. But on the actual exam, GPT Base students did 17% worse than control, an effect the authors call &quot;essentially eradicated&quot; for GPT Tutor users, &quot;though we still do not observe a positive effect.&quot; The authors suggest AI can boost performance but &quot;substantially inhibit learning without appropriate guardrails&quot; — students often used GPT Base as a &quot;crutch,&quot; copying solutions instead of working problems, while GPT Tutor prompted &quot;more substantive&quot; engagement like asking for help; students didn&#x27;t seem to realize the copying was hurting their learning.</div>
+<div class="mt">
+<b>design</b> Large-scale RCT; three randomly assigned arms (GPT Tutor, GPT Base, no generative AI access/control) during practice phase. &nbsp;·&nbsp; <b>n</b> ~1,000 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> &quot;four 90-min sessions for about fifty 9th, 10th, and 11th-grade classes&quot;; each session has three contiguous parts (lecture, assisted practice with practice problems, then exam); &quot;our sessions collectively comprised about 15% of the math curriculum covered during the semester&quot;; exam completed &quot;on their own without access to any resources&quot; immediately following the practice phase within the same session &nbsp;·&nbsp; <b>setting</b> &quot;a large high school in Turkey&quot;, during the Fall semester of the 2023–2024 academic year; classroom/in-class study session setting &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://arxiv.org/abs/2409.09047" target="_blank">Lehmann et al. 2024</a>
+<span class="v">arXiv (Cornell University)</span>
+<span class="bg pp">preprint</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Researchers ran two pre-registered lab experiments with real incentives and found that giving students access to LLMs (AI chatbots like ChatGPT) made no significant difference to how much they learned overall. Looking closer at how students actually used the tool, those who used LLMs to replace their own study work covered more topics but understood each one less well, while those who used LLMs to add to their own study work understood topics better without covering more of them. LLMs also widened the gap between students: those who already knew more learned better with LLM help, while those who knew less learned worse.</div>
+<div class="mt">
+<b>design</b> Two pre-registered, incentivized laboratory experiments plus a field study; randomization/control not specified in text &nbsp;·&nbsp; <b>n</b> 113 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Exact numeric results, sample sizes, and statistical values are not reported in the provided text excerpt.</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Is an LLM different from a search engine?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://doi.org/10.1093/pnasnexus/pgaf316" target="_blank">Melumad et al. 2025</a>
+<span class="v">PNAS Nexus</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">In seven experiments with 10,426 participants, people who learned a topic from LLM summaries, instead of clicking through web links, said they built shallower knowledge and put in less effort learning. Those participants then gave advice that was sparser and more generic, and other people found that advice less informative and were less likely to actually use it. The authors suggest LLM syntheses can limit deeper, more original learning because they cut the need to dig up and combine information from original sources yourself. This pattern held even when the LLM summaries also included real-time web links, and it showed up across different topics and different LLM tools.</div>
+<div class="mt">
+<b>design</b> Seven experiments; participants randomly assigned to learn topic via web links vs. LLM synthesis, then wrote advice. &nbsp;·&nbsp; <b>n</b> 10,426 &nbsp;·&nbsp; <b>age</b> M = 42.40, SD = 13.46 &nbsp;·&nbsp; <b>gender</b> 46% female, 53% male, 1% nonbinary &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://doi.org/10.1016/j.chb.2024.108386" target="_blank">Stadler et al. 2024</a>
+<span class="v">Computers in Human Behavior</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Students who used ChatGPT3.5 to research a learning task felt less mental strain, called cognitive load, than students who used Google search, but their final recommendations showed weaker reasoning and argumentation. The exact numbers weren&#x27;t given in the abstract. The authors suggest LLMs can ease mental effort but may not push students to engage deeply enough with content for high-quality learning. Recommendations and justifications were about equally varied, called homogeneity, between the two groups, suggesting LLMs didn&#x27;t narrow students&#x27; range of perspectives.</div>
+<div class="mt">
+<b>design</b> Randomised experiment; ChatGPT3.5 vs Google search as comparison conditions for a learning task &nbsp;·&nbsp; <b>n</b> 91 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <b>setting</b> university setting; country not reported &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Does it change how people study?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://doi.org/10.1111/bjet.13544" target="_blank">Fan et al. 2024</a>
+<span class="v">British Journal of Educational Technology</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Fan and colleagues randomly assigned students to get help from ChatGPT, a human expert chat, writing analytics tools, or no extra tool while working on a writing task. Afterward, all four groups reported similar intrinsic motivation, but they differed significantly in how often and in what order they used self-regulated learning processes, the steps learners take to plan, monitor, and check their own work. The ChatGPT group improved their essay scores more than the other groups, but showed no significant advantage in knowledge gain or in transfer, applying that knowledge to new situations. The authors suggest ChatGPT&#x27;s edge may be a short-term boost in task performance rather than deeper learning, and they raise concern that it might encourage technology dependence and &quot;metacognitive laziness,&quot; reduced effort in monitoring one&#x27;s own thinking.</div>
+<div class="mt">
+<b>design</b> Randomised experimental study, 4 groups: ChatGPT, human expert chat, writing analytics tools, no extra tool (control) &nbsp;·&nbsp; <b>n</b> 117 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Only abstract/practitioner notes available; exact statistics (CIs, p-values, effect sizes) not reported here.</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Does the order of the workflow matter?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#b5892a">
+<div class="hd">
+<a href="https://doi.org/10.3389/fpsyg.2026.1910545" target="_blank">Liu et al. 2026</a>
+<span class="v">Frontiers in Psychology</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">People who used AI by simply accepting its answers first, then reasoned worse on their own afterward than people who never used AI at all: their score dropped by 0.38 points on a 1-7 scale, a small effect (d = −0.28, p = 0.0002). People who used AI but had to generate their own answer first, before seeing AI&#x27;s answer, did not show this drop. The researchers think this is about the order of workflow — whether you produce your own answer before or after seeing AI&#x27;s — rather than about using AI itself; a &quot;generation effect,&quot; where producing an answer yourself strengthens learning more than just reading one, fits this pattern but isn&#x27;t confirmed as the actual mechanism. The result held up across several robustness checks, and people who reported a general tendency to offload thinking to others also tended to reason worse on their own.</div>
+<div class="mt">
+<b>design</b> Three-arm randomized experiment: self-generation-first autonomous AI workflow vs. direct-adoption dependent AI workflow vs. no-AI control. &nbsp;·&nbsp; <b>n</b> 900 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Performance measured 15–20 min after AI use, once the tool was removed; participants then wrote a second, parallel essay with no AI available. Session length/number of sessions: not reported. &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Effect reflects the whole workflow contrast; design cannot isolate mechanism or weigh alternative accounts.</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="gap">
+<div class="gnode">GAP — guardrails, tutor and draft-first have never been compared head to head</div>
+</li>
+</ul>
+</li>
+<li class="branch">
+<div class="bnode" style="--c:#c0553b">
+<span class="chip" style="background:#c0553b">Thin evidence</span>
+<h2>Does AI erode skill you already have?</h2>
+<p class="meta">4 studies shown · 1 randomised · 2 measured the outcome after the AI was withdrawn · only one measures a real-world outcome, and it has no control group</p>
+</div>
+<ul>
+<li>
+<div class="qnode">Has anyone seen it in real professional practice?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.1016/s2468-1253(25)00133-5" target="_blank">Budzyń et al. 2025</a>
+<span class="v">&#x27;The &quot;Lancet. Gastroenterology &amp; hepatology</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Endoscopists who started using AI tools to help spot polyps later did worse when scoping without AI: their adenoma detection rate, the share of colonoscopies finding a precancerous growth, dropped from 28.4% (226 of 795) before to 22.4% (145 of 648) after, a fall of -6.0% (95% CI -10.5 to -1.6; p=0.0089). Adjusting for other factors, AI exposure carried an odds ratio of 0.69 (95% CI 0.53-0.89), suggesting doctors&#x27; own detection skill may have declined once they got used to AI help. Patient sex and age mattered too: male patients had higher odds of detected adenomas than female patients (OR 1.78, 95% CI 1.38-2.30), and patients 60 or older had higher odds than younger ones (OR 3.60, 95% CI 2.74-4.72). The authors say this pattern suggests, but doesn&#x27;t prove, that relying on AI might weaken endoscopists&#x27; own detection ability over time.</div>
+<div class="mt">
+<b>design</b> Retrospective, observational, multicentre before/after comparison; not stated as randomised; comparison is same endoscopists&#x27; non-AI colonoscopy performance pre vs post AI exposure &nbsp;·&nbsp; <b>n</b> 1,443 colonoscopies &nbsp;·&nbsp; <b>age</b> median age 61 years (IQR 45-70) &nbsp;·&nbsp; <b>gender</b> 847 (58.7%) female, 596 (41.3%) male &nbsp;·&nbsp; <b>exposure</b> before/after comparison across two 3-month phases pre/post AI implementation; AI tools for polyp detection introduced at end of 2021 &nbsp;·&nbsp; <b>setting</b> four endoscopy centres in Poland (ACCEPT trial sites) &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Does it show up in a controlled task?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.1145/3834580.3838741" target="_blank">Wu et al. 2026</a>
+<span class="v">venue not recorded</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">When AI help cost less, participants asked for it more often. Those who leaned on AI during the assisted phase then did worse on their own once the AI was taken away, and their later unassisted performance was overestimated when guessed from how well they&#x27;d done with AI help. Using a model that separated starting skill, later skill, and skill change, the authors suggest that people who kept solving problems on their own during the AI phase gained more real ability, meaning skill-building seems weaker when AI substitutes for independent reasoning. No exact numbers, confidence intervals, or p-values were reported in this text.</div>
+<div class="mt">
+<b>design</b> Controlled experiment, AI request costs varied; unclear if randomised; compares AI-assisted vs unassisted (before/after) performance. &nbsp;·&nbsp; <b>n</b> NOT REPORTED &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> study includes a before, during (AI-access), and after phase; exact session/task counts and time span not reported &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Controlled logic-puzzle task; generalizability to real-world skill development not addressed.</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">How worried are practitioners?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.3390/arm94040048" target="_blank">Marchi et al. 2026</a>
+<span class="v">Advances in respiratory medicine</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Marchi and colleagues surveyed 118 interventional pulmonologists from 10 countries and found 87% saw real clinical potential in AI, but 73% worried AI could erode their procedural skills over time, a concern called &quot;deskilling.&quot; Deskilling ranked as the top priority for future research, with 89% agreement, and respondents broadly backed ways to guard against it: training without AI assistance (84%), simulation-based practice (86%), long-term monitoring of skills (78%), and formal governance rules (70%). Only 38% had previously heard of &quot;automation bias,&quot; blindly trusting a machine&#x27;s output, but once the term was explained, 81% said it resonated, a 43-point jump. The authors stress this survey captures opinions and attitudes only, not measured skill loss, and they explicitly warn it should not be taken as proof that AI actually causes deskilling in this field; no statistical significance testing was done.</div>
+<div class="mt">
+<b>design</b> International, observational, cross-sectional, questionnaire-based survey; not randomised; no control/comparison condition described &nbsp;·&nbsp; <b>n</b> 118 &nbsp;·&nbsp; <b>age</b> 35–44 years (n=45; 38.1%), 45–54 years (n=33; 28.0%), ≥55 years (n=21; 17.8%), &lt;35 years (n=19; 16.1%) &nbsp;·&nbsp; <b>gender</b> 76 male (64.4%), 42 female (35.6%) &nbsp;·&nbsp; <b>exposure</b> &quot;An international, observational, cross-sectional, questionnaire-based study was conducted in May 2026&quot;; no session length, number of sessions, or delay before outcome measurement reported &nbsp;·&nbsp; <b>setting</b> 10 countries: &quot;Australia, Canada, France, India, Italy, Morocco, Spain, Turkey, the United Kingdom, and the United States&quot;; participants were interventional pulmonologists recruited &quot;through professional networks affiliated with national and international respiratory societies&quot;; specific setting (e.g., hospital/university) not reported &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> &quot;No formal a priori sample size calculation was performed, consistent with the descriptive, exploratory, hypothesis-generating design&quot;</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.1007/s10796-026-10804-5" target="_blank">Subramanya et al. 2026</a>
+<span class="v">Information Systems Frontiers</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Subramanya and colleagues surveyed 143 knowledge workers in five countries about using GenAI, generative AI, at work. Workers with strong entrepreneurial ambition and a long-term outlook who kept using GenAI heavily seemed to end up feeling their own skills were eroding — a &quot;hustle-to-handicap&quot; pattern the authors say seems tied to sustained use itself, not just the person&#x27;s mindset. This suggests GenAI may sometimes shift from boosting people&#x27;s abilities to making them feel less capable, though the authors describe this as broadly consistent with their idea rather than proven, and no specific numbers or statistical results are given.</div>
+<div class="mt">
+<b>design</b> Survey study (cross-sectional); not stated as randomized; no control/comparison condition described &nbsp;·&nbsp; <b>n</b> 143 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <b>setting</b> knowledge workers across five countries; specific countries and setting (e.g., university, workplace, online panel) not reported &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="branch">
+<div class="bnode" style="--c:#1a4e8a">
+<span class="chip" style="background:#1a4e8a">Well evidenced</span>
+<h2>Does AI advice make judgment better or worse?</h2>
+<p class="meta">11 studies shown · 8 randomised · 0 measured the outcome after the AI was withdrawn</p>
+</div>
+<ul>
+<li>
+<div class="qnode">What happens when the AI is wrong?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1148/radiol.222176" target="_blank">Dratsch et al. 2023</a>
+<span class="v">Radiology</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">When radiologists rated mammograms and got a correct AI-suggested BI-RADS category (a breast cancer risk score), their accuracy was high: 79.7% for inexperienced readers, 81.3% for moderately experienced ones, and 82.3% for very experienced ones. When the AI suggestion was wrong instead, accuracy dropped sharply for everyone, down to 19.8%, 24.8%, and 45.5% for those same groups (all differences significant, P &lt; .001 or P = .003). The authors say this suggests radiologists are prone to automation bias, meaning they lean on AI advice even when it&#x27;s wrong. Inexperienced radiologists followed incorrect higher-risk AI suggestions more strongly (bias score 4.0 ± 1.8) than moderately experienced (2.4 ± 1.5, P = .044) or very experienced radiologists (1.2 ± 0.8, P = .009), suggesting more experience might lessen this bias.</div>
+<div class="mt">
+<b>design</b> Prospective within-subjects experiment; radiologists rated mammograms with correct vs incorrect AI-suggested BI-RADS categories. &nbsp;·&nbsp; <b>n</b> 27 radiologists &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> single session; each radiologist read 50 mammograms (10 training + 40 test); no delay before outcome measurement reported &nbsp;·&nbsp; <b>setting</b> country/setting not reported in retrieved text; mammograms obtained January 2017-December 2019 &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1001/jama.2023.22295" target="_blank">Jabbour et al. 2023</a>
+<span class="v">JAMA</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Clinicians reading medical case vignettes got the right diagnosis 73.0% of the time on their own (95% CI, 68.3% to 77.8%). When a standard, unbiased AI gave them a prediction, accuracy rose by 2.9 percentage points (95% CI, 0.5 to 5.2), and rose by 4.4 points (95% CI, 2.0 to 6.9) when the AI also showed an explanation, a visual highlight of what it used to make its call. But when the AI was systematically biased, meaning it made a consistent pattern of errors, accuracy fell by 11.3 points (95% CI, 7.2 to 15.5), and still fell by 9.1 points (95% CI, 4.9 to 13.2) even when it showed its explanation — only a 2.3-point improvement (95% CI, -2.7 to 7.2) that was not statistically significant. The authors conclude that while helpful AI improves diagnosis, biased AI harms it, and these common image-based explanations did not fix that harm.</div>
+<div class="mt">
+<b>design</b> Randomized clinical vignette survey study; randomized to AI predictions with or without explanations, compared with baseline (no AI). &nbsp;·&nbsp; <b>n</b> 457 clinicians &nbsp;·&nbsp; <b>age</b> Median participant age was 34 years (IQR, 31-39) &nbsp;·&nbsp; <b>gender</b> 241 (57.7%) were female &nbsp;·&nbsp; <b>exposure</b> administered between April 2022 and January 2023; clinicians shown 9 clinical vignettes (2 baseline without AI, 6 with AI model input); not reported for session length or delay before outcome measured &nbsp;·&nbsp; <b>setting</b> across 13 US states; hospitalist physicians, nurse practitioners, and physician assistants (clinical setting not further specified) &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1038/s41746-021-00385-9" target="_blank">Gaube et al. 2021</a>
+<span class="v">npj Digital Medicine</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Radiologists in this study rated advice as lower quality when they were told it came from AI rather than from a human, even though the advice was equally accurate either way — a bias the authors call algorithmic aversion. Non-expert participants showed no such bias, rating AI and human advice similarly. In both groups, how good they judged the advice to be tracked how confident they felt in their diagnosis (experts: r(1102) = 0.43, p &lt; 0.001; non-experts: r(1014), p &lt; 0.001, exact correlation not stated). Despite radiologists&#x27; distrust of AI-labeled advice, their actual diagnostic accuracy wasn&#x27;t hurt by source — accurate advice boosted performance by 40.10% for experts and 37.53% for non-experts, with no difference based on whether the advice was labeled AI or human.</div>
+<div class="mt">
+<b>design</b> 2×2 mixed factorial; advice source (AI vs. human) between-subject, not randomized to source as stated; advice accuracy within-subject. &nbsp;·&nbsp; <b>n</b> 265 physicians &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> Advice source was artificially/falsely labeled as AI or human, not real AI or human advice.</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Do human+AI teams beat either alone?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1038/s41562-024-02024-1" target="_blank">Vaccaro et al. 2024</a>
+<span class="v">Nature Human Behaviour</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Researchers combined 106 experiments where people did tasks alone, AI did them alone, or people and AI worked together. On average, teaming up beat working alone, with a medium-to-large g = 0.64 (p = 0.000, 95% CI 0.53 to 0.74) — this is called human augmentation. But teams did not beat whichever was better, human-alone or AI-alone, showing a small negative effect, g = −0.23 (p = 0.005, 95% CI −0.39 to −0.07) — meaning no true &quot;synergy&quot; on average. Whether a task was a decision task or a creation task, and whether the human or the AI was individually better, changed how well the team did; giving the AI&#x27;s confidence level or an explanation for its answer did not make a difference.</div>
+<div class="mt">
+<b>design</b> Systematic review and meta-analysis (three-level meta-analytic model) of published experiments comparing human-only, AI-only, and human–AI conditions; not a randomised trial itself. &nbsp;·&nbsp; <b>n</b> 106 studies / 370 effects &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; not applicable (review or survey)</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1073/pnas.2426153122" target="_blank">Zöller et al. 2025</a>
+<span class="v">Proceedings of the National Academy of Sciences</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Zöller and colleagues compared groups of doctors working alone, AI programs working alone, and doctors and AI working together on written descriptions of patient cases, across different medical specialties and experience levels. The combined human-AI groups made more accurate diagnoses than either doctors alone or AI alone, suggesting AI can add to human expertise rather than replace it, because mixing the different answers humans and AI come up with improves accuracy. The authors also note that when the AI got a diagnosis wrong, doctors often got it right, which they say shows why keeping doctors involved still matters even when using a powerful set of AI tools. No exact numbers, confidence ranges, or p-values were given in this excerpt.</div>
+<div class="mt">
+<b>design</b> Not explicitly randomised; comparison of human-only, LLM-only, and hybrid human–AI collectives on same clinical vignettes. &nbsp;·&nbsp; <b>n</b> 3,669 cases &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <b>setting</b> Online platform (Human Diagnosis Project, Human Dx) — international, users from around the world &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Do LLMs actually help doctors?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1001/jamanetworkopen.2024.40969" target="_blank">Goh et al. 2024</a>
+<span class="v">JAMA Network Open</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Doctors who used an AI chatbot (ChatGPT) alongside their usual tools scored about the same on a diagnostic-reasoning test as doctors using only their usual tools — 2 percentage points higher, a gap so small it could be chance (95% CI −4 to 8, P = .60). Using the chatbot didn&#x27;t speed them up either, saving 82 seconds per case at most, again not a real difference (95% CI −195 to 31, P = .20). Oddly, the chatbot working alone, with no doctor involved, scored 16 percentage points higher than doctors using only conventional tools (95% CI 2 to 30, P = .03) — a real gap. The authors think this means the chatbot itself is capable, but doctors need better training and tools to actually use it well.</div>
+<div class="mt">
+<b>design</b> Randomized clinical trial; physicians randomized to use ChatGPT Plus (GPT-4) vs conventional resources (eg, UpToDate, Google) for diagnostic reasoning. &nbsp;·&nbsp; <b>n</b> 50 physicians &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Sessions lasted for 1 hour; participants completed 6 clinical vignette cases within that 1-hour session (pilot testing showed a maximum of 6 cases completable in 1 hour) &nbsp;·&nbsp; <b>setting</b> United States; academic medical settings — Stanford University, Beth Israel Deaconess Medical Center, and the University of Virginia; participants recruited via institutional email lists and proctored in small groups either remotely or at an in-person computer laboratory &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1038/s41591-024-03456-y" target="_blank">Goh et al. 2025</a>
+<span class="v">Nature Medicine</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Doctors who used an AI chatbot to work through tough clinical cases scored 43.0% on average, versus 35.7% for doctors using standard resources like search engines and textbooks — a difference of 6.5 percentage points, 95% CI 2.7 to 10.2, p&lt;0.001. The chatbot alone scored 43.7%, about the same as doctors using it (difference 0.9%, 95% CI −7.2 to 9.0, p=0.80), and it may have scored higher than doctors using conventional resources, though this trend wasn&#x27;t statistically solid (difference 7.3%, 95% CI −0.7 to 15.4, p=0.074). Even after adjusting for how much time each doctor spent per case, chatbot use was still linked to a 5.4 percentage point higher score (95% CI 1.7 to 9.0, p=0.004).</div>
+<div class="mt">
+<b>design</b> Prospective randomized-controlled trial; physicians randomized to LLM use vs conventional resources on complex clinical management questions. &nbsp;·&nbsp; <b>n</b> 92 physicians &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Physicians randomized to use the LLM spent 801.5 seconds versus 690.2 seconds per case (difference: 119.3 seconds, 95% CI: 17.4 to 221.2, p = 0.022); study conducted from 30 November 2023 to 21 April 2024. &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Can interface design reduce overreliance?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1145/3449287" target="_blank">Buçinca et al. 2021</a>
+<span class="v">Proceedings of the ACM on Human-Computer Interaction</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Researchers tested designs that force people to pause and think before accepting an AI&#x27;s suggestion, comparing them to simpler AI explanation approaches and to no AI at all. The forcing designs cut overreliance — trusting the AI&#x27;s answer without enough scrutiny — more than the simple explanations did, though exact numbers weren&#x27;t reported. But participants rated the forcing designs least favorably, exactly the ones that worked best. The forcing designs also helped more for people higher in Need for Cognition, a trait reflecting how much someone enjoys effortful thinking, suggesting a person&#x27;s cognitive motivation shapes how well these AI designs work.</div>
+<div class="mt">
+<b>design</b> Experiment comparing three cognitive forcing designs to two XAI approaches and a no-AI baseline; randomization not stated. &nbsp;·&nbsp; <b>n</b> 199 &nbsp;·&nbsp; <b>age</b> M = 37.09, SD = 10.74 &nbsp;·&nbsp; <b>gender</b> 125 (65.44%) male, rest female &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1145/3579605" target="_blank">Vasconcelos et al. 2023</a>
+<span class="v">Proceedings of the ACM on Human-Computer Interaction</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Across five studies with 731 people doing a maze task with a simulated AI, participants relied too much on the AI&#x27;s advice more often when checking its explanation was harder or the task itself was harder, and relied on it less when they were paid money for getting things right. A fifth study used an adapted effort-based test, one that measures how much mental effort someone will spend for a given payoff, and found the same pattern. The authors suggest this means overreliance isn&#x27;t just an automatic mental bias — people seem to be weighing the effort of checking an explanation against its benefits and deciding strategically whether to bother. Exact statistical values (like p-values or effect sizes) weren&#x27;t given in the abstract.</div>
+<div class="mt">
+<b>design</b> 5 studies manipulating costs/benefits in a maze task with a simulated AI; randomization not stated &nbsp;·&nbsp; <b>n</b> 731 (5 studies) &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Does felt benefit match real benefit?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://arxiv.org/abs/2507.09089" target="_blank">Becker et al. 2025</a>
+<span class="v">arXiv (Cornell University)</span>
+<span class="bg pp">preprint</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Developers randomly assigned to use AI tools on coding tasks took 19% longer to finish than those who worked without them. Before starting, the developers had guessed AI would make them 24% faster, and even afterward they still believed it had made them 20% faster. Outside experts were even more optimistic: economics experts predicted AI would cut task time by 39%, and ML experts predicted a 38% cut. The researchers call this slowdown surprising, say it&#x27;s unlikely to be mainly a quirk of the experiment&#x27;s design, and found evidence for 5 of 21 possible contributing factors, with mixed or unclear evidence for 10 more.</div>
+<div class="mt">
+<b>design</b> Randomized controlled trial; each task randomly assigned to allow or disallow AI tool usage. &nbsp;·&nbsp; <b>n</b> 16 devs / 246 tasks &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> tasks average 2.0 hours; study period February–June 2025; developers have average of 5 years of prior experience on the projects &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> Authors state influence of experimental artifacts cannot be entirely ruled out.</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1287/orsc.2025.21838" target="_blank">Dell’Acqua et al. 2026</a>
+<span class="v">Organization Science</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Researchers had people use GPT-4 to help with work tasks, and the results depended on whether the task fit AI&#x27;s strengths. For 18 tasks that AI was good at, people using it finished 12.2% more tasks, worked 25.1% faster, and produced better-quality solutions. But on one complex managerial task that fell outside AI&#x27;s strengths, people using AI were 19% less likely to get the right answer than people working without it. The authors call this a &quot;jagged technology frontier&quot; — AI helps on some tasks and hurts on others, even within the same job and even when the tasks seem similarly hard.</div>
+<div class="mt">
+<b>design</b> Preregistered randomized experiment; three arms: no AI access, GPT-4 AI access, or GPT-4 access with prompt engineering overview. &nbsp;·&nbsp; <b>n</b> 758 consultants &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> Out-of-frontier finding based on a single complex managerial task, limiting generalizability.</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="branch">
+<div class="bnode" style="--c:#8a6fb0">
+<span class="chip" style="background:#8a6fb0">Weak method</span>
+<h2>Can you tell what AI is doing to your thinking?</h2>
+<p class="meta">7 studies shown · 0 randomised · 1 measured the outcome after the AI was withdrawn · the cluster behind the loudest public claims</p>
+</div>
+<ul>
+<li>
+<div class="qnode">What do people say about their own critical thinking?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#8a6fb0">
+<div class="hd">
+<a href="https://doi.org/10.3390/soc15010006" target="_blank">Gerlich 2025 (Societies)</a>
+<span class="v">Societies</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">People who used AI tools more often scored lower on tests of critical thinking, the ability to analyze and evaluate information carefully, and this link seemed to work through cognitive offloading, or letting a tool do the mental work instead of doing it yourself. Younger participants leaned on AI tools more and scored lower on critical thinking than older participants did. People with more education scored better on critical thinking no matter how much AI they used. Because the study only looked for patterns rather than testing cause and effect, the authors say this points to possible cognitive costs of relying on AI and a need for teaching that encourages people to engage critically with these tools, not that AI use directly causes weaker thinking.</div>
+<div class="mt">
+<b>design</b> Mixed-method: surveys + in-depth interviews, correlational/observational, not randomised, no control condition &nbsp;·&nbsp; <b>n</b> 666 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#8a6fb0">
+<div class="hd">
+<a href="https://doi.org/10.1145/3706598.3713778" target="_blank">Lee et al. 2025</a>
+<span class="v">venue not recorded</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">People who trusted the AI tool more tended to think critically about its answers less, while people who trusted their own skills more tended to think critically more, according to Lee et al.&#x27;s survey of GenAI-assisted tasks. The authors suggest this shift means critical thinking now looks less like solving the problem yourself and more like checking the AI&#x27;s information, blending its answers with your own, and overseeing the task overall. No exact statistical values, like coefficients, confidence intervals, or p-values, were reported.</div>
+<div class="mt">
+<b>design</b> Survey study (not stated as randomised); no control/comparison condition described. &nbsp;·&nbsp; <b>n</b> 319 workers &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">How well calibrated are people, when measured?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#8a6fb0">
+<div class="hd">
+<a href="https://arxiv.org/abs/2409.16708" target="_blank">Fernandes et al. 2024</a>
+<span class="v">arXiv (Cornell University)</span>
+<span class="bg pp">preprint</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">In Fernandes et al. 2024, 246 people used ChatGPT-4o to solve LSAT logical-reasoning problems, and their scores beat a no-AI comparison group by three points, but they thought they&#x27;d done four points better than they actually had. People who scored higher on an AI-literacy quiz (SNAIL) were more confident but actually less accurate at judging their own performance. Normally, low scorers overestimate themselves much more than high scorers do (the Dunning-Kruger effect), but a computational model showed this pattern disappeared when AI was used — everyone overestimated by a similar amount instead. A second study with 452 people, which paid participants for judging their performance accurately and compared an AI group to a no-AI group, found the same pattern.</div>
+<div class="mt">
+<b>design</b> Conceptual replication; Study 2 adds own non-AI baseline group and monetary incentive; randomization not reported. &nbsp;·&nbsp; <b>n</b> 246 &nbsp;·&nbsp; <b>age</b> M = 39.85, SD = 14.53 (Study 1, n = 246 analysed) &nbsp;·&nbsp; <b>gender</b> identified as female 114; male 130; non-binary 2 (Study 1) &nbsp;·&nbsp; <b>exposure</b> Study 1: participants used AI to solve 20 logical problems from the LSAT; session length, number of sessions, and delay before outcome measurement not reported. Study 2 duration not reported. &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#8a6fb0">
+<div class="hd">
+<a href="https://doi.org/10.1038/s42256-024-00976-7" target="_blank">Steyvers et al. 2025</a>
+<span class="v">Nature Machine Intelligence</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Users who read default explanations from an LLM guessed its answers were more accurate than they really were. When explanations ran longer, users trusted the answers more, even though the extra length didn&#x27;t make the answers any more correct. When the explanations were instead adjusted to reflect how confident the model actually was, two problems shrank: the calibration gap (mismatch between trust and true accuracy) and the discrimination gap (trouble telling right answers from wrong ones), and users&#x27; sense of the LLM&#x27;s accuracy significantly improved. No exact numbers or confidence intervals for these effects were available in the source text.</div>
+<div class="mt">
+<b>design</b> Behavioural experiments (1, 2, supplementary 3); default vs confidence-adjusted explanations compared; randomisation not reported &nbsp;·&nbsp; <b>n</b> 301 &nbsp;·&nbsp; <b>age</b> median age was 34 years (age range from 18 to 79) &nbsp;·&nbsp; <b>gender</b> 146 female and 138 male participants &nbsp;·&nbsp; <b>exposure</b> Single session; further session length/number of sessions/delay before outcome not reported &nbsp;·&nbsp; <b>setting</b> native English speakers residing in the USA, recruited through Prolific (online panel); not reported beyond this &nbsp;·&nbsp; not applicable (review or survey) &nbsp;·&nbsp; <b>caveat</b> Authors note focus on multiple-choice and short-answer questions with few response alternatives.</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">What happens when reasoning is scored instead of asked about?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#8a6fb0">
+<div class="hd">
+<a href="https://doi.org/10.1111/bjet.13591" target="_blank">Urban et al. 2025</a>
+<span class="v">British Journal of Educational Technology</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Students who wrote with ChatGPT-4o&#x27;s help pulled more correct facts into their writing than students who wrote alone, both from expert-written articles (d = 0.64) and from ChatGPT-generated articles (d = 0.95). But ChatGPT assistance didn&#x27;t change how much incorrect information students picked up from the ChatGPT-generated article. The authors suggest ChatGPT helps people use good information, but metacognitive skills — accurately judging your own understanding — are still needed to avoid absorbing AI mistakes. Across both groups, students with lower metacognitive bias, meaning they judged their own knowledge more accurately, included more correct facts from the expert article (R² = 12%), while higher metacognitive bias (R² = 10%) and certain epistemic beliefs, meaning views about how knowledge is justified (R² = 12%), were moderately linked to including more incorrect facts from the ChatGPT article.</div>
+<div class="mt">
+<b>design</b> Experimental study, comparing writing independently vs. with ChatGPT assistance; randomisation not reported. &nbsp;·&nbsp; <b>n</b> 98 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#8a6fb0">
+<div class="hd">
+<a href="https://doi.org/10.3390/data10110172" target="_blank">Gerlich 2025 (Data)</a>
+<span class="v">Data</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">When people used AI without any guidance, they leaned on it more to do their thinking for them — called cognitive offloading — but their reasoning didn&#x27;t get any better. When people used AI with structured prompting (guided questions steering how they used it), they offloaded less and showed stronger critical reasoning and reflective engagement, though the exact statistics weren&#x27;t reported. The authors suggest structured prompting keeps humans more involved and may narrow performance gaps between different demographic groups, and they propose it as a cheap, scalable way to guide responsible AI use. Using mediation and latent class analyses, they found this effect works through changes in offloading and engagement rather than being a simple direct effect.</div>
+<div class="mt">
+<b>design</b> Cross-country experiment; four conditions (human-only, human+AI unguided, human+AI guided, AI-only); randomisation not reported &nbsp;·&nbsp; <b>n</b> 150 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <b>setting</b> Germany, Switzerland, United Kingdom; setting not reported &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#8a6fb0">
+<div class="hd">
+<a href="https://doi.org/10.1002/jcal.70322" target="_blank">Melanou et al. 2026</a>
+<span class="v">Journal of Computer Assisted Learning</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Researchers tracked 87 students across three classes—one using AI with guided tutoring, one using AI unguided, and one control group with no AI—and found all three groups gained knowledge equally, so adding AI gave no extra boost. Students who worked harder mentally in a useful way, called germane cognitive load, learned more, and that mental effort went up during the study. Students in the AI condition reflected more on their own thinking, and that reflection was linked to better critical thinking, though critical thinking itself didn&#x27;t change overall. The authors conclude AI&#x27;s value depends on how teachers frame its use and how well students regulate their own learning, and found no sign that AI widened gaps between weaker and stronger students.</div>
+<div class="mt">
+<b>design</b> Quasi-experimental, three parallel classes (not stated as randomised): tutor-AI, unguided AI, no-AI control. &nbsp;·&nbsp; <b>n</b> 87 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> across an entire semester; data collected at three measurement points (T1–T3); session length not reported &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Quasi-experimental design (not confirmed randomised); exact numeric estimates (CIs, p-values) not reported in abstract.</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="branch">
+<div class="bnode" style="--c:#c0553b">
+<span class="chip" style="background:#c0553b">Thin evidence</span>
+<h2>What happens in the brain?</h2>
+<p class="meta">4 studies shown · 3 randomised · 2 measured the outcome after the AI was withdrawn · largest n = 64; no peer-reviewed fMRI of LLM-assisted work</p>
+</div>
+<ul>
+<li>
+<div class="qnode">EEG during AI-assisted writing</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://arxiv.org/abs/2506.08872" target="_blank">Kosmyna et al. 2025</a>
+<span class="v">arXiv (Cornell University)</span>
+<span class="bg pp">preprint</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Kosmyna and colleagues measured brain connectivity, or how strongly different brain regions&#x27; electrical signals sync up, while people wrote essays either alone, with a search engine, or with an LLM (large language model, like ChatGPT). The more outside help people used, the weaker and narrower their brain connectivity became: unaided writers showed the strongest, widest networks, search-engine users were in between, and LLM users showed the weakest coupling overall. In a fourth session, people who had used an LLM first and then switched to writing alone still showed weaker connectivity and under-used alpha and beta brain-wave networks, while people who switched from writing alone to using an LLM recalled more and re-engaged widespread brain regions at the back and front of the head. Behaviorally, 83.3% of the LLM group (15 of 18) couldn&#x27;t correctly quote from the essay they had just written, compared with only 11.1% (2 of 18) in each of the other two groups.</div>
+<div class="mt">
+<b>design</b> Between-subjects, 3 conditions, with a within-subject crossover fourth session; 32-channel EEG &nbsp;·&nbsp; <b>n</b> 54 (18/arm) &nbsp;·&nbsp; <b>age</b> 18 to 39 years old (age M = 22.9, SD = 1.69) &nbsp;·&nbsp; <b>gender</b> 32 female, 19 male, 2 non-binary, 1 preferred not to say &nbsp;·&nbsp; <b>exposure</b> 4 sessions; Sessions 1-3 in assigned condition, Session 4 crossover with conditions swapped (LLM-to-Brain, Brain-to-LLM); study span reported as ~4 months &nbsp;·&nbsp; <b>setting</b> Greater Boston area, USA; recruited from 5 universities (MIT, Wellesley, Harvard, Tufts, Northeastern) &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Preprint, not peer reviewed; 18 per group; one geographic area; authors note fMRI is &#x27;the next step&#x27;</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">fMRI of taking advice from a machine</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.3389/fnhum.2016.00542" target="_blank">Goodyear et al. 2016</a>
+<span class="v">Frontiers in Human Neuroscience</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Researchers had people do an X-ray luggage-screening task while getting advice from either a human or a machine helper, and giving bad advice made people both worse at the task and less likely to use the advice, F(1,22) = 7.63, p = 0.011 for advice use and F(2,31) = 13.85, p &lt; 0.0001 for task performance. Surprisingly, people cut back on trusting the human advisor more sharply over time than the machine advisor, F(1,22) = 5.06, p = 0.035. This happened because people initially rated the human as far more reliable than its actual 60% reliability, t(11) = 6.79, p &lt; 0.0001, then sharply lowered that rating after seeing it give wrong advice, t(11) = 4.10, p = 0.002. The authors suggest people over-trust human advisors compared to automated ones at first, but recalibrate, or adjust, that trust more sharply once the human&#x27;s mistakes show up — a pattern also linked to stronger brain-connectivity signals from certain &quot;driver&quot; hub regions during bad advice when the advisor was human.</div>
+<div class="mt">
+<b>design</b> Between-subjects design with random assignment; fMRI + X-ray luggage-screening task; comparison of human vs. machine advice agents. &nbsp;·&nbsp; <b>n</b> 24 (fMRI arm) &nbsp;·&nbsp; <b>age</b> Normative rating study: 24.0 ± 2.6; behavioral study: 22.3 ± 2.9; fMRI study: 20.0 ± 2.6 &nbsp;·&nbsp; <b>gender</b> Normative rating study: twenty-three male students; behavioral study: six males, four females; fMRI study: 13 males, 11 females &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <b>setting</b> George Mason University (GMU), United States; university setting &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Brain response when an AI fails</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.3390/brainsci14101032" target="_blank">Lv et al. 2024</a>
+<span class="v">Brain Sciences</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Researchers watched people&#x27;s brain activity (theta-band power, a signal tied to unconscious mental conflict) while participants viewed AI service failures. When people viewed the AI as a mere tool (&quot;design stance&quot;) rather than as having intentions, brain-signaled conflict was lower for emotional-task failures than mechanical-task failures (M=−0.089 vs. 0.506, p=0.021); when people instead viewed the AI as acting with intent (&quot;intentional stance&quot;), conflict was marginally higher for emotional than mechanical failures (M=0.324 vs. 0.020, p=0.096). A brain-connectivity measure (PLV, phase locking value) backed up this pattern overall (p=0.002 for the stance effect, p=0.033 for the interaction), though the specific intentional-stance difference between task types was not significant for this measure (p=0.545). The authors suggest seeing an AI as just following its design may unconsciously ease people&#x27;s conflict about emotional failures, while seeing it as acting intentionally may unconsciously heighten that conflict compared with mechanical failures.</div>
+<div class="mt">
+<b>n</b> 24 &nbsp;·&nbsp; <b>age</b> 23.791 ± 7.437 years &nbsp;·&nbsp; <b>gender</b> 11 males and 13 females &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Consumer EEG during design work</div>
+<ul>
+<li>
+<div class="snode" style="--c:#c0553b">
+<div class="hd">
+<a href="https://doi.org/10.3389/fpsyg.2025.1508383" target="_blank">Wang et al. 2025</a>
+<span class="v">Frontiers in Psychology</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg ftx">read in full</span>
+</div>
+<div class="f">Wang et al. compared people who used AIGC (AI-generated content) tools against a group that didn&#x27;t, and the AIGC-assisted group scored higher on creative performance, M=115.13 vs M=110.69, t(62)=2.208, p=0.031, d=0.55, 95% CI [0.419, 8.456]. They also showed higher concentration, M=51.06 vs M=48.31, t(62)=4.062, p&lt;0.001, d=1.02, but relaxation levels were about the same between groups, t(62)=1.321, p=0.191. Concentration and creative performance were moderately linked across both groups, r=0.67, p&lt;0.001, but the authors caution this correlation doesn&#x27;t prove concentration causes better creativity, since the direction of the relationship can&#x27;t be determined from this kind of analysis.</div>
+<div class="mt">
+<b>n</b> 64 &nbsp;·&nbsp; <b>age</b> range 20-25 years, M = 22.5, SD = 1.2 &nbsp;·&nbsp; <b>gender</b> 33 females, 31 males (experimental group: 17 females, 15 males; control group: 16 females, 16 males) &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Provided excerpt contains only Introduction/Literature Review; no Methods or Results text available.</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="branch">
+<div class="bnode" style="--c:#1a4e8a">
+<span class="chip" style="background:#1a4e8a">Well evidenced</span>
+<h2>Can AI make thinking better?</h2>
+<p class="meta">12 studies shown · 2 randomised · 4 measured the outcome after the AI was withdrawn · the same lever cuts both ways</p>
+</div>
+<ul>
+<li>
+<div class="qnode">Can AI talk people out of false beliefs?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1126/science.adq1814" target="_blank">Costello et al. 2024</a>
+<span class="v">Science</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Researchers had people with conspiracy beliefs talk through the evidence personally with GPT-4 Turbo, an AI chatbot, and this cut their belief in the conspiracy by about 20%. The drop lasted at least 2 months later, showed up across many different conspiracy theories, and happened even in people whose beliefs were deeply entrenched. The authors conclude that many conspiracy believers can change their minds if given sufficiently compelling evidence. The study also measured belief in unrelated conspiracies and intentions to act on conspiracy beliefs, but those results aren&#x27;t reported here.</div>
+<div class="mt">
+<b>design</b> Experiment; personalised evidence-based dialogues with GPT-4 Turbo; randomisation and control/comparison condition not reported &nbsp;·&nbsp; <b>n</b> 2,190 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session (one dialogue); durability measured 2 months later &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1093/pnasnexus/pgaf325" target="_blank">Boissin et al. 2025</a>
+<span class="v">PNAS Nexus</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Participants had short conversations debunking a false or unproven belief, and afterward they were less sure the belief was true. This dropped no matter whether the conversation partner was described as an AI or a human expert, or whether the tone was human-like or neutral. The drop was bigger for people who had shared a conspiracy theory — their certainty fell by 10 points, an 11.81% decrease — than for people who shared a general &quot;epistemically weak&quot; belief, an unfounded claim, whose certainty fell by 5 points, a 5.96% decrease; that gap was b = 5.11, 95% CI (2.75, 7.48), p &lt; 0.001. Every group&#x27;s belief dropped significantly (all p &lt; 0.018). The authors suggest the persuasion works because the messages themselves are convincing, not because people think they&#x27;re talking to an AI.</div>
+<div class="mt">
+<b>design</b> Preregistered randomised 2x2 experiment (AI vs human expert messenger) x (human-like vs neutral tone) &nbsp;·&nbsp; <b>n</b> 955 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session; no follow-up reported in retrieved text &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">...and the same lever pointed the other way</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1126/science.aea3884" target="_blank">Hackenburg et al. 2025</a>
+<span class="v">Science</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Researchers tested 19 chatbots on 76,977 people across 707 political topics, adjusting how the AI was trained, prompted, personalized, or scaled up, then checked how much people&#x27;s opinions shifted and whether the AI&#x27;s claims were factually accurate. Training the AI specifically to persuade boosted its persuasiveness by as much as 51%, and tweaking the prompts boosted it by as much as 27% — more than personalizing messages or using a bigger model did. But the more persuasive the AI became, it also systematically made more factual errors in its claims, no CI or p-value reported for these figures.</div>
+<div class="mt">
+<b>design</b> Three large-scale experiments, 19 LLMs across 707 issues; randomisation and control condition not reported. &nbsp;·&nbsp; <b>n</b> 76,977 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session (conversation) per the retrieved text &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1145/3706598.3713408" target="_blank">Danry et al. 2025</a>
+<span class="v">CHI Conference on Human Factors in Computing Systems</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Researchers tested how people react when an AI not only labels a news headline right or wrong but also gives a reason for its verdict. When the AI&#x27;s explanation was deceptive, people believed false headlines more and doubted true headlines more than when the AI simply gave a wrong classification with no explanation. But when an explanation was logically invalid, people trusted it less, which weakened the deception&#x27;s effect. The authors suggest this supports teaching logical reasoning and critical thinking. Exact numeric effect sizes are not reported in the retrieved text.</div>
+<div class="mt">
+<b>design</b> Pre-registered online experiment; randomisation not reported; comparison: AI explanations (deceptive vs honest) vs AI systems that simply classify the headline incorrectly &nbsp;·&nbsp; <b>n</b> 589 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1145/3544548.3581196" target="_blank">Jakesch et al. 2023</a>
+<span class="v">CHI Conference on Human Factors in Computing Systems</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Participants who wrote with an opinion-slanted language model, an AI writing assistant leaning one way, ended up expressing that same slant in their own writing and later survey answers. Writing with the biased model shifted opinions with a treatment effect of d=0.34, and the actual difference in opinions expressed matched an effect size of d=0.22 (p-value not fully reported here). The authors suggest this means the opinions built into AI language tools need to be monitored and engineered more carefully.</div>
+<div class="mt">
+<b>design</b> Randomised online experiment; LM assistant biased toward one side vs other side, comparison condition not otherwise specified &nbsp;·&nbsp; <b>n</b> 1,506 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session; single writing task; delay before attitude survey not reported &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> Authors note they only tested effects on a single topic.</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Who gains at work, and who doesn&#x27;t?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1093/qje/qjae044" target="_blank">Brynjolfsson et al. 2024</a>
+<span class="v">The Quarterly Journal of Economics</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Customer service agents got access to an AI assistant, and on average their productivity — how much work they got done — rose 15%, though this varied a lot between workers. Less experienced or lower-skilled agents got both faster and better at their work, while the most experienced, highest-skilled agents got a little faster but did slightly worse-quality work. The authors think the AI assistant helped workers learn on the job and improved English fluency, especially for agents from other countries, but since workers weren&#x27;t randomly assigned the AI access, this can&#x27;t be treated as proof the AI caused these changes. No confidence interval or p-value — a measure of how likely the result is due to chance — was reported.</div>
+<div class="mt">
+<b>design</b> Observational, staggered-adoption rollout of AI assistant across agents; not randomised; comparison is staggered access timing &nbsp;·&nbsp; <b>n</b> 5,172 agents &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>exposure</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1126/science.adh2586" target="_blank">Noy et al. 2023</a>
+<span class="v">Science</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Workers who used ChatGPT to complete an incentivized writing task finished 40% faster and produced work rated 18% higher in quality than workers who didn&#x27;t use it, and the gap between weaker and stronger performers narrowed. The authors say ChatGPT &quot;substantially raised productivity.&quot; Two weeks later, people who&#x27;d used it in the study were 2 times as likely to use ChatGPT in their actual jobs, and 2 months later they were 1.6 times as likely; no confidence interval or p-value was given for these two numbers.</div>
+<div class="mt">
+<b>design</b> Preregistered randomised online experiment; incentivised occupation-specific writing task; random exposure to ChatGPT vs comparison condition &nbsp;·&nbsp; <b>n</b> 453 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session writing task; adoption self-reported at follow-ups of 2 weeks and 2 months &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Does everyone end up thinking the same? — CONTESTED</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1126/sciadv.adn5290" target="_blank">Doshi et al. 2024</a>
+<span class="v">Science Advances</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Writers who got one AI-generated story idea to use as inspiration had their stories rated 5.4% more novel than writers working alone. Writers given five AI ideas saw novelty rise 8.1%. But stories written with AI help ended up more similar to each other than stories from humans working alone — that shared boost from one or five ideas made up 10.7% and 8.9% of the total range of similarity seen, respectively. The authors call this a &quot;social dilemma&quot;: AI makes each writer&#x27;s story better individually, but if many writers lean on AI ideas, the group&#x27;s stories as a whole may become less varied.</div>
+<div class="mt">
+<b>design</b> Randomised online experiment (Human-only vs Human+1 GenAI idea vs Human+5 GenAI ideas), plus separate evaluator study &nbsp;·&nbsp; <b>n</b> 293 writers &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session; exposure = option to request one or up to five GPT-4 story ideas before writing an eight-sentence story &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> Authors: task length constrained; population not representative — &#x27;we do not study professional writers or unusually creative individuals.&#x27;</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1145/3635636.3656204" target="_blank">Anderson et al. 2024</a>
+<span class="v">ACM Creativity and Cognition (C&amp;C &#x27;24)</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Anderson et al. had people brainstorm using either ChatGPT or an alternative creativity-support tool. Across different users, ChatGPT&#x27;s ideas looked more alike (less semantically distinct) than the other tool&#x27;s ideas did. ChatGPT users came up with more ideas, and more detailed ones, but felt less responsible for the ideas they produced. The authors suggest this &quot;homogenization&quot; happens because ChatGPT tends to feed similar ideas to different people, not because any one person gets stuck repeating themselves. No numeric test statistics or effect sizes were reported in the retrieved text.</div>
+<div class="mt">
+<b>design</b> Comparative user study of ChatGPT vs an alternative CST; within/between structure stated, randomisation not reported &nbsp;·&nbsp; <b>n</b> 36 &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session; number/length of sessions and any delay before outcome measured not reported &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> Authors suggest CST design should shift toward &#x27;intent elicitation,&#x27; getting users to think more per decision</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.1145/3715928.3737481" target="_blank">Ashkinaze et al. 2025</a>
+<span class="v">ACM Conference on Economics and Computation (EC &#x27;25)</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">Researchers exposed participants to AI-generated ideas at different levels (none, low, or high) in an online idea-generation experiment. High AI exposure didn&#x27;t make individual ideas more creative, but it did increase how much the group&#x27;s ideas diverged from each other and sped up how fast that diversity changed. Low AI exposure had no such effect. The authors conclude AI may make a group&#x27;s ideas more different, not better — no effect-size or regression numbers were available in this extraction.</div>
+<div class="mt">
+<b>design</b> Dynamic online experiment; AI exposure (none, low, high) and disclosure varied; randomization not stated &nbsp;·&nbsp; <b>n</b> 800+ &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session per participant; design chains sessions across participants; no delay before outcome specified &nbsp;·&nbsp; <b>setting</b> 40+ countries; online participants; specific setting not reported &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> Authors note effect measured for a single task; &#x27;AI ideas&#x27; operationalized one way among many possible choices.</div>
+</div>
+</li>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.48550/arxiv.2309.05196" target="_blank">Padmakumar et al. 2023</a>
+<span class="v">arXiv (preprint; subsequently presented at ICLR 2024 per the authors&#x27; listing — publication status not confirmed in retrieved record)</span>
+<span class="bg pp">preprint</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">People wrote essays together with an AI, using either a plain model called GPT3 or a feedback-tuned version called InstructGPT, or no AI help at all. When people co-wrote with InstructGPT, the essays became less diverse, and this was mainly because InstructGPT&#x27;s own text was less varied — the human&#x27;s own writing stayed just as diverse either way. Writing with plain GPT3 didn&#x27;t show this effect. The authors suggest this might mean that the recent quality gains from human-feedback tuning, where a model is adjusted based on people&#x27;s ratings, could come at the cost of more homogeneous, less varied writing.</div>
+<div class="mt">
+<b>design</b> Controlled experiment, three co-writing setups (base LLM GPT3, feedback-tuned InstructGPT, no model help); randomisation not reported &nbsp;·&nbsp; <b>n</b> 38 writers &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Single session (exposure_duration: &#x27;Single session&#x27;); no further detail on session length or delay before outcome measurement reported &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> Authors state further limitations are detailed in Appendix D, but that content was not extracted.</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<div class="qnode">Does AI help adults with cognitive or communication impairment?</div>
+<ul>
+<li>
+<div class="snode" style="--c:#1a4e8a">
+<div class="hd">
+<a href="https://doi.org/10.3389/fresc.2025.1600145" target="_blank">Allen et al. 2025</a>
+<span class="v">Frontiers in Rehabilitation Sciences</span>
+<span class="bg pr">peer-reviewed</span>
+<span class="bg abs">abstract only</span>
+</div>
+<div class="f">One patient with aphasia, a language disorder, wrote more sentences with fewer mistakes when ChatGPT helped, but when writing alone the sentences had fewer total errors even though the patient produced fewer of them and made them longer and more grammatically complex. Error rates went from 17 (5.9%) in the first five sessions to 1 out of 32 (3.1%) in the final five, but the authors did not run statistical tests on this, and this is just one person&#x27;s case. The authors suggest AI tools might help people with aphasia communicate in writing and take part in meaningful activities, especially those who already know how to use technology.</div>
+<div class="mt">
+<b>design</b> Single-case report (n=1), not randomised; within-person comparison of self-written vs ChatGPT-assisted writing samples &nbsp;·&nbsp; <b>n</b> 1 (case report) &nbsp;·&nbsp; <span class="off">
+<b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
+<b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Ten weekly 60-minute sessions over 14 weeks, plus self-reported continued use at 1 year &nbsp;·&nbsp; <span class="off">
+<b>setting</b> not reported</span> &nbsp;·&nbsp; outcome measured <b>with the AI present</b> &nbsp;·&nbsp; <b>caveat</b> Single-case design (n=1); authors note improvement &#x27;unlikely due to spontaneous recovery&#x27; but no inferential stats reported</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="foot">Findings are rewritten for readability but every number is quoted as the paper states it, checked
+automatically against the source record; effect-size symbols (g vs d) are preserved as published. Where the analysis unit
+is not people, the unit is named. Authors' hedges are kept and associations are not described as causes. Branch headers
+count only the studies shown in that branch. Kestin et al. is 194 eligible of 233 enrolled in one extraction and 316 at
+pre-test in another; check the paper. Compiled September 2026.</p>

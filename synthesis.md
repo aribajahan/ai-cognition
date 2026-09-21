@@ -32,7 +32,7 @@ The AI-focused corpus is adult-focused rather than strictly adult-only. It inclu
 |---|---:|---|
 | AI-focused corpus | 64 | Unique records after the two retrieval passes are combined. |
 | Construct map | 63 | One record could not be coded for its claimed capacity and actual measure. |
-| Question map | 50 | Empirical studies with detailed design coding; reviews and duplicate-branch records are excluded. |
+| Question map | 50 | Selected source records with detailed design coding; one source appears in two branches because it addresses both memory and brain measures. |
 | Older offloading corpus | 51 | Separate pre-AI studies used for comparison, not as evidence about contemporary AI assistants. |
 
 The corpus-building work happened in collaboration with Claude Science and Perplexity. The conclusions rest on the studies and their source records. Each tool surfaced studies the other missed, and comparison made some coverage gaps visible.
@@ -80,7 +80,7 @@ AI conversation can also change particular beliefs. Costello, Pennycook, and Ran
 
 ## What happens after the tool is removed
 
-The 50-study question map makes the central gap visible. Many studies measure performance while AI remains available. Fewer measure performance after removal, and only a small number test delayed outcomes. Immediate post-tests and later follow-ups answer different questions: a person may retain something briefly and still lose it later, or struggle immediately and recover through later practice.
+The 50-record question map makes the central gap visible. Many studies measure performance while AI remains available. Fewer measure performance after removal, and only a small number test delayed outcomes. Immediate post-tests and later follow-ups answer different questions: a person may retain something briefly and still lose it later, or struggle immediately and recover through later practice.
 
 The older offloading literature supplies useful context. It includes withdrawal designs that the AI literature rarely uses. Where researchers have found decrements in unaided ability, the effects are often small and depend on the task. Casner and colleagues found that 16 airline pilots retained much of their manual-control skill while having more difficulty with cognitive tasks such as tracking position, selecting navigation steps, and recognizing instrument failures ([Casner et al., 2014](https://doi.org/10.1177/0018720814535628)). The study concerns cockpit automation and suggests that AI studies should distinguish fluent execution from the judgment needed to supervise a system.
 
