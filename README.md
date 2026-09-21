@@ -8,7 +8,9 @@ This project also records what I learned using Claude Science and Perplexity to 
 
 ## In this repository
 
+- [Synthesis](synthesis.md) brings together the definitions, evidence, limits, and questions the current corpus leaves open.
 - [Methods](methods.md) explains how the corpus was assembled, coded, and bounded by source access.
-- The synthesis, evidence tables, question map, selected analyses, and research-tool workflow case study will be added as they are prepared for this shared version.
+- [Evidence tables](data/) provide the study-level records and project coding behind the synthesis.
+- The question map, selected analyses, and research-tool workflow case study will be added as they are prepared for this shared version.
 
 By Ariba Jahan · [aribajahan.com](https://aribajahan.com)
