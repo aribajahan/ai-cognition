@@ -6,6 +6,8 @@ This map organizes 50 selected source records from the project's initial evidenc
 
 It is designed to make the boundaries of the evidence visible. Each study node includes its source, publication status, access basis, design, sample, exposure, finding, and caveat. The summary cards show how often the map contains randomized comparisons, an outcome after AI access ended, demographic information, and a reported session length.
 
+The branch labels describe the kind of evidence represented in this map, rather than rating a research area as settled or unsettled: Direct evidence, Mixed findings, Limited coverage, Indirect measures, and Open question.
+
 ## Scope
 
 The map is a 50-record snapshot, selected from the project's 64-record AI-focused corpus. It does not claim to represent the complete literature. A later independent search surfaced additional leads, including one unpublished delayed-retention study; the synthesis records how those leads affect the open questions without treating them as settled evidence.
