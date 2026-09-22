@@ -110,6 +110,6 @@ AI changes the conditions under which people perform and learn. Current research
 
 This is an exploration in progress. I still need to do three things:
 
-- **Verify the claims that carry this synthesis against the primary papers.** The project has an answer key in progress for the exact population, design, outcome, and qualification behind each load-bearing sentence.
+- **Verify the claims that carry this synthesis against the primary papers.** The project has an answer key in progress for the exact population, design, outcome, and qualification behind each sentence the argument depends on.
 - **Close the source-access gaps.** The question map began with twenty-eight abstract-only records; full text has since been read for all but four (Budzyn, Noy, Costello, and Dell'Acqua remain paywalled). Folding that full text back into the coding may still change how individual studies are weighted or described.
 - **Extend the research questions the current field leaves open.** The highest-value questions are whether independent ability returns after people stop relying on AI, whether more use produces a larger effect, and which interaction designs preserve learning and judgment across different starting skill levels.
