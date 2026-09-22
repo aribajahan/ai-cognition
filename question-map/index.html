@@ -1187,3 +1187,96 @@ var CONCL={"Gilbert et al. 2022":"People systematically set more reminders than 
  });
 })();
 </script>
+<style id="mono">
+/* Option A: mono / beige, story order kept, status stays a text label (no hue) */
+:root{--ink:#2D2D2D;--paper:#FFFBF3;--panel:#FDF7EC;--rule:rgba(45,45,45,.16);--mute:#7a746b}
+body{background:var(--paper)!important;color:var(--ink)!important}
+.sub{color:var(--mute)!important}
+.cards .card{background:#fff!important;border-color:var(--rule)!important}
+.card .big{color:var(--ink)!important}
+.card .lab{color:var(--ink)!important}
+.card .fine{color:var(--mute)!important}
+.note{background:var(--panel)!important;border-color:var(--rule)!important;color:var(--ink)!important}
+.legend{display:none!important}
+li::before,li::after{border-color:var(--rule)!important}
+.bnode{border-left:1px solid var(--rule)!important;background:#fff!important}
+.bnode h2{color:var(--ink)!important}
+.meta{color:var(--mute)!important}
+.chip{color:var(--mute)!important;border:1px solid var(--rule)!important;background:#fff!important;letter-spacing:.06em;text-transform:uppercase}
+.qnode{background:var(--panel)!important;color:var(--ink)!important}
+.snode{border:1px solid var(--rule)!important;border-left:2px solid var(--rule)!important;background:#fff!important}
+.hd a{color:var(--ink)!important;border-bottom:1.5px solid var(--rule)}
+.v{color:var(--mute)!important}
+.bg{background:#fff!important;color:var(--mute)!important;border:1px solid var(--rule)!important;font-weight:600}
+.f{color:var(--ink)!important}
+.mt,.mt b{color:var(--mute)!important}
+.mt{border-top-color:var(--rule)!important}
+.gnode{border-color:var(--rule)!important;color:var(--ink)!important;background:#fff!important}
+.foot{color:var(--mute)!important;border-color:var(--rule)!important}
+</style>
+<style id="ground">
+/* cream ground, cream cards, thin charcoal border + refined layered shadow */
+body{background:#FFFBF3!important;color:#2D2D2D!important;padding:36px 40px 96px!important}
+h1{color:#2D2D2D!important;font-size:27px!important}
+.sub{color:#7a746b!important;margin-bottom:26px!important}
+.cards{gap:14px!important}
+.card,.note,.bnode,.snode{background:#FFFBF3!important;border:1px solid #2D2D2D!important;border-radius:8px!important}
+.card,.note{box-shadow:0 1px 2px rgba(45,45,45,.05),0 10px 26px -12px rgba(45,45,45,.18)!important}
+.card .big,.card .lab{color:#2D2D2D!important}
+.card .fine{color:#7a746b!important}
+.note{color:#2D2D2D!important;margin-top:20px!important}
+.note b{color:#2D2D2D!important}
+.bnode{box-shadow:0 1px 2px rgba(45,45,45,.05),0 14px 32px -14px rgba(45,45,45,.20)!important;margin:0!important;padding:17px 20px!important;transition:box-shadow .16s ease,transform .16s ease}
+.bnode:hover{box-shadow:0 2px 4px rgba(45,45,45,.06),0 20px 44px -16px rgba(45,45,45,.28)!important;transform:translateY(-1px)}
+.branch{margin-bottom:16px!important}
+.bnode h2{color:#2D2D2D!important}
+.meta{color:#7a746b!important}
+.chip{color:#7a746b!important;border:1px solid var(--rule)!important;background:transparent!important}
+.qnode{background:transparent!important;color:#2D2D2D!important;border:0!important;padding:0!important;font-size:12.5px!important;letter-spacing:.03em;text-transform:uppercase}
+.snode{box-shadow:0 1px 2px rgba(45,45,45,.04),0 6px 16px -10px rgba(45,45,45,.16)!important;margin:0 0 12px!important;padding:14px 16px!important}
+.hd a{color:#2D2D2D!important;border-bottom:1px solid var(--rule)!important}
+.v{color:#7a746b!important}
+.bg{background:transparent!important;color:#7a746b!important;border:1px solid var(--rule)!important}
+.f{color:#2D2D2D!important}
+.mt,.mt b{color:#7a746b!important}
+.mt{border-top-color:var(--rule)!important}
+.foot{color:#7a746b!important;border-color:var(--rule)!important}
+li::before,li::after{border-color:var(--rule)!important}
+.xtoggle{color:#b9b3a8!important}
+</style>
+<style id="type">
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+body{font-family:Barlow,system-ui,sans-serif!important}
+h1{font-family:"Big Shoulders Display",sans-serif!important;font-weight:800!important;text-transform:uppercase;letter-spacing:.01em;font-size:36px!important;line-height:.98}
+.bnode h2{font-family:"Big Shoulders Display",sans-serif!important;font-weight:700!important;font-size:25px!important;letter-spacing:.005em;line-height:1.05}
+.card .big{font-family:"Big Shoulders Display",sans-serif!important;font-weight:800!important;font-size:27px!important;letter-spacing:.01em}
+.sub,.meta,.f,.mt,.mt b,.card .lab,.card .fine,.chip,.bg,.qnode,.foot,.v,.hd a{font-family:Barlow,system-ui,sans-serif!important}
+</style>
+<style id="polish3">
+/* --- collapse toggle: inset from the card edge, softer --- */
+.bnode{padding-right:46px!important}
+.xtoggle{right:20px!important;top:15px!important;font-size:22px!important;line-height:1!important;color:#a8a296!important}
+.bnode:hover .xtoggle{color:#2D2D2D!important}
+
+/* --- breathing room when a branch opens --- */
+.branch.open>ul{margin-top:18px!important}
+.branch>ul>li{margin-top:26px}
+.branch>ul>li:first-child{margin-top:6px}
+
+/* --- sub-question headers a touch stronger --- */
+.qnode{font-weight:600!important;color:#2D2D2D!important;letter-spacing:.07em!important}
+
+/* --- readable column: narrow the whole card so finding + design share one width and align --- */
+.snode{max-width:768px!important}
+.note{max-width:880px!important}
+
+/* --- a little more air under the citation line --- */
+.snode .hd{margin-bottom:10px!important}
+
+/* --- study cards read as objects: gentle lift on hover --- */
+.snode{transition:box-shadow .16s ease, transform .16s ease}
+.snode:hover{box-shadow:0 2px 4px rgba(45,45,45,.06),0 14px 30px -14px rgba(45,45,45,.24)!important;transform:translateY(-1px)}
+
+/* --- hide the internal "read in full" badge; keep "abstract only" as the meaningful flag --- */
+.bg.ftx{display:none!important}
+</style>
