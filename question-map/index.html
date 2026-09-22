@@ -1280,3 +1280,48 @@ h1{font-family:"Big Shoulders Display",sans-serif!important;font-weight:800!impo
 /* --- hide the internal "read in full" badge; keep "abstract only" as the meaningful flag --- */
 .bg.ftx{display:none!important}
 </style>
+<style id="spine">
+/* per-study metadata spine: the facts the project turns on, pulled up from DESIGN & METHOD */
+.spine{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 11px}
+.spine .pill{font-family:Barlow,system-ui,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#7a746b;background:#fff;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.spine .pill-n{color:#2D2D2D}
+</style>
+<script>
+// Build the metadata spine for each study from its own DESIGN & METHOD text.
+(function(){
+  document.querySelectorAll('.snode').forEach(function(s){
+    var mt=s.querySelector('.mt'), hd=s.querySelector('.hd');
+    if(!mt||!hd)return;
+    var t=mt.textContent.replace(/\s+/g,' ').trim();
+    var low=t.toLowerCase();
+    var pills=[];
+    // sample size — capture the value after the "n" field label
+    var nm=t.match(/(?:·|^)\s*n\s+([^·]+?)\s*(?:·|$)/i);
+    if(nm){
+      var nv=nm[1].trim();
+      if(nv && !/^not reported$/i.test(nv)){
+        if(/review/i.test(nv)) pills.push(['review','']);
+        else if(/case report|case study|single-case/i.test(nv)) pills.push(['case report','']);
+        else { if(nv.length>20) nv=nv.slice(0,20).trim()+'…'; pills.push(['n = '+nv,'pill-n']); }
+      }
+    }
+    // randomization — assert only when clearly present and not negated anywhere nearby
+    var hasR=/random/.test(low);
+    var neg=/\bnot\b[^.]{0,20}\brandom/.test(low)      // "not ... random"
+          || /\bno\b[^.]{0,6}\brandom/.test(low)        // "no randomisation"
+          || /non-?random/.test(low)                    // "non-random"
+          || /random[a-z]*[^.]{0,40}\bnot\b/.test(low)  // "randomisation ... not reported"
+          || /unclear if random/.test(low);
+    if(hasR && !neg) pills.push(['randomized','']);
+    // when the outcome was measured — assisted vs. durable
+    if(low.indexOf('after the ai was withdrawn')>-1) pills.push(['measured after AI removed','pill-durable']);
+    else if(low.indexOf('with the ai present')>-1) pills.push(['measured with AI present','']);
+    if(!pills.length)return;
+    var row=document.createElement('div'); row.className='spine';
+    pills.forEach(function(p){
+      var e=document.createElement('span'); e.className='pill'+(p[1]?' '+p[1]:''); e.textContent=p[0]; row.appendChild(e);
+    });
+    hd.parentNode.insertBefore(row, hd.nextSibling);
+  });
+})();
+</script>
