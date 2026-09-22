@@ -16,7 +16,7 @@ While building and checking this corpus, I also built reusable Claude Science sk
 - [Research-tool workflow](research-workflow.md) records what Claude Science and Perplexity each contributed, and the judgment that remained mine.
 - [Question map](https://aribajahan.github.io/ai-cognition/question-map/) organizes 50 selected source records by the question each one addresses.
 
-[![Preview of the question map](question-map/preview.svg)](https://aribajahan.github.io/ai-cognition/question-map/)
+[![Preview of the question map](question-map/preview.png)](https://aribajahan.github.io/ai-cognition/question-map/)
 - Selected analyses will be added as they are prepared for this shared version.
 
 By Ariba Jahan · [aribajahan.com](https://aribajahan.com)
