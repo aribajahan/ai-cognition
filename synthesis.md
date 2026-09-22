@@ -62,7 +62,7 @@ The construct audit makes the difference visible. Across the 63 AI-focused recor
 
 That distribution does not mean the studies are poor. It means they answer different questions. An essay can improve while memory of the material weakens. A clinician can make a faster decision while becoming less able to catch a bad recommendation. Those are different findings, and they require different measures.
 
-I coded 63 study records by the capacity each paper claimed to address and the measure it actually used. Five records had a measure that clearly matched the capacity being claimed. Fifteen named a validated instrument in the text retrieved for this project. Those figures are the result of this project’s coding, rather than a field-wide meta-analysis, and they are capped by source access: many records were available only as abstracts.
+I coded 63 study records by the capacity each paper claimed to address and the measure it actually used. Five records had a measure that clearly matched the capacity being claimed. Fifteen named a validated instrument in the text retrieved for this project. Those figures are the result of this project’s coding, rather than a field-wide meta-analysis, and they were capped by source access at the time of coding, when many records were available only as abstracts; full text has since been read for all but four.
 
 The critical-thinking literature shows the problem in a concentrated form. Seven studies are often cited in support of the claim that AI erodes critical thinking. They define the term differently, several rely on self-report, and some do not measure critical thinking at all. That body of work does not support a broad conclusion about whether AI changes critical-thinking ability.
 
@@ -111,5 +111,5 @@ AI changes the conditions under which people perform and learn. Current research
 This is an exploration in progress. I still need to do three things:
 
 - **Verify the claims that carry this synthesis against the primary papers.** The project has an answer key in progress for the exact population, design, outcome, and qualification behind each load-bearing sentence.
-- **Close the source-access gaps.** Twenty-eight records in the question map were abstract-only. Full text may change how individual studies should be weighted or described.
+- **Close the source-access gaps.** The question map began with twenty-eight abstract-only records; full text has since been read for all but four (Budzyn, Noy, Costello, and Dell'Acqua remain paywalled). Folding that full text back into the coding may still change how individual studies are weighted or described.
 - **Extend the research questions the current field leaves open.** The highest-value questions are whether independent ability returns after people stop relying on AI, whether more use produces a larger effect, and which interaction designs preserve learning and judgment across different starting skill levels.
