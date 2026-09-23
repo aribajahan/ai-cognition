@@ -26,6 +26,7 @@ DOCUMENTS = {
     Path("data/README.md"): ("contains {first} study records", "contains {benefit} records", "leaving {unique}", "contains {perplexity} source records", "{cross} also appear", "leaving {perplexity_only} Perplexity-only"),
     Path("synthesis.md"): ("{first}-record first pass", "{benefit}-record benefit-side pass", "leaving {unique} unique", "separate {perplexity}-record table", "{cross} Perplexity records", "leaving {perplexity_only} Perplexity-only"),
     Path("field-notes.md"): ("contains {perplexity} records", "{cross} also appear", "leaving {perplexity_only} records unique"),
+    Path("question-map/README.md"): ("{unique} unique Claude Science source records",),
 }
 
 

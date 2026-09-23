@@ -19,7 +19,7 @@ FILES = (
     "data/perplexity_evidence_table.csv",
     "data/corpus_census.json",
 )
-DOCUMENTS = ("data/README.md", "synthesis.md", "field-notes.md")
+DOCUMENTS = ("data/README.md", "synthesis.md", "field-notes.md", "question-map/README.md")
 
 
 class CorpusAuditPositiveControls(unittest.TestCase):
@@ -73,6 +73,14 @@ class CorpusAuditPositiveControls(unittest.TestCase):
         document = self.root / DOCUMENTS[0]
         text = document.read_text(encoding="utf-8")
         document.write_text(text.replace("64", "73", 1), encoding="utf-8")
+        result = self.run_audit()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("missing current census claim", result.stderr)
+
+    def test_stale_question_map_census_fails(self) -> None:
+        document = self.root / "question-map/README.md"
+        text = document.read_text(encoding="utf-8")
+        document.write_text(text.replace("63 unique", "64 unique", 1), encoding="utf-8")
         result = self.run_audit()
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("missing current census claim", result.stderr)

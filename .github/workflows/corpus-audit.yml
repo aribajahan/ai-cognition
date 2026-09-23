@@ -14,3 +14,5 @@ jobs:
           python-version: "3.12"
       - run: python scripts/test_corpus_audit.py
       - run: python scripts/corpus_audit.py
+      - run: python scripts/test_question_map_audit.py
+      - run: python scripts/question_map_audit.py

@@ -3,7 +3,7 @@
 <title>AI and cognition — question map</title>
 <style>*{box-sizing:border-box}body{font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;margin:0;padding:30px 36px 60px;background:#fbfbfc;color:#1a1a1a}
 h1{font-size:25px;margin:0 0 6px}.sub{color:#555;font-size:13.5px;margin:0 0 20px;max-width:1060px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:11px;max-width:1320px;margin:0 0 10px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;max-width:1320px;margin:0 0 10px}
 .card{background:#fff;border:1px solid #e3e6eb;border-radius:6px;padding:11px 13px}
 .card .big{font-size:20px;font-weight:700;color:#12508f;line-height:1.15}
 .card .lab{font-size:12px;font-weight:650;color:#333;margin-top:2px}
@@ -69,7 +69,32 @@ ul.root{padding-left:0}ul.root>li{padding-left:0}ul.root>li::before,ul.root>li::
 </div>
 </div>
 <div class="note">
-<b>The two numbers to read together.</b> About half the studies (26 of 50) randomized who received AI, which helps tell whether a comparison is fair — but only 18 of 50 measured anything after the AI was taken away; the rest measured it while AI was still in hand. An unaided outcome is possible in those 18, yet an immediate post-test and a later follow-up answer different questions, so this doesn't establish durable ability. <b>On blank fields:</b> 46 of these papers were read in full and 4 only as abstracts; the abstract-only ones are marked, and a blank field means the detail was absent from the text retrieved, not that the study never reported it.</div>
+<b>What these studies can and cannot tell us.</b> About half the studies (26 of 50) randomized who received AI, which helps tell whether a comparison is fair — but only 18 of 50 measured anything after the AI was taken away; the rest measured it while AI was still in hand. An unaided outcome is possible in those 18, yet an immediate post-test and a later follow-up answer different questions, so this doesn't establish durable ability. <b>On blank fields:</b> 46 of these papers were read in full and 4 only as abstracts; the abstract-only ones are marked, and a blank field means the detail was absent from the text retrieved, not that the study never reported it.</div>
+<section class="map-tools" aria-label="Find studies in the map">
+<div class="tool-field tool-search">
+<label for="study-search">Search studies</label>
+<input id="study-search" type="search" placeholder="Author, finding, method, or question">
+</div>
+<div class="tool-field">
+<label for="timing-filter">Outcome timing</label>
+<select id="timing-filter">
+<option value="all">All timing</option>
+<option value="after">After AI was removed</option>
+<option value="present">With AI present</option>
+</select>
+</div>
+<div class="tool-field">
+<label for="publication-filter">Publication status</label>
+<select id="publication-filter">
+<option value="all">All sources</option>
+<option value="peer-reviewed">Peer-reviewed</option>
+<option value="preprint">Preprints</option>
+</select>
+</div>
+<button id="clear-filters" type="button">Clear</button>
+<p id="filter-status" role="status" aria-live="polite">51 study appearances shown</p>
+</section>
+<p id="no-results" hidden>No study cards match those filters.</p>
 <div class="legend">
 <span>
 <i style="background:#647f99">
@@ -196,9 +221,9 @@ ul.root{padding-left:0}ul.root>li{padding-left:0}ul.root>li::before,ul.root>li::
 <span class="bg pr">peer-reviewed</span>
 <span class="bg ftx">read in full</span>
 </div>
-<div class="f">Students who learned from an AI tutor at home scored higher on post-tests, with a median of 4.5 (out of some total, N = 142), than students who did an in-class active-learning lesson, who scored a median of 3.5 (N = 174). Both groups started from the same combined pre-test baseline, median 2.75 (N = 316), but the AI-tutored group&#x27;s learning gains were over double those of the in-class group. A rank-sum test (a way to compare two groups&#x27; scores) found this difference statistically significant (z = -5.6, p &lt; 10, as printed in the source, though that p-value looks cut off). The authors say this suggests a well-designed AI tutoring system can outperform in-class active learning on measured mastery of the material, though the excerpt provided doesn&#x27;t give their further causal interpretation.</div>
+<div class="f">Students who learned from an AI tutor at home scored higher on post-tests, with a median of 4.5 across 142 condition-level observations, than students who did an in-class active-learning lesson, who scored a median of 3.5 across 174 condition-level observations. The study enrolled 233 students; 194 met the eligibility criteria, and the crossover design allowed the same students to contribute observations to both conditions. Learning gains in the AI-tutored condition were over double those in the in-class condition. A rank-sum test found this difference statistically significant (z = -5.6, p &lt; 10, as printed in the retrieved text, though that p-value is truncated). The authors say this suggests a well-designed AI tutoring system can outperform in-class active learning on measured mastery of the material.</div>
 <div class="mt">
-<b>design</b> Randomized crossover experiment; groups alternated weekly between AI-tutor lesson (home) and in-class active learning lesson, each compared via pre/post-tests. &nbsp;·&nbsp; <b>n</b> 194–316* &nbsp;·&nbsp; <span class="off">
+<b>design</b> Randomized crossover experiment; groups alternated weekly between AI-tutor lesson (home) and in-class active learning lesson, each compared via pre/post-tests. &nbsp;·&nbsp; <b>n</b> 194 eligible participants (233 enrolled; 316 condition-level pre-test observations across the crossover lessons) &nbsp;·&nbsp; <span class="off">
 <b>age</b> not reported</span> &nbsp;·&nbsp; <span class="off">
 <b>gender</b> not reported</span> &nbsp;·&nbsp; <b>exposure</b> Two lessons in consecutive weeks (crossover); in-class sessions were 75-minute periods (15 minutes on pre/post-tests, assumed 60 minutes on learning); AI group median time on task was 49 minutes, with 70% spending less than 60 minutes and 30% spending more than 60 minutes on task &nbsp;·&nbsp; <b>setting</b> Harvard University, undergraduate physics course; AI lesson completed at home, active learning lesson completed in class &nbsp;·&nbsp; outcome measured <b>after the AI was withdrawn</b> &nbsp;·&nbsp; <b>caveat</b> p-value for the Mann–Whitney test is garbled in the source text (&#x27;&lt; 10&#x27;), exact significance threshold not reported</div>
 </div>
@@ -1122,8 +1147,8 @@ ul.root{padding-left:0}ul.root>li{padding-left:0}ul.root>li::before,ul.root>li::
 <p class="foot">Findings are rewritten for readability but every number is quoted as the paper states it, checked
 automatically against the source record; effect-size symbols (g vs d) are preserved as published. Where the analysis unit
 is not people, the unit is named. Authors' hedges are kept and associations are not described as causes. Branch headers
-count only the studies shown in that branch. Kestin et al. is 194 eligible of 233 enrolled in one extraction and 316 at
-pre-test in another; check the paper. Compiled September 2026.</p>
+count only the studies shown in that branch. Kestin et al. enrolled 233 students; 194 were eligible, while 316 refers to
+condition-level pre-test observations in its crossover design. Compiled September 2026.</p>
 
 <style>
 /* collapse only — original design untouched */
@@ -1377,3 +1402,166 @@ h1{font-family:"Big Shoulders Display",sans-serif!important;font-weight:800!impo
 /* one cool counterweight: durable-evidence studies flagged in outerspace blue */
 .spine .pill-durable{color:var(--blue)!important;border-color:rgba(15,15,244,.32)!important}
 </style>
+<style id="navigation-tools">
+.map-tools{display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px;max-width:1080px;margin:0 0 22px;padding:16px;border:1px solid #2D2D2D;border-radius:8px;background:#FFFBF3;box-shadow:0 1px 2px rgba(45,45,45,.05),0 10px 26px -12px rgba(45,45,45,.18)}
+.tool-field{display:flex;flex-direction:column;gap:5px;min-width:190px}
+.tool-search{flex:1 1 310px}
+.tool-field label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#5c574f}
+.tool-field input,.tool-field select,#clear-filters{min-height:42px;border:1px solid rgba(45,45,45,.35);border-radius:5px;background:#fff;color:#2D2D2D;font:14px/1.2 Barlow,system-ui,sans-serif;padding:9px 11px}
+.tool-field input{width:100%}
+#clear-filters{cursor:pointer;font-weight:600;padding-left:18px;padding-right:18px}
+#clear-filters:hover{border-color:#E73131;color:#E73131}
+#filter-status{flex:1 0 100%;margin:0;font-size:12px;color:#7a746b}
+#no-results{max-width:1080px;margin:0 0 22px;padding:16px;border:1px solid rgba(45,45,45,.25);border-radius:8px;background:#fff;font-weight:600}
+.bnode:focus-visible,.mtog:focus-visible,.direct-link:focus-visible,.map-tools input:focus-visible,.map-tools select:focus-visible,#clear-filters:focus-visible{outline:3px solid #0F0FF4;outline-offset:3px}
+.mtog{appearance:none;-webkit-appearance:none;background:transparent;border:0;border-bottom:1px solid var(--rule);border-radius:0;padding:0;cursor:pointer}
+.direct-link{display:inline-block;margin-left:8px;color:#7a746b!important;border-bottom:1px solid var(--rule)!important;font-size:10.5px!important;font-weight:500!important;letter-spacing:.04em;text-transform:uppercase}
+.direct-link:hover{color:#E73131!important;border-bottom-color:#E73131!important}
+.snode:target{outline:3px solid #0F0FF4;outline-offset:4px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){body{padding:24px 18px 72px!important}.map-tools{align-items:stretch}.tool-field,#clear-filters{width:100%}.cards{grid-template-columns:1fr}.bnode{padding-right:42px!important}}
+@media(prefers-reduced-motion:reduce){.bnode,.snode,.bnode::before,.snode::before{transition:none!important}}
+</style>
+<script>
+(function(){
+  var branches=Array.from(document.querySelectorAll('.branch'));
+  var studies=Array.from(document.querySelectorAll('.snode'));
+
+  function syncBranches(){
+    branches.forEach(function(branch){
+      var control=branch.querySelector('.bnode');
+      if(control) control.setAttribute('aria-expanded',branch.classList.contains('open')?'true':'false');
+    });
+  }
+
+  branches.forEach(function(branch,index){
+    var control=branch.querySelector('.bnode');
+    var panel=branch.querySelector(':scope > ul');
+    var heading=control&&control.querySelector('h2');
+    if(!control||!panel)return;
+    var panelId='question-panel-'+(index+1);
+    panel.id=panelId;
+    control.setAttribute('role','button');
+    control.setAttribute('tabindex','0');
+    control.setAttribute('aria-controls',panelId);
+    control.setAttribute('aria-expanded',branch.classList.contains('open')?'true':'false');
+    if(heading){
+      var headingId='question-heading-'+(index+1);
+      heading.id=headingId;
+      control.setAttribute('aria-label',heading.textContent.replace(/^\s*\d+\s*/,'').trim());
+    }
+    var visualToggle=control.querySelector('.xtoggle');
+    if(visualToggle)visualToggle.setAttribute('aria-hidden','true');
+    control.addEventListener('click',syncBranches);
+    control.addEventListener('keydown',function(event){
+      if(event.key==='Enter'||event.key===' '){event.preventDefault();control.click();}
+    });
+  });
+
+  document.querySelectorAll('.mtog').forEach(function(oldToggle,index){
+    var study=oldToggle.closest('.snode');
+    var detail=study&&study.querySelector('.mt');
+    if(!study||!detail)return;
+    var button=document.createElement('button');
+    button.type='button';
+    button.className='mtog';
+    button.textContent='design & method';
+    var detailId='study-method-'+(index+1);
+    detail.id=detailId;
+    button.setAttribute('aria-controls',detailId);
+    button.setAttribute('aria-expanded','false');
+    oldToggle.replaceWith(button);
+    button.addEventListener('click',function(){
+      var open=study.classList.toggle('sopen');
+      button.textContent=open?'hide design & method':'design & method';
+      button.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+
+  var usedIds={};
+  studies.forEach(function(study){
+    var citation=study.querySelector('.hd a');
+    if(!citation)return;
+    citation.setAttribute('rel','noopener noreferrer');
+    var base='study-'+citation.textContent.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    usedIds[base]=(usedIds[base]||0)+1;
+    var id=usedIds[base]===1?base:base+'-'+usedIds[base];
+    study.id=id;
+    var link=document.createElement('a');
+    link.className='direct-link';
+    link.href='#'+id;
+    link.textContent='direct link';
+    link.setAttribute('aria-label','Direct link to '+citation.textContent);
+    citation.parentNode.appendChild(link);
+  });
+
+  var search=document.getElementById('study-search');
+  var timing=document.getElementById('timing-filter');
+  var publication=document.getElementById('publication-filter');
+  var clear=document.getElementById('clear-filters');
+  var status=document.getElementById('filter-status');
+  var noResults=document.getElementById('no-results');
+  var savedOpenStates=null;
+
+  studies.forEach(function(study){
+    var question=study.closest('ul')&&study.closest('ul').previousElementSibling;
+    var branch=study.closest('.branch');
+    var branchHeading=branch&&branch.querySelector('h2');
+    study.dataset.search=[branchHeading&&branchHeading.textContent,question&&question.textContent,study.textContent].filter(Boolean).join(' ').toLowerCase();
+  });
+
+  function applyFilters(){
+    var query=search.value.trim().toLowerCase();
+    var timingValue=timing.value;
+    var publicationValue=publication.value;
+    var active=Boolean(query||timingValue!=='all'||publicationValue!=='all');
+    if(active&&savedOpenStates===null) savedOpenStates=branches.map(function(branch){return branch.classList.contains('open');});
+    var shown=0;
+    studies.forEach(function(study){
+      var method=(study.querySelector('.mt')||{}).textContent||'';
+      var timingMatch=timingValue==='all'||(timingValue==='after'&&/after the AI was withdrawn/i.test(method))||(timingValue==='present'&&/with the AI present/i.test(method));
+      var publicationMatch=publicationValue==='all'||(publicationValue==='peer-reviewed'&&Boolean(study.querySelector('.bg.pr')))||(publicationValue==='preprint'&&Boolean(study.querySelector('.bg.pp')));
+      var searchMatch=!query||study.dataset.search.indexOf(query)>-1;
+      var visible=timingMatch&&publicationMatch&&searchMatch;
+      study.closest('li').hidden=!visible;
+      if(visible)shown++;
+    });
+    document.querySelectorAll('.qnode').forEach(function(question){
+      var group=question.parentElement;
+      group.hidden=!Array.from(group.querySelectorAll('.snode')).some(function(study){return !study.closest('li').hidden;});
+    });
+    branches.forEach(function(branch,index){
+      var hasMatch=Array.from(branch.querySelectorAll('.snode')).some(function(study){return !study.closest('li').hidden;});
+      branch.hidden=active&&!hasMatch;
+      if(active&&hasMatch) branch.classList.add('open');
+      if(!active&&savedOpenStates!==null) branch.classList.toggle('open',savedOpenStates[index]);
+      var toggle=branch.querySelector('.xtoggle');
+      if(toggle)toggle.textContent=branch.classList.contains('open')?'–':'+';
+    });
+    if(!active)savedOpenStates=null;
+    syncBranches();
+    status.textContent=shown+' study appearance'+(shown===1?'':'s')+' shown';
+    noResults.hidden=shown!==0;
+  }
+
+  [search,timing,publication].forEach(function(control){control.addEventListener(control===search?'input':'change',applyFilters);});
+  clear.addEventListener('click',function(){search.value='';timing.value='all';publication.value='all';applyFilters();search.focus();});
+
+  function openDirectLink(){
+    if(!location.hash)return;
+    var study=document.getElementById(location.hash.slice(1));
+    if(!study)return;
+    var branch=study.closest('.branch');
+    if(branch){
+      branches.forEach(function(other){other.classList.toggle('open',other===branch);});
+      var toggle=branch.querySelector('.xtoggle');
+      if(toggle)toggle.textContent='–';
+      syncBranches();
+    }
+    window.setTimeout(function(){study.scrollIntoView({block:'center'});},0);
+  }
+  window.addEventListener('hashchange',openDirectLink);
+  applyFilters();
+  openDirectLink();
+})();
+</script>
