@@ -103,7 +103,7 @@ Claude Science became the main research workbench. It assembled the initial corp
 
 Perplexity became an independent route through the question. It surfaced additional studies, reached some sources that were unavailable in the first environment, identified a retracted meta-analysis, and found delayed-retention studies in an area the first corpus had described as empty.
 
-The comparison has an important limit: Claude Science received more prompts and more iterative development. I worked with Perplexity in a mix of ways- retrieval, verification, and analysis. The project documents how the tools behaved during this process and I also documented my own observations and behaviors.
+The comparison has an important limit: Claude Science received more prompts and more iterative development. I worked with Perplexity in a mix of ways, including retrieval, verification, and analysis. The project documents how the tools behaved during this process and I also documented my own observations and behaviors.
 
 The process also changed how I thought about trust in research tools. Claude Science’s large, polished evidence map initially made the corpus feel more complete. Watching Perplexity visit sources made its work feel more transparent before I had evaluated its rigor. In both cases, the interface affected my perception of the output.
 
@@ -111,7 +111,7 @@ The process also changed how I thought about trust in research tools. Claude Sci
 
 Full text is available for all 24 records in the benefit-side table and 37 of the 45 records in the first-pass table. Eight first-pass records remain abstract-only.
 
-“Not reported” in the evidence tables means that a detail was absent from the text retrieved for this project. The paper itself may contain additional information that the research environment could not access. 
+“Not reported” in the evidence tables means that a detail was absent from the text retrieved for this project. The paper itself may contain additional information that the research environment could not access.
 
 The construct classifications and other project codes were developed with AI assistance and reviewed by me. They were not independently coded by multiple researchers.
 
@@ -131,9 +131,9 @@ I am especially interested in:
 - whether an ability returns when someone reduces or stops using AI;
 - how the same assistance affects people with different starting levels of skill;
 - which interface choices encourage retrieval, checking, revision, and independent judgment;
-- will the way we define skills, cognition, task evolve as more interactions become AI-mediated or assisted;
-- what happens to cognition, skills, memory, judgement after longer term use of AI;
-- will we see a new category or type of skill and cognition that emerges through practice with AI;
+- how definitions of skill, cognition, and tasks evolve as more interactions become AI-mediated or AI-assisted;
+- what happens to cognition, skills, memory, and judgment after longer-term AI use;
+- whether new categories of skill or cognition emerge through sustained practice with AI;
 - how generative AI compares with earlier tools that took on narrower parts of a cognitive task.
 
 ## Related work
@@ -141,5 +141,9 @@ I am especially interested in:
 This investigation grew from [Cognitive Endurance](https://www.unmissables.xyz/p/cognitive-endurance-2), my framework for developing stronger human-AI loops while strengthening discernment, creativity, critical thinking, and independent judgment.
 
 While building the corpus, I also created reusable workflows for source checking, structured extraction, full-text retrieval, and construct audits. They are documented in [Claude Science Skills](https://github.com/aribajahan/claude-science-skills).
+
+## License
+
+The software code is available under the [MIT License](LICENSE-CODE.md). The original research data and writing are available under the [Creative Commons Attribution 4.0 International License](LICENSE-CONTENT.md).
 
 By [Ariba Jahan](https://aribajahan.com)
