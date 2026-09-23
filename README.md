@@ -70,7 +70,7 @@ Generative AI expands the range of tasks a tool can participate in. It can retri
 | [Methods](methods.md) | Corpus construction, coding decisions, source access, and project limits |
 | [Evidence tables](data/) | Study-level records, construct coding, and the machine-readable corpus census |
 | [Research workflow](research-workflow.md) | How Claude Science and Perplexity contributed to the review |
-| [Field notes](field-notes.md) | What I noticed while working with both research environments |
+| [Field notes](field-notes.md) | What I noticed while working with both research environments across Claude Science and Perplexity |
 
 ## Corpus and scope
 
@@ -93,7 +93,7 @@ The project is adult-focused. It includes a small number of studies outside a st
 
 The repository is a structured evidence review and research record. Searches were mediated by AI research tools, and the studies differ too much in their populations, interventions, and outcomes to combine into a single effect estimate.
 
-## How I used the research tools
+## How I used the AI-assisted research environments
 
 Claude Science and Perplexity received the same opening question and the same evidence rules: use verifiable studies, preserve the authors’ limitations, distinguish correlation from causation, and say when a detail was absent from the available source text.
 
@@ -103,15 +103,15 @@ Claude Science became the main research workbench. It assembled the initial corp
 
 Perplexity became an independent route through the question. It surfaced additional studies, reached some sources that were unavailable in the first environment, identified a retracted meta-analysis, and found delayed-retention studies in an area the first corpus had described as empty.
 
-The comparison has an important limit: Claude Science received more prompts and more iterative development. I used Perplexity later and for a different mix of retrieval, verification, and analysis. The project documents how the tools behaved during this investigation rather than assigning a general winner.
+The comparison has an important limit: Claude Science received more prompts and more iterative development. I worked with Perplexity in a mix of ways- retrieval, verification, and analysis. The project documents how the tools behaved during this process and I also documented my own observations and behaviors.
 
-The process also changed how I thought about trust in research tools. Claude Science’s large, polished evidence map initially made the corpus feel more complete than it was. Watching Perplexity visit sources made its work feel more transparent before I had evaluated its rigor. In both cases, the interface affected my confidence in the output.
+The process also changed how I thought about trust in research tools. Claude Science’s large, polished evidence map initially made the corpus feel more complete. Watching Perplexity visit sources made its work feel more transparent before I had evaluated its rigor. In both cases, the interface affected my perception of the output.
 
 ## Source access and verification
 
 Full text is available for all 24 records in the benefit-side table and 37 of the 45 records in the first-pass table. Eight first-pass records remain abstract-only.
 
-“Not reported” in the evidence tables means that a detail was absent from the text retrieved for this project. The paper itself may contain additional information that the research environment could not access.
+“Not reported” in the evidence tables means that a detail was absent from the text retrieved for this project. The paper itself may contain additional information that the research environment could not access. 
 
 The construct classifications and other project codes were developed with AI assistance and reviewed by me. They were not independently coded by multiple researchers.
 
@@ -131,6 +131,9 @@ I am especially interested in:
 - whether an ability returns when someone reduces or stops using AI;
 - how the same assistance affects people with different starting levels of skill;
 - which interface choices encourage retrieval, checking, revision, and independent judgment;
+- will the way we define skills, cognition, task evolve as more interactions become AI-mediated or assisted;
+- what happens to cognition, skills, memory, judgement after longer term use of AI;
+- will we see a new category or type of skill and cognition that emerges through practice with AI;
 - how generative AI compares with earlier tools that took on narrower parts of a cognitive task.
 
 ## Related work
