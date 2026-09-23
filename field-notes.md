@@ -7,7 +7,7 @@ These are field notes from the full project: what each research environment made
 
 ## Why I used both
 
-I started with Claude Science because it was the research environment I had. After building a 64-study corpus there, I ran the identical opening prompt through Perplexity, cold, with the same standing evidence rules: cite only real studies, preserve authors' hedges, say "not reported" instead of filling gaps.
+I started with Claude Science because it was the research environment I had. After building what is now a 63-record corpus there, I ran the identical opening prompt through Perplexity, cold, with the same standing evidence rules: cite only real studies, preserve authors' hedges, say "not reported" instead of filling gaps.
 
 Holding the opening question constant let me see that the two systems responded differently to the same framing. Claude Science's first pass leaned heavily toward harm until I ran a corrective benefit-side search. Perplexity challenged both the harm and benefit framings in its first run. That doesn't tell me exactly why their retrieval differed, but it does show that the same question can produce materially different evidence landscapes.
 
