@@ -9,6 +9,7 @@
 | `construct_map.csv` | 63 | Project coding of the task, claimed capacity, actual measure, and inference gap for the combined AI-focused corpus. One record could not be coded. |
 | `critical_thinking_construct_audit.csv` | 7 | Studies commonly used to support claims about AI and critical thinking. |
 | `dissociation_coding.csv` | 50 | Coding for the test of whether outcome type predicts whether a study reports a positive or negative result. |
+| `perplexity_evidence_table.csv` | 73 | Studies surfaced by Perplexity across 9 runs on the same opening question. 12 overlap with the Claude Science corpus, 57 are unique to Perplexity. |
 | `preai_offloading_studies.csv` | 51 | Older research on offloading cognition to non-AI tools. |
 
 ## Reading the fields
