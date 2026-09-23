@@ -12,7 +12,7 @@ This was not a controlled head-to-head. Claude Science received more follow-up w
 
 | Work in this project | Claude Science | Perplexity in computer mode | What still required my judgment |
 |---|---|---|---|
-| Build a corpus | Produced a structured 64-record corpus across two retrieval passes. | Produced an independent map with partial overlap and additional leads. | Decide which sources belonged in scope and run a benefit-side retrieval when the first pass tilted toward harm. |
+| Build a corpus | Produced a structured 63-record corpus across two retrieval passes. | Produced an independent map with partial overlap and additional leads. | Decide which sources belonged in scope and run a benefit-side retrieval when the first pass tilted toward harm. |
 | Inspect individual studies | Extracted design, sample, measures, findings, access status, and limitations into tables. | Retrieved some sources the first environment could not access. | Read the source basis, distinguish an abstract from full text, and decide how much weight a record could carry. |
 | Find gaps | Made the absence of unaided and delayed outcomes visible across the map. | Found a delayed-retention preprint that meant the first map's universal absence claim had to be narrowed. | Change the conclusion without treating one unpublished, weakly documented study as a settled answer. |
 | Check integrity | A requested number-drift audit caught unsupported numbers and mislabeled statistics in the map. | Flagged a retracted education meta-analysis and named source-access limits in its output. | Verify corrections and retractions, decide which claims to remove, and preserve the audit trail. |
