@@ -24,7 +24,7 @@ Across the studies reviewed so far:
 
 - **Belief change is one of the clearest effects that has persisted after an AI interaction.** AI conversations and writing assistance have moved people’s reported beliefs toward accurate, slanted, and false claims. Some of those changes remained weeks or months later.
 
-- **The long-term effects of ordinary AI use remain open.** A small number of studies now test people after a delay, including one unpublished 45-day retention study and a six-week nursing pilot. The available studies are too narrow to establish what months or years of regular AI use do to memory, judgment, or skill.
+- **The long-term effects of ordinary AI use remain open.** A published 45-day trial found lower retention after unrestricted ChatGPT-assisted study. A one-week working paper found higher unaided scores after AI-allowed learning, and a small nursing pilot found higher six-week scores after a tightly guided intervention. The studies test different forms of assistance in narrow settings, so they cannot establish what months or years of regular AI use do to memory, judgment, or skill.
 
 The [full synthesis](synthesis.md) explains these findings, the studies behind them, and the limits on each conclusion.
 
@@ -60,13 +60,13 @@ Generative AI expands the range of tasks a tool can participate in. It can retri
 | Resource | What it contains |
 |---|---|
 | [Synthesis](synthesis.md) | The findings, evidence limits, and questions the current corpus leaves open |
-| [Interactive question map](https://aribajahan.github.io/ai-cognition/question-map/) | 50 selected source records organized by the questions they address |
+| [Interactive question map](https://aribajahan.github.io/ai-cognition/question-map/) | 110 unique source records organized across nine questions, with separate views for AI studies, earlier technologies, and cognitive psychology |
 | [Methods](methods.md) | Corpus construction, coding decisions, source access, and project limits |
 | [Evidence tables](data/) | Study-level records, construct coding, and the machine-readable corpus census |
 | [Research workflow](research-workflow.md) | How Claude Science and Perplexity contributed to the review |
 | [Field notes](field-notes.md) | What I noticed while working with both research environments |
 
-[![Preview of the interactive question map](question-map/preview.png)](https://aribajahan.github.io/ai-cognition/question-map/)
+[![Preview of the 110-source interactive question map](question-map/preview.png)](https://aribajahan.github.io/ai-cognition/question-map/)
 
 ## Corpus and scope
 
@@ -75,11 +75,15 @@ Claude Science produced two evidence tables:
 - A 45-record first pass across memory, learning and skill, judgment, and brain or physiological measures
 - A 24-record benefit-side pass, added after the first search leaned heavily toward harm
 
-Six sources appear in both tables, leaving **63 unique Claude Science source records**.
+Seven sources appear in both tables, leaving **62 unique Claude Science source records**. One of
+those overlaps is Buçinca et al. 2021, which appeared under its published ACM DOI in one table and
+its arXiv DOI in the other.
 
 Perplexity produced a separate table containing **64 source records** across AI-era studies, older cognitive-offloading research, meta-analyses, and reviews. Sixteen also appear in the Claude Science corpus, leaving **48 Perplexity-only records**.
 
-I have kept the tables separate because they came from different searches and contain different kinds of sources. The separation also preserves provenance: a reader can see which research environment surfaced each record.
+The public data folder preserves both tool-specific tables and a combined table with **110 unique source records**. The combined table reconciles overlaps while retaining whether a source was found by Claude Science, Perplexity, or both. A separate placement table records the question, sub-question, evidence role, and relationship assigned to every source in the map.
+
+The files are named by provenance so the distinction is visible before someone opens them: [`claude_science_first_pass_records.csv`](data/claude_science_first_pass_records.csv), [`claude_science_benefit_side_records.csv`](data/claude_science_benefit_side_records.csv), [`perplexity_source_records.csv`](data/perplexity_source_records.csv), [`combined_source_records.csv`](data/combined_source_records.csv), and [`combined_question_map_placements.csv`](data/combined_question_map_placements.csv).
 
 The project is adult-focused. It includes a small number of studies outside a strict adult-only definition when they directly address the research question, including a high-school mathematics field experiment. Each finding should be read in light of the population, task, and form of AI assistance that the study tested.
 
@@ -109,7 +113,7 @@ The construct classifications and other project codes were developed with AI ass
 
 A corpus audit now checks the current row counts, duplicate records, and cross-tool overlap labels. The audit runs automatically through GitHub Actions whenever the repository changes.
 
-The current census was verified on **September 22, 2026**. The [machine-readable census](data/corpus_census.json) preserves those counts.
+The current census and combined map data were verified on **September 23, 2026**. The [machine-readable census](data/corpus_census.json) preserves those counts.
 
 ## Questions I want to keep following
 

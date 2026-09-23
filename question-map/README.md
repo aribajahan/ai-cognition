@@ -1,27 +1,43 @@
 # Question map
 
-[Open the interactive map](index.html)
+[Open the interactive map](https://aribajahan.github.io/ai-cognition/question-map/)
 
-This map organizes 50 selected source records from the project's initial evidence corpus around the questions they address: memory, learning, skill, judgment, self-assessment, brain measures, and possible benefits. It has 51 source appearances because one study belongs under both memory and brain measures.
+The map organizes **110 unique source records** from Claude Science and Perplexity around nine
+questions about memory, learning, skill, judgment, metacognition, belief change, benefits, brain and
+physiological measures, and evidence quality. It contains 111 source appearances because the Kosmyna
+study answers both a memory question and a brain-measures question.
 
-It is designed to make the boundaries of the evidence visible. Each study node includes its source, publication status, access basis, design, sample, exposure, finding, and caveat. The summary cards show how often the map contains randomized comparisons, an outcome after AI access ended, demographic information, and a reported session length.
+Each study card includes a concise takeaway, a fuller plain-language description, a direct source
+link, publication and evidence-role labels, and expandable details about the design, sample, timing,
+provenance, and limitations. Every branch ends with questions the current corpus does not answer.
 
-Search by author, finding, method, or question. Filters separate outcomes measured after AI was removed from outcomes measured with AI present, and peer-reviewed sources from preprints. Each study card also has a direct link.
-
-The branch labels describe the kind of evidence represented in this map, rather than rating a research area as settled or unsettled: Direct evidence, Mixed findings, Limited coverage, Indirect measures, and Open question.
+The controls let readers view current AI studies, earlier-technology studies, and cognitive-
+psychology research together or separately. Search covers the main questions, sub-questions,
+authors, findings, and methods. Additional filters separate evidence roles and outcomes measured
+with assistance from those measured after the tool was removed.
 
 ## Scope
 
-The map is a 50-record snapshot selected from 63 unique Claude Science source records. It does not claim to represent the complete literature. A later independent search surfaced additional leads, including one unpublished delayed-retention study; the synthesis records how those leads affect the open questions without treating them as settled evidence.
+Claude Science produced 45 first-pass records and 24 benefit-side records. Seven overlap, leaving
+**62 unique Claude Science source records**. Perplexity produced 64 records, 16 of which overlap with
+Claude Science. The combined corpus therefore contains 110 unique source records.
 
-The corpus is adult-focused rather than strictly adult-only. It includes one high-school mathematics field experiment because it is directly relevant to the learning question. Findings should be read in light of the people and tasks each study tested.
+The map is an exploratory evidence review rather than a systematic review. It includes primary
+studies, reviews, theory, a protocol, methodological critiques, a thesis, and a retracted paper. The
+role of each record is visible because those sources answer different questions and should carry
+different weight.
 
-## Audit applied in September 2026
+The corpus is adult-focused rather than strictly adult-only. It includes a small number of younger
+samples when a study directly addresses the research question. Findings should be read in light of
+the people, task, duration, form of assistance, and outcome each source examined.
 
-The public version preserves the 50 source records and their current summary totals. The audit checked that each branch heading matched the source appearances shown beneath it, and that the overall source-record count matched the corpus walkthrough.
+## Audit applied September 23, 2026
 
-It also corrected three claims that could otherwise mislead a reader:
+Every source was reviewed against the question and sub-question where it appears. The audit checked
+whether the study actually answers that question, whether the wording matches the measured outcome,
+and whether the visible finding preserves the study's limits. The published HTML is also checked for
+the 110-source census, 111 appearances, nine branches, 50 collapsible sub-questions, evidence-view
+counts, study descriptions, unanswered-question sections, and interaction behavior.
 
-- An outcome after AI access ends may be immediate; it does not by itself establish durable independent ability.
-- The map contains no peer-reviewed delayed-recall test of AI-assisted study material in adults. A later search found one unpublished 45-day candidate that remains to be checked.
-- The map is an initial evidence snapshot, not a claim that these 50 source records constitute the full field.
+The earlier 50-source Claude Science map is preserved as a dated snapshot in the private research
+repository. The current public map represents the combined project.

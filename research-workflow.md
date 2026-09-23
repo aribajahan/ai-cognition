@@ -12,9 +12,9 @@ This was not a controlled head-to-head. Claude Science received more follow-up w
 
 | Work in this project | Claude Science | Perplexity in computer mode | What still required my judgment |
 |---|---|---|---|
-| Build a corpus | Produced a structured 63-record corpus across two retrieval passes. | Produced an independent map with partial overlap and additional leads. | Decide which sources belonged in scope and run a benefit-side retrieval when the first pass tilted toward harm. |
+| Build a corpus | Produced 62 unique source records across two retrieval passes. | Produced 64 records, including 48 not found in the Claude Science tables. | Reconcile the 16 overlaps into the 110-source combined corpus and decide which sources belonged in scope. |
 | Inspect individual studies | Extracted design, sample, measures, findings, access status, and limitations into tables. | Retrieved some sources the first environment could not access. | Read the source basis, distinguish an abstract from full text, and decide how much weight a record could carry. |
-| Find gaps | Made the absence of unaided and delayed outcomes visible across the map. | Found a delayed-retention preprint that meant the first map's universal absence claim had to be narrowed. | Change the conclusion without treating one unpublished, weakly documented study as a settled answer. |
+| Find gaps | Made the absence of unaided and delayed outcomes visible across the map. | Found delayed-retention studies that meant the first map's universal absence claim had to be narrowed. | Verify each study, correct its publication status, and compare interventions before drawing a conclusion. |
 | Check integrity | A requested number-drift audit caught unsupported numbers and mislabeled statistics in the map. | Flagged a retracted education meta-analysis and named source-access limits in its output. | Verify corrections and retractions, decide which claims to remove, and preserve the audit trail. |
 
 ## Four moments that changed the work
@@ -25,9 +25,9 @@ My first Claude Science prompt was framed around how AI might damage cognition. 
 
 ### 2. A second tool found a study the first one had declared absent
 
-The original question map stated that no adult study tested recall after a delay. Perplexity surfaced a 45-day delayed-retention randomized trial. Its own source notes also raised reasons for caution: the paper was an unpublished preprint, authorship was not clear on the abstract page, and the reported sample and test statistic suggested unexplained attrition.
+The original question map stated that no adult study tested recall after a delay. Perplexity surfaced a 45-day randomized trial, but its initial record described the paper as an unpublished preprint, left the author unclear, and did not explain why the follow-up sample was smaller than the randomized sample. A later source-verification pass found that André Barcaui's study had been published in *Social Sciences & Humanities Open*. It randomized 120 students and tested 85 after 45 days; attrition was substantial but balanced between the groups.
 
-That changed the claim. The evidence gap is still very large, but a universal absence claim was too strong. The right response was to narrow the conclusion and retain the source-status caveat.
+That changed the claim and the source-status caveat. The evidence gap remains large, but the published 45-day trial, a one-week working paper, and a small six-week nursing pilot now give three delayed results to examine. Their findings point in different directions under different forms of AI assistance.
 
 ### 3. Source access changed what I could say about a headline study
 

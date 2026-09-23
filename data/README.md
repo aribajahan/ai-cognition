@@ -1,52 +1,56 @@
 # Data guide
 
-## Current corpus census
+## Current corpus
 
-These counts were verified from parsed CSV data rows on September 22, 2026, after a project audit
-found older counts in working documents:
+The public data now preserves each research environment's source records and the combined table used
+to build the question map. The counts were verified from parsed CSV rows on September 23, 2026.
 
-- The first-pass table contains **45 study records**. Its original 46th row was a Gerlich
-  correction notice, which is not a study and is excluded from the current table and count.
-- The benefit-side table contains **24 records**. Six overlap with the first pass, leaving **63
-  unique Claude Science source records**.
-- The Perplexity table contains **64 source records**. 16 also appear in the Claude Science
-  corpus, leaving **48 Perplexity-only records**. An older figure of 73 came from inaccurate
-  project documentation rather than the CSV.
+- The Claude Science first-pass table contains **45 study records**. Its original 46th row was a
+  correction notice rather than a study.
+- The Claude Science benefit-side table contains **24 records**. Seven overlap with the first pass,
+  leaving **62 unique Claude Science source records**.
+- The Perplexity table contains **64 source records**. **16 also appear** in the Claude Science
+  corpus, leaving **48 Perplexity-only records**.
+- The combined table reconciles those overlaps into **110 unique source records**. It is the source
+  table for the current question map.
 
 `corpus_census.json` is the machine-readable census. Run `python3 scripts/corpus_audit.py` from the
-repository root before publishing changed counts. It parses CSV data rows, excludes headers, and
-checks every cross-tool overlap label.
+repository root before publishing changed counts or tables.
 
-## Included tables
+## Source and synthesis tables
 
 | File | Rows | What it contains |
 |---|---:|---|
-| `ai_cognition_evidence_table.csv` | 45 | First-pass evidence records across the AI and cognition question. |
-| `benefit_side_studies.csv` | 24 | Second-pass records on benefits and countervailing evidence. Six records overlap with the first pass. |
-| `construct_map.csv` | 63 | Project coding of the task, claimed capacity, actual measure, and inference gap for the combined AI-focused corpus. |
+| [`claude_science_first_pass_records.csv`](claude_science_first_pass_records.csv) | 45 | Claude Science's first retrieval pass across memory, learning and skill, judgment, and brain or physiological measures. |
+| [`claude_science_benefit_side_records.csv`](claude_science_benefit_side_records.csv) | 24 | Claude Science's second pass on benefits and countervailing evidence. Seven records overlap with the first pass. |
+| [`perplexity_source_records.csv`](perplexity_source_records.csv) | 64 | Records surfaced across nine Perplexity runs. Sixteen overlap with the Claude Science corpus. |
+| [`combined_source_records.csv`](combined_source_records.csv) | 110 | The canonical cross-tool table, with overlap reconciled and provenance retained for every record. |
+| [`combined_question_map_placements.csv`](combined_question_map_placements.csv) | 110 | The reviewed question, sub-question, evidence role, and relationship assigned to every canonical source. One source appears twice in the rendered map because it answers two questions. |
+
+## Analysis tables
+
+| File | Rows | What it contains |
+|---|---:|---|
+| `construct_map.csv` | 62 | Coding of the task, claimed capacity, actual measure, and inference gap for the Claude Science corpus. |
 | `critical_thinking_construct_audit.csv` | 7 | Studies commonly used to support claims about AI and critical thinking. |
-| `dissociation_coding.csv` | 50 | Coding for the test of whether outcome type predicts whether a study reports a positive or negative result. |
-| `perplexity_evidence_table.csv` | 64 | Source records surfaced by Perplexity across 9 runs. 16 also appear in the Claude Science corpus, leaving 48 Perplexity-only records. |
-| `preai_offloading_studies.csv` | 51 | Older research on offloading cognition to non-AI tools. |
+| `dissociation_coding.csv` | 50 | Coding for whether outcome type predicts the direction of a reported result. |
+| `preai_offloading_studies.csv` | 51 | Earlier research on offloading cognition to GPS, automation, calculators, spell-check, search, and other tools. |
 
 ## Reading the fields
 
-The two broad evidence tables share many fields:
+The tool-specific tables preserve the fields produced during each search, so their schemas differ.
+The combined table normalizes the fields needed for cross-tool analysis: citation, publication status,
+source access, design, sample, population, exposure, measures, finding, limitation, outcome timing,
+evidence role, and provenance.
 
-- `citation`, `title`, `authors`, `year`, `venue`, `doi`, and `url` identify the source.
-- `pub_status` records whether the retrieved source was a journal article, preprint, or another publication status.
-- `text_basis` records what the project could read: full text, abstract, metadata only, or another accessible source.
-- `design`, `n`, `population`, and exposure fields describe the study as reported in retrieved text.
-- `measures`, `key_finding`, `effect_size`, and `limitations` retain the project’s source-grounded extraction rather than a new meta-analysis.
+`outcome_timing` distinguishes performance measured with assistance from performance measured after
+the tool was removed. An outcome measured after removal may still be an immediate post-test. It does
+not by itself establish a durable effect.
 
-`unassisted_outcome_flag` is especially important. It indicates whether a study measured an outcome after the AI tool was removed. It does not by itself show a long-term effect: an immediate post-test and a delayed follow-up are different designs.
+The tables are a study index and audit trail. The studies differ too much in their tasks,
+populations, interventions, measures, and source access to pool every row into one effect estimate.
+Rows based on abstracts or metadata carry less detail than records extracted from full papers.
 
-## How to use the tables
-
-The tables are a study index and audit trail. They support close reading of individual studies and make the project’s coding visible. They do not support pooling every row into a single effect size: the studies differ too much in outcome, task, population, intervention, and source access.
-
-Rows marked abstract-only or metadata-only should be treated as bibliographic leads and high-level descriptions. They carry less evidentiary weight than records drawn from full papers.
-
-## Project coding
-
-The construct and dissociation tables contain judgments made for this project. The coding rules and limitations are described in the selected analyses. In particular, the distinction between an output measure and a measure of a cognitive process can be arguable. Readers should treat those codes as transparent analytical choices that can be inspected and challenged.
+The construct, dissociation, and map-placement fields are project coding developed with AI
+assistance and reviewed by Ariba Jahan. They make the analytical choices inspectable; they are not
+independent ratings by multiple researchers.

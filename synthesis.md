@@ -14,11 +14,11 @@ I built the review with Claude Science and Perplexity, then checked what each st
 - **Starting skill may change who benefits.** Several studies find larger gains among less experienced or lower-performing people, while one randomized crossover study found that the same AI reading aids helped lower performers and hurt higher performers.
 - **Belief change is one of the clearest durable effects in the current evidence.** AI conversations and writing assistance can move what people believe. The direction depends on what the system argues.
 
-The long-term question remains open. A few studies now measure outcomes weeks later, so the answer is no longer “nobody has tested this.” The available delayed studies are too small, narrow, or unpublished to establish what months and years of ordinary AI use do to memory, judgment, or skill.
+The long-term question remains open. A few studies now measure outcomes weeks later, so the answer is no longer “nobody has tested this.” The available studies use short, narrow interventions and do not establish what months and years of ordinary AI use do to memory, judgment, or skill.
 
 ## What this review includes
 
-This review draws on three evidence tables. Claude Science produced a 45-record first pass and a 24-record benefit-side pass; six sources appear in both, leaving 63 unique records in that set. Perplexity produced a separate 64-record table that includes AI-era studies, older research on cognitive offloading, meta-analyses, and reviews. 16 Perplexity records also appear in the Claude Science corpus, leaving 48 Perplexity-only records.
+This review draws on three evidence tables. Claude Science produced a 45-record first pass and a 24-record benefit-side pass; seven sources appear in both, leaving 62 unique records in that set. Perplexity produced a separate 64-record table that includes AI-era studies, older research on cognitive offloading, meta-analyses, and reviews. 16 Perplexity records also appear in the Claude Science corpus, leaving 48 Perplexity-only records.
 
 I have kept the Claude and Perplexity tables separate because they were built from different searches and do not contain the same kinds of sources. Adding their row counts together would double-count some studies and treat reviews as if they were additional experiments. Keeping them separate also preserves provenance: readers can see which research environment surfaced each source and how it entered the review.
 
@@ -47,9 +47,9 @@ The seven-study critical-thinking audit found studies using the same term for se
 
 ## Assisted performance and independent ability are separate outcomes
 
-AI often improves the work produced while it is available. Noy and Zhang found that professionals completed writing tasks 40% faster and produced work rated 18% higher in quality with ChatGPT. Brynjolfsson, Li, and Raymond found a 13.8% productivity increase after an AI assistant was introduced to 5,179 customer-support agents, with larger gains among novice and lower-skilled workers. In both studies, people completed more or better work while they had AI assistance.
+AI often improves the work produced while it is available. Noy and Zhang found that professionals completed writing tasks 40% faster and produced work rated 18% higher in quality with ChatGPT. Brynjolfsson, Li, and Raymond studied a staggered workplace rollout across 5,172 customer-support agents and found a 15% average productivity increase, with larger gains among novice and lower-skilled workers. In both studies, people completed more or better work while they had AI assistance.
 
-Neither study establishes a durable change in the person’s unaided ability. That requires removing the system and testing again.
+Noy and Zhang did not test later unaided performance. Brynjolfsson, Li, and Raymond examined rare software outages and found that some exposed workers remained faster without live recommendations, especially after longer exposure and among workers who had followed the suggestions more closely. The outage result suggests learning, but it comes from a noisy observational comparison that may include differences in the chats workers handled.
 
 The studies that separate practice from later performance show why the distinction matters. In the high-school mathematics field experiment, the unguarded GPT interface improved practice and lowered later exam performance; the guided tutor improved practice and removed the penalty. In a preregistered experiment with 900 randomized participants, people who directly adopted AI answers scored lower than the no-AI group on an unaided reasoning task 15 to 20 minutes later, an adjusted difference of −0.38 and an effect size of *d* = −0.28. The self-generation-first group appeared to score slightly above the no-AI group, but the difference was no longer statistically reliable after the researchers corrected for making multiple comparisons.
 
@@ -57,7 +57,7 @@ The strongest positive learning result also came from a designed tutor. In a cro
 
 For product teams, this leads to a practical question: what does the interface require the person to generate, retrieve, check, and revise before it supplies an answer?
 
-*Sources: [Bastani et al. 2025](https://doi.org/10.1073/pnas.2422633122); [Liu et al. 2026](https://doi.org/10.3389/fpsyg.2026.1910545); [Kestin et al. 2025](https://doi.org/10.1038/s41598-025-97652-6); [Noy and Zhang 2023](https://doi.org/10.1126/science.adh2586); [Brynjolfsson, Li, and Raymond 2024](https://doi.org/10.1093/qje/qjae044).*
+*Sources: [Bastani et al. 2025](https://doi.org/10.1073/pnas.2422633122); [Liu et al. 2026](https://doi.org/10.3389/fpsyg.2026.1910545); [Kestin et al. 2025](https://doi.org/10.1038/s41598-025-97652-6); [Noy and Zhang 2023](https://doi.org/10.1126/science.adh2586); [Brynjolfsson, Li, and Raymond 2025](https://doi.org/10.1093/qje/qjae044).*
 
 ## Results depend on whether AI is right and whether people catch its mistakes
 
@@ -93,11 +93,11 @@ Aggregate averages can conceal people moving in opposite directions.
 
 In a randomized crossover study of 195 college-aged adults, four GPT-based reading aids improved comprehension among people who scored lower before the study, with effects ranging from *d* = 0.45 to 0.86. The same aids worsened comprehension among people who started with higher scores, with effects from *d* = 0.33 to 0.83. The relationship between starting score and AI benefit was *r* = −0.785. The study used the same test to sort people into groups and calculate who benefited, which makes the size of the difference harder to interpret.
 
-The customer-support rollout found a related workplace pattern: productivity rose 34% among novice and lower-skilled agents, with little average effect among experienced and higher-skilled agents. The study was observational and measured work with AI available. It cannot tell us whether either group learned or lost skill.
+The customer-support rollout found a related workplace pattern: productivity rose 30% among less-skilled and less-experienced agents, while experienced and higher-skilled agents saw smaller gains. The study was observational. Its outage analysis found suggestive evidence of retained speed gains without live recommendations, but it cannot establish how each group’s underlying skill changed.
 
 Baseline ability may be a moderator, meaning it changes who benefits from the same form of assistance. Studies should report results separately for people with different starting levels of skill. The current evidence does not establish a universal rule that AI helps novices and harms experts.
 
-*Sources: [Etkin et al. 2025](https://doi.org/10.3389/feduc.2025.1506752); [Brynjolfsson, Li, and Raymond 2024](https://doi.org/10.1093/qje/qjae044).*
+*Sources: [Etkin et al. 2025](https://doi.org/10.3389/feduc.2025.1506752); [Brynjolfsson, Li, and Raymond 2025](https://doi.org/10.1093/qje/qjae044).*
 
 ## AI can produce durable changes in belief
 
@@ -113,13 +113,21 @@ These studies do not show that AI generally improves or degrades judgment. They 
 
 ## What happens after AI is removed
 
-My first search suggested that almost no studies tested people after AI was removed, especially after a delay. The second search found studies it had missed: a 45-day randomized retention study with 120 participants, a six-week nursing pilot with 32 participants, and several tests conducted immediately or the next day. I changed the claim. Some delayed evidence exists, but it is too limited to tell us what happens after months or years of ordinary AI use. The 45-day study is an unpublished working paper, the nursing study is small, and most other withdrawal tests happen minutes or days after a short exposure.
+My first search suggested that almost no studies tested people after AI was removed, especially after a delay. A later search found three studies that changed that claim.
+
+In André Barcaui's published trial, 120 undergraduate business students were randomized to prepare a presentation with unrestricted ChatGPT or with traditional resources. Of the 85 students who completed a surprise test 45 days later, the ChatGPT group scored 57.5% and the traditional group scored 68.5% (*d* = 0.68). Attrition was substantial but balanced between groups, and the traditional group spent more time studying.
+
+A working paper by Zara Contractor and Germán Reyes found a result in the other direction. College students had 35 minutes to learn an unfamiliar topic and write an essay, with AI allowed or forbidden. Of the 211 students who attended the first session, 204 returned about one week later. The AI-allowed group scored 5.1 percentage points higher on the unaided delayed test, an effect of 0.27 standard deviations. Only 68% of the students assigned to the AI group used it.
+
+The six-week nursing study tested a different kind of intervention. It combined ChatGPT with standardized prompts, peer discussion, comparison against clinical guidelines, instructor monitoring, and correction. The study randomized 34 students and analyzed 32. The intervention group had a median score of 65 on the six-week knowledge test, compared with 55 in the control group (*p* = .044). The pilot was small, the follow-up was remote and unsupervised, and the intervention cannot isolate the effect of ChatGPT from the surrounding teaching design.
+
+Delayed evidence now exists, and its direction varies with the task and the way AI is used. These studies cover one week, 45 days, and six weeks after brief interventions. They do not tell us what happens after months or years of ordinary AI use.
 
 Older research on cockpit automation measured different parts of a skill separately instead of treating pilot performance as one outcome. In a simulator study of 16 airline pilots, manual flying remained largely intact while participants had more difficulty tracking position, choosing navigation steps, and recognizing instrument failures. I tested whether the AI studies showed the same pattern, with execution holding up while supervision weakened. They did not. Positive and negative results appeared across both types of outcome, and there were too few studies to treat the lack of a pattern as decisive.
 
 The aviation research still points to a useful question: what stops being practiced once AI becomes available? Current AI studies rarely track that change over time.
 
-*Sources: [Perplexity evidence table](data/perplexity_evidence_table.csv); [Casner et al. 2014](https://doi.org/10.1177/0018720814535628); [project dissociation coding](data/dissociation_coding.csv).*
+*Sources: [Barcaui 2025](https://doi.org/10.1016/j.ssaho.2025.102287); [Contractor and Reyes 2026](https://arxiv.org/abs/2607.08849); [Sezgunsay, Polat, and Kılıcer 2026](https://doi.org/10.1186/s12909-026-09483-2); [Casner et al. 2014](https://doi.org/10.1177/0018720814535628); [project dissociation coding](data/dissociation_coding.csv).*
 
 ## What remains unanswered
 

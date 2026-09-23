@@ -1,8 +1,10 @@
 {
   "claude_benefit_side_records": 24,
   "claude_first_pass_records": 45,
-  "claude_internal_overlap": 6,
-  "claude_unique_records": 63,
+  "claude_internal_overlap": 7,
+  "claude_unique_records": 62,
+  "combined_map_placement_records": 110,
+  "combined_unique_records": 110,
   "cross_tool_overlap": 16,
   "perplexity_only_records": 48,
   "perplexity_records": 64
