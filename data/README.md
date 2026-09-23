@@ -9,12 +9,13 @@ found older counts in working documents:
   correction notice, which is not a study and is excluded from the current table and count.
 - The benefit-side table contains **24 records**. Six overlap with the first pass, leaving **63
   unique Claude Science source records**.
-- The Perplexity table contains **64 source records**. An older figure of 73 came from inaccurate
-  project documentation rather than the CSV. Its overlap coding still needs reconciliation, so no
-  precise Perplexity-only count is supported yet.
+- The Perplexity table contains **64 source records**. 16 also appear in the Claude Science
+  corpus, leaving **48 Perplexity-only records**. An older figure of 73 came from inaccurate
+  project documentation rather than the CSV.
 
-Count CSV data rows with a parser and exclude the header. Physical line counts, commit messages,
-and historical run records are not the current census.
+`corpus_census.json` is the machine-readable census. Run `python3 scripts/corpus_audit.py` from the
+repository root before publishing changed counts. It parses CSV data rows, excludes headers, and
+checks every cross-tool overlap label.
 
 ## Included tables
 
@@ -25,7 +26,7 @@ and historical run records are not the current census.
 | `construct_map.csv` | 63 | Project coding of the task, claimed capacity, actual measure, and inference gap for the combined AI-focused corpus. |
 | `critical_thinking_construct_audit.csv` | 7 | Studies commonly used to support claims about AI and critical thinking. |
 | `dissociation_coding.csv` | 50 | Coding for the test of whether outcome type predicts whether a study reports a positive or negative result. |
-| `perplexity_evidence_table.csv` | 64 | Source records surfaced by Perplexity across 9 runs. The table includes primary studies, older offloading research, meta-analyses, and reviews. Its overlap coding still needs reconciliation, so no unique-to-Perplexity count is reported here. |
+| `perplexity_evidence_table.csv` | 64 | Source records surfaced by Perplexity across 9 runs. 16 also appear in the Claude Science corpus, leaving 48 Perplexity-only records. |
 | `preai_offloading_studies.csv` | 51 | Older research on offloading cognition to non-AI tools. |
 
 ## Reading the fields

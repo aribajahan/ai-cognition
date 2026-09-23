@@ -18,7 +18,7 @@ The long-term question remains open. A few studies now measure outcomes weeks la
 
 ## What this review includes
 
-This review draws on three evidence tables. Claude Science produced a 45-record first pass and a 24-record benefit-side pass; six sources appear in both, leaving 63 unique records in that set. Perplexity produced a separate 64-record table that includes AI-era studies, older research on cognitive offloading, meta-analyses, and reviews.
+This review draws on three evidence tables. Claude Science produced a 45-record first pass and a 24-record benefit-side pass; six sources appear in both, leaving 63 unique records in that set. Perplexity produced a separate 64-record table that includes AI-era studies, older research on cognitive offloading, meta-analyses, and reviews. 16 Perplexity records also appear in the Claude Science corpus, leaving 48 Perplexity-only records.
 
 I have kept the Claude and Perplexity tables separate because they were built from different searches and do not contain the same kinds of sources. Adding their row counts together would double-count some studies and treat reviews as if they were additional experiments. Keeping them separate also preserves provenance: readers can see which research environment surfaced each source and how it entered the review.
 

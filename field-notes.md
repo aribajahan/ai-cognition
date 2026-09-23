@@ -79,7 +79,7 @@ In the construct audit, Perplexity reached a primary-text copy of the Gerlich pa
 
 ### What 9 runs produced
 
-The consolidated Perplexity evidence table contains 64 records. Its overlap coding needs another reconciliation pass before I can state how many are unique to Perplexity.
+The consolidated Perplexity evidence table contains 64 records. 16 also appear in the Claude Science corpus, leaving 48 records unique to Perplexity.
 
 The Perplexity records expanded the review in several directions. They included ten studies on persuasion and belief change, thirteen pre-AI offloading studies across GPS, calculators, aviation, and internet search, and eight cognitive psychology studies on the generation effect, testing effect, and desirable difficulties. Perplexity also surfaced AI studies absent from the Claude Science corpus, including Etkin's finding that baseline ability reverses the direction of the effect (AI helps weaker performers and hurts stronger ones) and Russell's fNIRS null (subjective effort drops with AI, but the brain shows nothing).
 
@@ -88,9 +88,9 @@ The later runs (3 through 9) weren't adding many new studies. They were re-exami
 
 ## What using both made visible
 
-### The corpora barely overlap
+### The corpora only partly overlap
 
-The two evidence sets overlapped less than I expected. My first corpus looked complete until I put it beside the second. Neither research environment showed me that gap on its own; the comparison did.
+16 of Perplexity's 64 records also appear in the Claude Science corpus. My first corpus looked complete until I put it beside the second. Neither research environment showed me that gap on its own; the comparison did.
 
 Claude Science found the automation-bias reliance work (Dratsch, Jabbour, Gaube) and the belief-change cluster (Costello, Hackenburg, Danry, Jakesch) that Perplexity missed. Perplexity found delayed-retention studies in the gap the initial Claude Science map described as empty, including a 45-day RCT and a six-week nursing study. The universal claim that no adult study tests recall after a delay had to be narrowed. The studies that exist are small or unpublished, so they changed the scope of the claim more than the conclusion.
 
