@@ -1,5 +1,21 @@
 # Data guide
 
+## Current corpus census
+
+These counts were verified from parsed CSV data rows on September 22, 2026, after a project audit
+found older counts in working documents:
+
+- The first-pass table contains **45 study records**. Its original 46th row was a Gerlich
+  correction notice, which is not a study and is excluded from the current table and count.
+- The benefit-side table contains **24 records**. Six overlap with the first pass, leaving **63
+  unique Claude Science source records**.
+- The Perplexity table contains **64 source records**. An older figure of 73 came from inaccurate
+  project documentation rather than the CSV. Its overlap coding still needs reconciliation, so no
+  precise Perplexity-only count is supported yet.
+
+Count CSV data rows with a parser and exclude the header. Physical line counts, commit messages,
+and historical run records are not the current census.
+
 ## Included tables
 
 | File | Rows | What it contains |
