@@ -8,6 +8,12 @@ I used Claude Science and Perplexity to build a structured review of research on
 
 The project also became a record of what it was like to use two AI research environments for the same investigation. Each tool surfaced a different body of sources. Each made some parts of the work easier to see and left other gaps that only became apparent through comparison, follow-up searches, and source checking.
 
+## Explore the question map
+
+The [interactive question map](https://aribajahan.github.io/ai-cognition/question-map/) organizes all 110 unique source records across nine questions. It lets you compare current AI studies with earlier-technology and cognitive-psychology research, then open each source to see the finding, study design, sample, timing, and limitations.
+
+[![Preview of the 110-source interactive question map](question-map/preview.png)](https://aribajahan.github.io/ai-cognition/question-map/)
+
 ## What the evidence currently suggests
 
 The clearest distinction in the corpus is between performance with AI and ability after AI is removed. A faster report, a better essay, or a more accurate answer can show that the assistance worked. Learning and skill require a later test of what the person can do independently.
@@ -65,8 +71,6 @@ Generative AI expands the range of tasks a tool can participate in. It can retri
 | [Evidence tables](data/) | Study-level records, construct coding, and the machine-readable corpus census |
 | [Research workflow](research-workflow.md) | How Claude Science and Perplexity contributed to the review |
 | [Field notes](field-notes.md) | What I noticed while working with both research environments |
-
-[![Preview of the 110-source interactive question map](question-map/preview.png)](https://aribajahan.github.io/ai-cognition/question-map/)
 
 ## Corpus and scope
 
