@@ -3,70 +3,54 @@
 
 from __future__ import annotations
 
-import shutil
-import subprocess
-import sys
 import tempfile
 import unittest
 from pathlib import Path
+
+from question_map_audit import MAP_PATH, audit
 
 
 REPO = Path(__file__).resolve().parents[1]
 
 
 class QuestionMapAuditPositiveControls(unittest.TestCase):
-    def setUp(self) -> None:
-        self.temp = tempfile.TemporaryDirectory()
-        self.root = Path(self.temp.name)
-        (self.root / "question-map").mkdir(parents=True)
-        (self.root / "scripts").mkdir()
-        shutil.copy2(REPO / "question-map/index.html", self.root / "question-map/index.html")
-        shutil.copy2(REPO / "scripts/question_map_audit.py", self.root / "scripts/question_map_audit.py")
-
-    def tearDown(self) -> None:
-        self.temp.cleanup()
-
-    def run_audit(self) -> subprocess.CompletedProcess[str]:
-        return subprocess.run(
-            [sys.executable, "scripts/question_map_audit.py"],
-            cwd=self.root,
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-
-    def replace_once(self, old: str, new: str) -> None:
-        path = self.root / "question-map/index.html"
-        text = path.read_text(encoding="utf-8")
-        self.assertIn(old, text)
-        path.write_text(text.replace(old, new, 1), encoding="utf-8")
+    def check_mutation(self, old: str, new: str, expected: str) -> None:
+        source = (REPO / MAP_PATH).read_text(encoding="utf-8")
+        self.assertIn(old, source)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "map.html"
+            path.write_text(source.replace(old, new, 1), encoding="utf-8")
+            self.assertTrue(any(expected in error for error in audit(path)))
 
     def test_current_map_passes(self) -> None:
-        self.assertEqual(self.run_audit().returncode, 0)
+        self.assertEqual(audit(REPO / MAP_PATH), [])
 
-    def test_ambiguous_kestin_sample_fails(self) -> None:
-        self.replace_once("194 eligible participants", "194–316*")
-        result = self.run_audit()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("194 eligible participants", result.stderr)
+    def test_missing_card_is_caught(self) -> None:
+        self.check_mutation('class="study-card"', 'class="removed-card"', "study appearances")
 
-    def test_missing_search_control_fails(self) -> None:
-        self.replace_once('id="study-search"', 'id="study-search-removed"')
-        result = self.run_audit()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("study-search", result.stderr)
+    def test_missing_branch_is_caught(self) -> None:
+        self.check_mutation('class="branch" data-branch', 'class="removed-branch" data-branch', "branches")
 
-    def test_missing_accessible_question_label_fails(self) -> None:
-        self.replace_once("control.setAttribute('aria-label'", "control.setAttribute('data-label'")
-        result = self.run_audit()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("aria-label", result.stderr)
+    def test_missing_subquestion_is_caught(self) -> None:
+        self.check_mutation('class="subquestion-toggle"', 'class="removed-subquestion"', "collapsible subquestions")
 
-    def test_missing_study_card_fails(self) -> None:
-        self.replace_once('<div class="snode"', '<div class="study-node-removed"')
-        result = self.run_audit()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("study appearances", result.stderr)
+    def test_missing_stat_explanation_is_caught(self) -> None:
+        self.check_mutation('class="info"', 'class="removed-info"', "statistic explanations")
+
+    def test_missing_takeaway_is_caught(self) -> None:
+        self.check_mutation('class="takeaway"', 'class="removed-takeaway"', "study takeaways")
+
+    def test_missing_description_is_caught(self) -> None:
+        self.check_mutation('class="study-description"', 'class="removed-description"', "full study descriptions")
+
+    def test_four_column_summary_is_caught(self) -> None:
+        self.check_mutation("repeat(3,minmax(0,1fr))", "repeat(4,minmax(0,1fr))", "three columns")
+
+    def test_hidden_retraction_is_caught(self) -> None:
+        self.check_mutation('class="retracted"', 'class="neutral"', "visibly retracted")
+
+    def test_missing_hidden_state_is_caught(self) -> None:
+        self.check_mutation("[hidden]{display:none!important}", "[hidden]{display:block}", "hidden")
 
 
 if __name__ == "__main__":
