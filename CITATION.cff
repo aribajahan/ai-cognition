@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this research project, please cite it using the metadata below."
+title: "AI and Cognition: A Question Map"
+type: dataset
+authors:
+  - family-names: Jahan
+    given-names: Ariba
+url: "https://aribajahan.github.io/ai-cognition/question-map/"
+repository-code: "https://github.com/aribajahan/ai-cognition"
+abstract: >-
+  A structured evidence review and interactive question map examining how AI use affects adult
+  memory, learning, skill, judgment, attention, self-assessment, and related brain and
+  physiological measures. The September 2026 release contains 110 unique source records organized
+  around nine questions.
+keywords:
+  - artificial intelligence
+  - cognition
+  - human-AI interaction
+  - memory
+  - learning
+  - judgment
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2026-09-23
