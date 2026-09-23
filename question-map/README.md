@@ -1,6 +1,8 @@
-# Question map
+# AI and Cognition: A Question Map
 
 [Open the interactive map](https://aribajahan.github.io/ai-cognition/question-map/)
+
+What researchers are investigating, how cognition is being measured, and what remains unanswered.
 
 The map organizes **110 unique source records** from Claude Science and Perplexity around nine
 questions about memory, learning, skill, judgment, metacognition, belief change, benefits, brain and

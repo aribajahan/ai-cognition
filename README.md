@@ -8,9 +8,9 @@ I used Claude Science and Perplexity to build a structured review of research on
 
 The project also became a record of what it was like to use two AI research environments for the same investigation. Each tool surfaced a different body of sources. Each made some parts of the work easier to see and left other gaps that only became apparent through comparison, follow-up searches, and source checking.
 
-## Explore the question map
+## Explore A Question Map
 
-The [interactive question map](https://aribajahan.github.io/ai-cognition/question-map/) organizes all 110 unique source records across nine questions. It lets you compare current AI studies with earlier-technology and cognitive-psychology research, then open each source to see the finding, study design, sample, timing, and limitations.
+[AI and Cognition: A Question Map](https://aribajahan.github.io/ai-cognition/question-map/) organizes all 110 unique source records across nine questions. It shows what researchers are investigating, how cognition is being measured, and what remains unanswered. You can compare current AI studies with earlier-technology and cognitive-psychology research, then open each source to see the finding, study design, sample, timing, and limitations.
 
 [![Preview of the 110-source interactive question map](question-map/preview.png)](https://aribajahan.github.io/ai-cognition/question-map/)
 
@@ -66,7 +66,7 @@ Generative AI expands the range of tasks a tool can participate in. It can retri
 | Resource | What it contains |
 |---|---|
 | [Synthesis](synthesis.md) | The findings, evidence limits, and questions the current corpus leaves open |
-| [Interactive question map](https://aribajahan.github.io/ai-cognition/question-map/) | 110 unique source records organized across nine questions, with separate views for AI studies, earlier technologies, and cognitive psychology |
+| [AI and Cognition: A Question Map](https://aribajahan.github.io/ai-cognition/question-map/) | 110 unique source records organized across nine questions, with separate views for AI studies, earlier technologies, and cognitive psychology |
 | [Methods](methods.md) | Corpus construction, coding decisions, source access, and project limits |
 | [Evidence tables](data/) | Study-level records, construct coding, and the machine-readable corpus census |
 | [Research workflow](research-workflow.md) | How Claude Science and Perplexity contributed to the review |
