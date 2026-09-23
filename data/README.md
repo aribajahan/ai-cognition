@@ -4,12 +4,12 @@
 
 | File | Rows | What it contains |
 |---|---:|---|
-| `ai_cognition_evidence_table.csv` | 46 | First-pass evidence records across the AI and cognition question. |
+| `ai_cognition_evidence_table.csv` | 45 | First-pass evidence records across the AI and cognition question. |
 | `benefit_side_studies.csv` | 24 | Second-pass records on benefits and countervailing evidence. Six records overlap with the first pass. |
-| `construct_map.csv` | 63 | Project coding of the task, claimed capacity, actual measure, and inference gap for the combined AI-focused corpus. One record could not be coded. |
+| `construct_map.csv` | 63 | Project coding of the task, claimed capacity, actual measure, and inference gap for the combined AI-focused corpus. |
 | `critical_thinking_construct_audit.csv` | 7 | Studies commonly used to support claims about AI and critical thinking. |
 | `dissociation_coding.csv` | 50 | Coding for the test of whether outcome type predicts whether a study reports a positive or negative result. |
-| `perplexity_evidence_table.csv` | 73 | Studies surfaced by Perplexity across 9 runs on the same opening question. 12 overlap with the Claude Science corpus, 57 are unique to Perplexity. |
+| `perplexity_evidence_table.csv` | 64 | Source records surfaced by Perplexity across 9 runs. The table includes primary studies, older offloading research, meta-analyses, and reviews. Its overlap coding still needs reconciliation, so no unique-to-Perplexity count is reported here. |
 | `preai_offloading_studies.csv` | 51 | Older research on offloading cognition to non-AI tools. |
 
 ## Reading the fields

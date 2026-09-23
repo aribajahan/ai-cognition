@@ -10,10 +10,12 @@ The project also records how two AI research systems handled the same evidence q
 
 The AI-focused corpus was assembled in two Claude Science retrieval passes:
 
-- A first pass of 46 records on memory, learning and skill, judgment, and brain or physiological measures.
+- A first pass of 45 records on memory, learning and skill, judgment, and brain or physiological measures.
 - A benefit-side pass of 24 records on areas the first question under-sampled.
 
-Six records overlap, yielding 64 unique records. The interactive question map contains 50 selected source records with detailed design coding. The difference between those denominators reflects the available extraction fields, not an additional body of evidence.
+Six records overlap, yielding 63 unique records. The interactive question map contains 50 selected source records with detailed design coding. The difference between those denominators reflects the available extraction fields, not an additional body of evidence.
+
+Perplexity produced a separate 64-record table across nine runs. It includes AI-era studies, older offloading research, meta-analyses, and reviews. Because it was built from different searches and contains different source types, it remains separate from the Claude Science tables rather than being added to a single master count.
 
 The corpus is adult-focused, though it includes some studies outside a strict adult-only definition, including a high-school mathematics field experiment. Findings should be read as applying to the populations each study recruited, not to all adults.
 

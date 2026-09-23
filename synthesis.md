@@ -1,115 +1,138 @@
 # AI and cognition
 
-I wrote Cognitive Endurance, a two-part framework examining how leaders and teams preserve human judgment, curiosity, discernment, and agency as AI takes on more cognitive work. While I was writing it, I kept seeing headlines claiming that AI was making us worse thinkers or weakening critical thinking. I wanted to know what those claims were actually based on.
+While writing [Cognitive Endurance](https://aribajahan.com/reading-room/cognitive-endurance), I kept seeing claims that AI was weakening memory, learning, and critical thinking. I wanted to know what those claims were based on. So I built an evidence review around a narrower question: what has research actually measured about AI's effect on cognition, and how far can the findings go?
 
-I started with a set of basic questions. How do researchers measure a change in cognition? What answers do they have now? What would research need to show before we could say that using AI changes a person's independent ability? AI is still new in the context that matters here: repeated use in everyday thinking and work. I wanted to take stock of the evidence that exists and build something I can return to as the field develops.
+I found that studies grouped under “AI and cognition” were answering different questions. Some measure the work people produce while AI is available. Others test what a person can do after it is removed. Some measure confidence or perceived effort and call that critical thinking. Others measure recall, the ability to apply something later, decision accuracy, or belief change. The findings appear to contradict one another partly because the studies are measuring different things.
 
-I built this corpus in collaboration with Claude Science and Perplexity. That let me explore a second question at the same time: how these tools work in a research and literature-review workflow. What do they find? What do they miss? What remains mine to assess?
-
-This project is ongoing. This repository captures my observations so far: what the research says about AI and cognition, where it is thin, and what I learned using the tools to investigate it.
+I built the review with Claude Science and Perplexity, then checked what each study had measured and narrowed claims that went beyond those measures. This synthesis separates the findings supported by multiple studies from early results that still need to be tested. It also records what researchers have not studied yet. I wanted a baseline I could return to as the field changed: a dated snapshot that shows which conclusions strengthen, weaken, or change as new studies arrive. The project is a structured evidence review and research record, not a systematic review or meta-analysis.
 
 ## The short version
 
-- **The field measures AI-assisted performance more often than durable unaided ability.** Better work with a tool present does not tell us what a person retains or can do later alone.
-- **“Cognition” covers different capacities that studies often blur together.** Memory, learning, judgment, attention, self-assessment, and output quality need different measures.
-- **AI can help or harm within the same broad domain.** Purpose-built tutors can support learning; answer-providing interfaces can improve practice while weakening later independent performance.
-- **The lasting effects people are most worried about remain largely unmeasured.** The evidence does not yet establish how repeated, everyday AI use changes cognition over months and years.
+- **Current studies tell us much more about performance during AI use than about durable, unaided ability.** Immediate practice gains and later independent skill require different tests.
+- **The way a person uses AI can change the result.** Guided tutoring and self-generation-first workflows have produced different outcomes from interfaces that supply answers for direct adoption.
+- **Reliance becomes dangerous when the AI is wrong.** Clinicians, radiologists, and participants in misinformation studies have followed or been influenced by incorrect recommendations and explanations.
+- **Starting skill may change who benefits.** Several studies find larger gains among less experienced or lower-performing people, while one randomized crossover study found that the same AI reading aids helped lower performers and hurt higher performers.
+- **Belief change is one of the clearest durable effects in the current evidence.** AI conversations and writing assistance can move what people believe. The direction depends on what the system argues.
 
-| Question | What current studies can support | What remains unanswered |
+The long-term question remains open. A few studies now measure outcomes weeks later, so the answer is no longer “nobody has tested this.” The available delayed studies are too small, narrow, or unpublished to establish what months and years of ordinary AI use do to memory, judgment, or skill.
+
+## What this review includes
+
+This review draws on three evidence tables. Claude Science produced a 45-record first pass and a 24-record benefit-side pass; six sources appear in both, leaving 63 unique records in that set. Perplexity produced a separate 64-record table that includes AI-era studies, older research on cognitive offloading, meta-analyses, and reviews.
+
+I have kept the Claude and Perplexity tables separate because they were built from different searches and do not contain the same kinds of sources. Adding their row counts together would double-count some studies and treat reviews as if they were additional experiments. Keeping them separate also preserves provenance: readers can see which research environment surfaced each source and how it entered the review.
+
+I also examined 51 older studies on GPS, cockpit automation, calculators, spell-check, and web search. They show what earlier researchers measured when people handed part of a cognitive task to technology: what stopped being practiced, what people could still do without the system, and whether a skill returned. They do not establish the effects of current AI systems.
+
+Most of the AI studies involve adults. I also included a small number of studies with younger participants when they directly addressed the question, including the high-school mathematics experiment discussed later. A result from one high school, one profession, or one laboratory task should not be assumed to apply to everyone.
+
+Full text is now available for every record in the benefit-side table and 37 of the 45 records in the first-pass table. Eight first-pass records remain abstract-only. The [methods](methods.md) and [public data tables](data/) preserve the access basis for each record.
+
+## What counts as evidence of cognition
+
+“Cognition” covers capacities that need different measures. A faster answer, a better essay, confidence in one’s performance, and the ability to solve a similar problem later are four different outcomes.
+
+| Capacity | What it means here | Evidence needed |
 |---|---|---|
-| Does AI improve work while it is available? | It can, when the task fits the tool's capability. | Whether the improvement persists when the tool is removed. |
-| Does AI affect learning and skill? | Purpose-built tutoring can improve short-term learning; answer-supplying interfaces can improve practice while lowering a later unaided exam score. | How repeated use affects durable, independent skill. |
-| Does AI affect judgment? | Incorrect recommendations can shift decisions people had previously made correctly. | Whether ordinary use changes a person's judgment over time. |
-| Does AI change cognition over months or years? | The current corpus offers very little direct evidence. | The direction, size, reversibility, and distribution of any long-term effects. |
+| Memory | Retaining and retrieving information after an experience. | Recall or recognition without AI, ideally after a delay. |
+| Learning and skill | Being able to perform independently after practice. | An unaided transfer or performance test, followed by a later test when possible. |
+| Judgment | Evaluating a recommendation, detecting an error, and deciding what to do. | Decisions with known-correct answers, including cases where the AI is wrong. |
+| Attention and cognitive control | Directing focus, monitoring progress, and resisting distraction. | Behavioral attention measures, observed monitoring behavior, or validated instruments. |
+| Metacognition | Knowing what you understand and how much help you need. | Confidence compared with actual performance. |
+| Output performance | The speed, quality, or accuracy of work produced with AI. | The work completed while AI is available. |
 
-## What this project examined
+An earlier project audit compared the capacity each paper claimed to study with what it actually measured. Of the 63 records coded, five clearly measured the capacity named in the paper, and 15 named a validated instrument in the text available at the time. I reviewed the model-assisted coding myself; it was not independently coded by multiple researchers. The audit also predates some of the later full-text retrieval, so the counts describe that version of the evidence table.
 
-I brought together 64 unique records from research on AI use and cognition, including memory, learning and skill, judgment, attention, and self-assessment. The corpus combines 46 records from an initial pass with 24 from a benefit-side pass; six appear in both. I also reviewed a separate 51-record corpus of older cognitive-offloading research on GPS, automation, calculators, spell-check, and web search. Those studies provide analogies that help identify questions worth asking about AI assistants.
+The seven-study critical-thinking audit found studies using the same term for self-reported work behaviors, confidence ratings, essay recall, and coded argument quality. Several only show that two things occurred together; they cannot tell us whether AI caused the difference. Some do not test a person’s critical-thinking ability at all. The scope is narrower than the headline claim: a survey of how people feel about their thinking can describe their perception, but it cannot show whether their reasoning ability changed.
 
-The AI-focused corpus is adult-focused rather than strictly adult-only. It includes college students, working professionals, clinicians, online samples, and at least one high-school field experiment. The evidence applies to the specific people and tasks each study tested.
+## Assisted performance and independent ability are separate outcomes
 
-| Project artifact | Records | What the denominator means |
-|---|---:|---|
-| AI-focused corpus | 64 | Unique records after the two retrieval passes are combined. |
-| Construct map | 63 | One record could not be coded for its claimed capacity and actual measure. |
-| Question map | 50 | Selected source records with detailed design coding; one source appears in two branches because it addresses both memory and brain measures. |
-| Older offloading corpus | 51 | Separate pre-AI studies used for comparison, not as evidence about contemporary AI assistants. |
+AI often improves the work produced while it is available. Noy and Zhang found that professionals completed writing tasks 40% faster and produced work rated 18% higher in quality with ChatGPT. Brynjolfsson, Li, and Raymond found a 13.8% productivity increase after an AI assistant was introduced to 5,179 customer-support agents, with larger gains among novice and lower-skilled workers. In both studies, people completed more or better work while they had AI assistance.
 
-The corpus-building work happened in collaboration with Claude Science and Perplexity. The conclusions rest on the studies and their source records. Each tool surfaced studies the other missed, and comparison made some coverage gaps visible.
+Neither study establishes a durable change in the person’s unaided ability. That requires removing the system and testing again.
 
-## What I mean by cognition
+The studies that separate practice from later performance show why the distinction matters. In the high-school mathematics field experiment, the unguarded GPT interface improved practice and lowered later exam performance; the guided tutor improved practice and removed the penalty. In a preregistered experiment with 900 randomized participants, people who directly adopted AI answers scored lower than the no-AI group on an unaided reasoning task 15 to 20 minutes later, an adjusted difference of −0.38 and an effect size of *d* = −0.28. The self-generation-first group appeared to score slightly above the no-AI group, but the difference was no longer statistically reliable after the researchers corrected for making multiple comparisons.
 
-Before looking at the studies, I needed a shared vocabulary. “Cognition” is used as if it names one thing. In this project, it covers several capacities that need different evidence.
+The strongest positive learning result also came from a designed tutor. In a crossover study of 194 eligible Harvard undergraduates, students using an AI tutor had a median post-test score of 4.5 compared with 3.5 after an active classroom lesson. The adjusted effect size was 0.63. The study measured short-term course learning in a setting supported by expert-built prompts, instructional videos, and prewritten solutions. It does not show that any chatbot will outperform teaching.
 
-| Capacity | What it means here | Evidence a study would need to support a claim about it |
-|---|---|---|
-| Memory | Retaining and retrieving information after an experience. | A recall or recognition test, ideally after a delay and without AI available. |
-| Learning and skill | Being able to do something independently after practice. | An unaided transfer or performance test after practice, ideally with a later follow-up. |
-| Judgment | Evaluating a recommendation, noticing an error, and deciding what to do. | A decision task with known-correct answers, including cases where the AI is wrong. |
-| Attention and cognitive control | Directing focus, monitoring what is happening, and resisting distraction. | A behavioral attention measure, observation of monitoring behavior, or a validated cognitive-control instrument. |
-| Metacognition | Knowing what you understand, what you do not, and how much help you need. | A comparison between a person's confidence and actual performance. |
-| Output performance | The speed, quality, or accuracy of work completed with AI assistance. | A measure of the work produced while the tool is available. This is valuable, but it does not by itself establish change in the other capacities. |
+For product teams, this leads to a practical question: what does the interface require the person to generate, retrieve, check, and revise before it supplies an answer?
 
-The construct audit makes the difference visible. Across the 63 AI-focused records it could code, the most common outcomes were task performance with the tool present, output quality, and self-report. Only six records scored task performance once the tool was removed.
+*Sources: [Bastani et al. 2025](https://doi.org/10.1073/pnas.2422633122); [Liu et al. 2026](https://doi.org/10.3389/fpsyg.2026.1910545); [Kestin et al. 2025](https://doi.org/10.1038/s41598-025-97652-6); [Noy and Zhang 2023](https://doi.org/10.1126/science.adh2586); [Brynjolfsson, Li, and Raymond 2024](https://doi.org/10.1093/qje/qjae044).*
 
-| What the audit found was recorded | Records |
-|---|---:|
-| Task performance with AI available | 18 |
-| Output quality | 14 |
-| Self-report | 14 |
-| Task performance after AI was removed | 6 |
-| Other or unclear measures | 11 |
+## Results depend on whether AI is right and whether people catch its mistakes
 
-That distribution does not mean the studies are poor. It means they answer different questions. An essay can improve while memory of the material weakens. A clinician can make a faster decision while becoming less able to catch a bad recommendation. Those are different findings, and they require different measures.
+When AI is correct, its assistance can improve a decision. When it is wrong, people often follow it.
 
-I coded 63 study records by the capacity each paper claimed to address and the measure it actually used. Five records had a measure that clearly matched the capacity being claimed. Fifteen named a validated instrument in the text retrieved for this project. Those figures are the result of this project’s coding, rather than a field-wide meta-analysis, and they were capped by source access at the time of coding, when many records were available only as abstracts; full text has since been read for all but four.
+Across 106 experiments and 370 effects published through June 2023, human–AI combinations performed below the better solo performer on average, with Hedges’ *g* = −0.23. The average hid substantial variation. Creative tasks were more likely to show gains; decision tasks were more likely to show losses. Combinations tended to improve when the human outperformed the AI alone and decline when the AI was stronger.
 
-The critical-thinking literature shows the problem in a concentrated form. Seven studies are often cited in support of the claim that AI erodes critical thinking. They define the term differently, several rely on self-report, and some do not measure critical thinking at all. That body of work does not support a broad conclusion about whether AI changes critical-thinking ability.
+Clinical studies show what that looks like. In one randomized experiment with 457 clinicians, standard AI recommendations raised diagnostic accuracy by 2.9 percentage points while systematically biased recommendations lowered it by 11.3 points. Explanations did not remove the harm. Radiologists in a separate study were correct about 80% of the time when the purported AI was correct and between 19.8% and 45.5% when it was wrong, depending on experience.
 
-## What the research can say so far
+The same problem appears outside expert work. A preregistered false-memory experiment found that a generative chatbot produced an average of 1.82 immediate false memories per participant, compared with 0.54 in the control condition. The difference remained visible one week later. In misinformation studies, deceptive AI explanations moved belief in false and true headlines beyond the effect of an incorrect label alone.
 
-AI can improve performance on particular tasks while it is available. In a field experiment with 758 management consultants, performance improved on tasks inside the model’s capability range and fell on a task designed to expose its limits ([Dell’Acqua et al., 2026](https://doi.org/10.1287/orsc.2025.21838)). The study is a useful reminder that task performance depends on the fit between a person, a tool, and the work being done.
+These studies tell us what happens when people receive a wrong recommendation during a task. They do not show that ordinary AI use permanently weakens judgment. They do show that a fluent explanation or professional expertise does not guarantee that someone will catch the mistake.
 
-People can also rely too heavily on a wrong recommendation. In experiments with clinicians and radiologists, incorrect AI recommendations changed decisions that participants had previously made correctly. A meta-analysis of 106 experiments found that human–AI combinations performed below the better solo performer on average, while results varied by task and by whether the human or AI had the stronger baseline performance ([Vaccaro, Almaatouq, and Malone, 2024](https://doi.org/10.1038/s41562-024-02024-1)). These are findings about coordination and trust calibration. They do not show that AI changes a person’s underlying capacity over time.
+This is a calibration problem. Trust is well calibrated when confidence in the AI rises and falls with the quality of its recommendation. In these studies, it often did not.
 
-There is also evidence that AI can support learning when its interaction design requires engagement. Kestin and colleagues found higher short-term post-test gains with a purpose-built AI tutor than with an active classroom lesson in a crossover study of Harvard undergraduates ([Kestin et al., 2025](https://doi.org/10.1038/s41598-025-97652-6)). In a separate field experiment with high-school mathematics students, a GPT-4 interface that frequently gave answers improved practice performance but was associated with lower later exam performance. A guided tutor removed that exam penalty without producing a positive exam advantage ([Bastani et al., 2025](https://doi.org/10.1073/pnas.2422633122)).
+*Sources: [Vaccaro, Almaatouq, and Malone 2024](https://doi.org/10.1038/s41562-024-02024-1); [Jabbour et al. 2023](https://doi.org/10.1001/jama.2023.22295); [Dratsch et al. 2023](https://doi.org/10.1148/radiol.222176); [Chan et al. 2024](https://doi.org/10.48550/arxiv.2408.04681); [Danry et al. 2025](https://doi.org/10.1145/3706598.3713408).*
 
-Those studies concern different populations and learning settings. Together, they support a design question: does the interaction help a person work through the task, or does it allow them to bypass the work the task was meant to develop? They do not establish one universal effect of AI on learning.
+## Self-report cannot substitute for behavioral outcomes
 
-AI conversation can also change particular beliefs. Costello, Pennycook, and Rand found that a personalized dialogue with GPT-4 Turbo reduced participants’ reported belief in their chosen conspiracy theory, with the effect present at a two-month follow-up ([Costello et al., 2024](https://doi.org/10.1126/science.adq1814)). This result shows that durable change is possible in a bounded setting. It does not tell us whether AI conversation generally improves judgment.
+Self-report remains useful for experience: whether a system felt easy, demanding, trustworthy, or satisfying. It cannot stand in for a behavioral measure of memory, reasoning, or skill.
 
-## What happens after the tool is removed
+In two experiments using LSAT reasoning questions, AI improved performance and participants still overestimated how well they had done. The overestimation effect was large in both experiments (*d* = 0.93 and *d* = 1.17). In a separate study of 20 adults, participants said their workload fell when they used AI. Measures of brain activity, heart rate, heart-rate variability, and electrodermal activity did not show a corresponding change.
 
-The 50-record question map makes the central gap visible. Many studies measure performance while AI remains available. Fewer measure performance after removal, and only a small number test delayed outcomes. Immediate post-tests and later follow-ups answer different questions: a person may retain something briefly and still lose it later, or struggle immediately and recover through later practice.
+Feeling more effort is not proof that more learning happened either. A meta-analysis of 25 articles and 3,135 participants found that making material harder to read increased learning time (*d* = 0.52) and made people think they had learned less (*d* = −0.43). Their recall (*d* = −0.01) and ability to transfer what they learned (*d* = 0.03) stayed the same. A task can feel easier without producing better learning, and it can feel harder without producing better learning.
 
-The older offloading literature supplies useful context. It includes withdrawal designs that the AI literature rarely uses. Where researchers have found decrements in unaided ability, the effects are often small and depend on the task. Casner and colleagues found that 16 airline pilots retained much of their manual-control skill while having more difficulty with cognitive tasks such as tracking position, selecting navigation steps, and recognizing instrument failures ([Casner et al., 2014](https://doi.org/10.1177/0018720814535628)). The study concerns cockpit automation and suggests that AI studies should distinguish fluent execution from the judgment needed to supervise a system.
+How hard a task feels tells us too little about what a person will remember. Effort remains an unproven mechanism, not an explanation for the mixed AI results. Future studies need to record what the person generated, what they retrieved from memory, what they practiced, and what they knew they would need to do later.
 
-I tested that hypothesis against the current AI corpus and did not find the predicted pattern. Positive and negative results appeared in both output-focused and judgment-focused studies. The clearest association was with study design: studies that deliberately supplied incorrect AI recommendations tended to produce negative results. That finding narrows what those studies show. They are strong evidence about reliance on a wrong system and weaker evidence about a general loss of cognition.
+*Sources: [Fernandes et al. 2024](https://doi.org/10.48550/arxiv.2409.16708); [Russell et al. 2025](https://arxiv.org/abs/2506.04167); [Xie et al. 2018](https://doi.org/10.1007/s10648-018-9442-x); [Grinschgl et al. 2021](https://doi.org/10.1177/17470218211008060).*
 
-## What remains unknown
+## Starting skill changes who benefits in some studies
 
-The research has not established whether repeated, everyday AI use changes memory, judgment, or skill over months and years. It has little to say about whether an unaided skill returns after a person stops relying on a tool. It does not give a reliable dose-response account of whether more use produces more effect. Older adults and people with cognitive impairments are scarcely represented in this corpus.
+Aggregate averages can conceal people moving in opposite directions.
 
-The next studies need a clearer design: define the capacity being tested, measure it before and after AI use, remove the tool for an unaided test, include a delayed follow-up, and report outcomes by relevant prior skill level. They also need a realistic comparison condition. People often choose among AI, search, a colleague, a textbook, a checklist, and a tutor.
+In a randomized crossover study of 195 college-aged adults, four GPT-based reading aids improved comprehension among people who scored lower before the study, with effects ranging from *d* = 0.45 to 0.86. The same aids worsened comprehension among people who started with higher scores, with effects from *d* = 0.33 to 0.83. The relationship between starting score and AI benefit was *r* = −0.785. The study used the same test to sort people into groups and calculate who benefited, which makes the size of the difference harder to interpret.
 
-## How I’m reading the evidence
+The customer-support rollout found a related workplace pattern: productivity rose 34% among novice and lower-skilled agents, with little average effect among experienced and higher-skilled agents. The study was observational and measured work with AI available. It cannot tell us whether either group learned or lost skill.
 
-I have kept the evidence limits visible because they materially affect the conclusions. Twenty-eight of the 50 records in the Claude Science question map were read from abstracts rather than full papers. Abstracts often omit measures, instruments, exposure details, and limitations. Several high-profile papers in the area are preprints, have corrections, or rely on evidence that cannot carry the claims made about them.
+Baseline ability may be a moderator, meaning it changes who benefits from the same form of assistance. Studies should report results separately for people with different starting levels of skill. The current evidence does not establish a universal rule that AI helps novices and harms experts.
 
-AI changes the conditions under which people perform and learn. Current research identifies real risks around reliance, calibration, and interaction design, alongside credible evidence of benefit in well-designed learning settings. The durable effects people are most worried about remain largely unmeasured.
+*Sources: [Etkin et al. 2025](https://doi.org/10.3389/feduc.2025.1506752); [Brynjolfsson, Li, and Raymond 2024](https://doi.org/10.1093/qje/qjae044).*
 
-## Questions I’m left with
+## AI can produce durable changes in belief
 
-- What happens to a skill after months of ordinary AI use, when nobody is being watched in a study?
-- Does independent ability return when a person stops relying on the tool, or does the answer depend on the skill and the way it was offloaded?
-- Which interaction designs preserve learning and judgment for people with different starting levels of skill?
-- What should a product make a person do for themselves before it supplies an answer, recommendation, or draft?
-- Which capacities are people most willing to hand over without noticing what they have given up?
+The clearest delayed effects in this review concern what people believe.
 
-## What I’m doing next
+In a study of 2,190 participants, a personalized evidence-based dialogue with GPT-4 Turbo reduced belief in a chosen conspiracy theory by about 20%. The reduction remained at the two-month follow-up. A later preregistered experiment with 955 participants found that short conversations reduced confidence in conspiracy theories and other unsupported beliefs whether the speaker was presented as an AI or a human expert.
 
-This is an exploration in progress. I still need to do three things:
+Other studies found that AI could also move beliefs toward slanted or false claims. An opinionated writing assistant shifted the views participants expressed in their writing and in a later attitude survey, with a treatment effect of *d* = 0.34. In three large experiments covering 19 language models and 707 political issues, prompting and post-training methods increased persuasion while systematically lowering factual accuracy. An information-dense prompt raised the average persuasive effect from 8.34 to 10.60 percentage points.
 
-- **Verify the claims that carry this synthesis against the primary papers.** The project has an answer key in progress for the exact population, design, outcome, and qualification behind each sentence the argument depends on.
-- **Close the source-access gaps.** The question map began with twenty-eight abstract-only records; full text has since been read for all but four (Budzyn, Noy, Costello, and Dell'Acqua remain paywalled). Folding that full text back into the coding may still change how individual studies are weighted or described.
-- **Extend the research questions the current field leaves open.** The highest-value questions are whether independent ability returns after people stop relying on AI, whether more use produces a larger effect, and which interaction designs preserve learning and judgment across different starting skill levels.
+These studies do not show that AI generally improves or degrades judgment. They show that AI can change what people report believing, that some changes remain after the conversation ends, and that making a system more persuasive can make it less accurate.
+
+*Sources: [Costello, Pennycook, and Rand 2024](https://doi.org/10.1126/science.adq1814); [Boissin et al. 2025](https://doi.org/10.1093/pnasnexus/pgaf325); [Jakesch et al. 2023](https://doi.org/10.1145/3544548.3581196); [Hackenburg et al. 2025](https://doi.org/10.1126/science.aea3884).*
+
+## What happens after AI is removed
+
+My first search suggested that almost no studies tested people after AI was removed, especially after a delay. The second search found studies it had missed: a 45-day randomized retention study with 120 participants, a six-week nursing pilot with 32 participants, and several tests conducted immediately or the next day. I changed the claim. Some delayed evidence exists, but it is too limited to tell us what happens after months or years of ordinary AI use. The 45-day study is an unpublished working paper, the nursing study is small, and most other withdrawal tests happen minutes or days after a short exposure.
+
+Older research on cockpit automation measured different parts of a skill separately instead of treating pilot performance as one outcome. In a simulator study of 16 airline pilots, manual flying remained largely intact while participants had more difficulty tracking position, choosing navigation steps, and recognizing instrument failures. I tested whether the AI studies showed the same pattern, with execution holding up while supervision weakened. They did not. Positive and negative results appeared across both types of outcome, and there were too few studies to treat the lack of a pattern as decisive.
+
+The aviation research still points to a useful question: what stops being practiced once AI becomes available? Current AI studies rarely track that change over time.
+
+*Sources: [Perplexity evidence table](data/perplexity_evidence_table.csv); [Casner et al. 2014](https://doi.org/10.1177/0018720814535628); [project dissociation coding](data/dissociation_coding.csv).*
+
+## What remains unanswered
+
+The research has not established how repeated, everyday AI use changes memory, judgment, or skill over months and years. It does not show whether a person’s unaided ability returns after they stop relying on AI. Few studies test whether using AI more often produces a larger effect. Older adults and people with cognitive impairments are also rarely included.
+
+The next studies should:
+
+- define the capacity before choosing the task;
+- measure baseline ability and report results by starting skill;
+- distinguish output quality, self-report, behavior, and independent performance;
+- sustain AI exposure long enough for a practice pattern to change;
+- remove AI and test immediately and again after a meaningful delay;
+- record what participants generated, retrieved, checked, and stopped practicing;
+- compare AI with the alternatives people would actually use, including search, a colleague, a textbook, a checklist, or a tutor.
+
+Product teams can act on the evidence that already exists. They can decide what a system supplies, what it asks the person to work through, when it exposes uncertainty, and how it helps someone detect a wrong answer. Those choices change what people practice while the system is present.
