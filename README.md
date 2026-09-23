@@ -139,6 +139,4 @@ This investigation grew from [Cognitive Endurance](https://www.unmissables.xyz/p
 
 While building the corpus, I also created reusable workflows for source checking, structured extraction, full-text retrieval, and construct audits. They are documented in [Claude Science Skills](https://github.com/aribajahan/claude-science-skills).
 
-I used Codex to reconcile the combined corpus, build and test the question map, and manage the public release.
-
 By [Ariba Jahan](https://aribajahan.com)
