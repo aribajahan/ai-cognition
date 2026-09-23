@@ -129,6 +129,6 @@ These needs showed up in both environments once the research project outgrew a s
 
 **Analysis persistence.** Claude Science saved figures and CSVs while leaving written analysis in the conversation. Roughly six investigations had their reasoning living only in chat. With Perplexity, I kept asking it to export analyses as Markdown files. In both environments, prose that lived only in the conversation felt ephemeral. I wanted it in my local file system where I could keep working with it.
 
-**Cross-system workspace.** Claude Code became the comparison workspace because I could put both corpora side by side and keep editing the synthesis. I was the orchestration layer: downloading, filing, moving between conversations, and carrying context from one environment to another.
+**Cross-system workspace.** I exported the Perplexity outputs and brought them alongside the Claude Science files in Claude Code. That was where I compared the two corpora, ran the combined analysis, and kept editing the synthesis. I still had to coordinate the handoffs myself: downloading, filing, moving between conversations, and carrying context from one environment to another.
 
 By the end, I wanted one workspace with shared project context, branchable conversations, and a visible record of what each investigation had established. I didn't have that in either research environment during this project.
