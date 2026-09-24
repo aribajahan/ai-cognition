@@ -115,6 +115,8 @@ Full text is available for 21 of the 24 records in the benefit-side table and 37
 
 The construct classifications and other project codes were developed with AI assistance and reviewed by me. They were not independently coded by multiple researchers.
 
+Before publishing the combined map, I ran five quality-control passes across the corpus: reconciling the source records, reviewing every map placement, auditing all 110 records and 111 map appearances in a fresh context, separately checking 36 rewritten takeaways, and returning to the primary sources for the three remaining unresolved claims. Each correction was added to the automated regression suite.
+
 A corpus audit now checks the current row counts, duplicate records, and cross-tool overlap labels. The audit runs automatically through GitHub Actions whenever the repository changes.
 
 The current census and combined map data were verified on **September 23, 2026**. The [machine-readable census](data/corpus_census.json) preserves those counts.
