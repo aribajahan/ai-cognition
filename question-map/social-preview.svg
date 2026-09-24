@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1280" viewBox="0 0 1280 1280" role="img" aria-labelledby="title desc">
+  <title id="title">AI and Cognition: A Question Map</title>
+  <desc id="desc">A preview of Ariba Jahan's 110-source question map about AI and human cognition.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2d2d2d" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .heading{font-family:"Arial Narrow","Helvetica Neue",sans-serif;font-weight:800;letter-spacing:1px}
+      .body{font-family:"Helvetica Neue",Arial,sans-serif}
+      .muted{fill:#7a746b}.support{fill:#5c574f}.ink{fill:#2d2d2d}.red{fill:#e73131}
+    </style>
+  </defs>
+  <rect width="1280" height="1280" fill="#fffdf8"/>
+  <g transform="translate(0 320)">
+  <text x="72" y="86" class="body red" font-size="17" font-weight="700" letter-spacing="2.2">AI AND COGNITION</text>
+  <text x="72" y="168" class="heading ink" font-size="74">A QUESTION MAP</text>
+  <text x="72" y="223" class="body support" font-size="23">What researchers are investigating, how cognition is being</text>
+  <text x="72" y="256" class="body support" font-size="23">measured, and what remains unanswered.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="304" width="150" height="76" rx="8" fill="#fff" stroke="#ded8ce"/>
+    <rect x="232" y="304" width="150" height="76" rx="8" fill="#fff" stroke="#ded8ce"/>
+    <rect x="392" y="304" width="150" height="76" rx="8" fill="#fff" stroke="#ded8ce"/>
+  </g>
+  <text x="89" y="338" class="heading ink" font-size="30">110</text>
+  <text x="89" y="363" class="body muted" font-size="12">unique sources</text>
+  <text x="249" y="338" class="heading ink" font-size="30">9</text>
+  <text x="249" y="363" class="body muted" font-size="12">questions</text>
+  <text x="409" y="338" class="heading ink" font-size="30">3</text>
+  <text x="409" y="363" class="body muted" font-size="12">evidence views</text>
+
+  <g transform="translate(822 48)">
+    <g class="body" font-size="9" font-weight="700">
+      <rect x="0" y="0" width="76" height="25" rx="13" fill="#f4d83d" stroke="#2d2d2d"/>
+      <text x="15" y="16" class="ink">All evidence</text>
+      <rect x="83" y="0" width="68" height="25" rx="13" fill="#fff" stroke="#2d2d2d"/>
+      <text x="98" y="16" class="ink">AI studies</text>
+      <rect x="158" y="0" width="112" height="25" rx="13" fill="#fff" stroke="#2d2d2d"/>
+      <text x="173" y="16" class="ink">Earlier technology</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="0" y="39" width="390" height="78" rx="8" fill="#e73131"/>
+      <rect x="0" y="126" width="390" height="78" rx="8" fill="#fffbf3" stroke="#ded8ce"/>
+      <rect x="0" y="213" width="390" height="78" rx="8" fill="#fffbf3" stroke="#ded8ce"/>
+      <rect x="0" y="300" width="390" height="78" rx="8" fill="#fffbf3" stroke="#ded8ce"/>
+      <rect x="0" y="387" width="390" height="78" rx="8" fill="#fffbf3" stroke="#ded8ce"/>
+    </g>
+
+    <text x="18" y="73" class="heading" fill="#fff" font-size="21">01</text>
+    <text x="62" y="70" class="heading" fill="#fff" font-size="16">DOES AI CHANGE WHAT YOU REMEMBER?</text>
+    <text x="62" y="93" class="body" fill="#f8dada" font-size="10">Memory · recall · retention</text>
+    <text x="361" y="84" class="body" fill="#fff" font-size="22">−</text>
+
+    <text x="18" y="160" class="heading red" font-size="21">02</text>
+    <text x="62" y="157" class="heading ink" font-size="18">DOES AI CHANGE WHAT YOU LEARN?</text>
+    <text x="62" y="180" class="body muted" font-size="10">Learning · transfer · understanding</text>
+    <text x="361" y="171" class="body ink" font-size="22">+</text>
+
+    <text x="18" y="247" class="heading red" font-size="21">03</text>
+    <text x="62" y="244" class="heading ink" font-size="16">DOES AI CHANGE THE SKILLS YOU BUILD?</text>
+    <text x="62" y="267" class="body muted" font-size="10">Practice · fluency · skill decay</text>
+    <text x="361" y="258" class="body ink" font-size="22">+</text>
+
+    <text x="18" y="334" class="heading red" font-size="21">04</text>
+    <text x="62" y="331" class="heading ink" font-size="18">DOES AI CHANGE JUDGMENT?</text>
+    <text x="62" y="354" class="body muted" font-size="10">Decisions · advice · error</text>
+    <text x="361" y="345" class="body ink" font-size="22">+</text>
+
+    <text x="18" y="421" class="heading red" font-size="21">05</text>
+    <text x="62" y="418" class="heading ink" font-size="13">CAN YOU TELL WHAT AI IS DOING TO YOUR THINKING?</text>
+    <text x="62" y="441" class="body muted" font-size="10">Confidence · monitoring · self-assessment</text>
+    <text x="361" y="432" class="body ink" font-size="22">+</text>
+  </g>
+
+  <line x1="72" y1="568" x2="1208" y2="568" stroke="#ded8ce"/>
+  <text x="72" y="601" class="body muted" font-size="14">By Ariba Jahan · September 2026</text>
+  </g>
+</svg>
