@@ -103,6 +103,9 @@ def audit(path: Path) -> list[str]:
         "Among 69 learners ages 10–17",
         "In a randomized study of 52 junior developers",
         "neutral-control conversations produced no change",
+        "smaller confidence-performance gaps were associated with more correct expert information",
+        "each writer completed one to three three-essay sessions",
+        "With no concurrent control group, the study cannot establish that AI exposure caused the decline",
         "after AI was removed with 45-day follow-up",
         "after AI was removed with six-week follow-up",
         '<label class="sr-only" for="role">Evidence role</label>',
@@ -115,6 +118,9 @@ def audit(path: Path) -> list[str]:
         "Incentives increased overreliance",
         "impaired learning",
         "AI use predicts skill atrophy",
+        "low confidence predicted better use of expert sources",
+        "38 writers each produced three essays",
+        "the corrected table should be consulted before relying on the adjusted odds ratio",
     )
     for stale in forbidden_stale_copy:
         if stale in text:

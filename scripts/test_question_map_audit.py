@@ -93,6 +93,27 @@ class QuestionMapAuditPositiveControls(unittest.TestCase):
     def test_internal_process_takeaway_is_caught(self) -> None:
         self.check_mutation("Watching a crime video", "verified in analysis 13", "internal process language")
 
+    def test_stale_urban_metacognition_wording_is_caught(self) -> None:
+        self.check_mutation(
+            "smaller confidence-performance gaps were associated with more correct expert information",
+            "low confidence predicted better use of expert sources",
+            "superseded map copy",
+        )
+
+    def test_stale_padmakumar_accounting_is_caught(self) -> None:
+        self.check_mutation(
+            "each writer completed one to three three-essay sessions",
+            "38 writers each produced three essays",
+            "superseded map copy",
+        )
+
+    def test_stale_budzyn_correction_warning_is_caught(self) -> None:
+        self.check_mutation(
+            "With no concurrent control group, the study cannot establish that AI exposure caused the decline",
+            "the corrected table should be consulted before relying on the adjusted odds ratio",
+            "superseded map copy",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

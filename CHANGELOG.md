@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.2 — September 24, 2026
+
+- Resolved the three remaining source-trail checks against the primary publications.
+- Corrected Padmakumar and He's participant-to-essay accounting: 38 writers completed one to three
+  three-essay sessions, producing 300 essays in total.
+- Replaced “low confidence” in the Urban summary with the study's measured confidence-performance
+  gap and retained the regression results as associations.
+- Checked Budzyń's corrected publisher appendix, recorded the changed secondary estimates, and
+  clarified that the main uncontrolled before-and-after result was unchanged.
+- Added regression tests for all three corrections.
+
 ## 1.0.1 — September 24, 2026
 
 - Corrected or narrowed ten question-map summaries after an independent audit of the published work,
