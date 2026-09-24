@@ -1,6 +1,6 @@
 # AI and cognition
 
-While writing [Cognitive Endurance](https://aribajahan.com/reading-room/cognitive-endurance), I kept seeing claims that AI was weakening memory, learning, and critical thinking. I wanted to know what those claims were based on. So I built an evidence review around a narrower question: what has research actually measured about AI's effect on cognition, and how far can the findings go?
+While writing [Cognitive Endurance](https://www.unmissables.xyz/p/cognitive-endurance-2), I kept seeing claims that AI was weakening memory, learning, and critical thinking. I wanted to know what those claims were based on. So I built an evidence review around a narrower question: what has research actually measured about AI's effect on cognition, and how far can the findings go?
 
 I found that studies grouped under “AI and cognition” were answering different questions. Some measure the work people produce while AI is available. Others test what a person can do after it is removed. Some measure confidence or perceived effort and call that critical thinking. Others measure recall, the ability to apply something later, decision accuracy, or belief change. The findings appear to contradict one another partly because the studies are measuring different things.
 
@@ -12,7 +12,7 @@ I built the review with Claude Science and Perplexity, then checked what each st
 - **The way a person uses AI can change the result.** Guided tutoring and self-generation-first workflows have produced different outcomes from interfaces that supply answers for direct adoption.
 - **Reliance becomes dangerous when the AI is wrong.** Clinicians, radiologists, and participants in misinformation studies have followed or been influenced by incorrect recommendations and explanations.
 - **Starting skill may change who benefits.** Several studies find larger gains among less experienced or lower-performing people, while one randomized crossover study found that the same AI reading aids helped lower performers and hurt higher performers.
-- **Belief change is one of the clearest durable effects in the current evidence.** AI conversations and writing assistance can move what people believe. The direction depends on what the system argues.
+- **Some belief changes remain measurable after the interaction ends.** AI conversations and writing assistance can move what people report believing. The direction depends on what the system argues. The longest result in this corpus has a corrected analysis under review after reproducibility problems in the public dataset.
 
 The long-term question remains open. A few studies now measure outcomes weeks later, so the answer is no longer “nobody has tested this.” The available studies use short, narrow interventions and do not establish what months and years of ordinary AI use do to memory, judgment, or skill.
 
@@ -26,7 +26,7 @@ I also examined 51 older studies on GPS, cockpit automation, calculators, spell-
 
 Most of the AI studies involve adults. I also included a small number of studies with younger participants when they directly addressed the question, including the high-school mathematics experiment discussed later. A result from one high school, one profession, or one laboratory task should not be assumed to apply to everyone.
 
-Full text is now available for every record in the benefit-side table and 37 of the 45 records in the first-pass table. Eight first-pass records remain abstract-only. The [methods](methods.md) and [public data tables](data/) preserve the access basis for each record.
+Full text is available for 21 of the 24 benefit-side records and 37 of the 45 first-pass records. Three benefit-side records and eight first-pass records remain abstract-only. The [methods](methods.md) and [public data tables](data/) preserve the access basis where it was recorded and identify the gap for Perplexity-only records.
 
 ## What counts as evidence of cognition
 
@@ -41,7 +41,7 @@ Full text is now available for every record in the benefit-side table and 37 of 
 | Metacognition | Knowing what you understand and how much help you need. | Confidence compared with actual performance. |
 | Output performance | The speed, quality, or accuracy of work produced with AI. | The work completed while AI is available. |
 
-An earlier project audit compared the capacity each paper claimed to study with what it actually measured. Of the 63 records coded, five clearly measured the capacity named in the paper, and 15 named a validated instrument in the text available at the time. I reviewed the model-assisted coding myself; it was not independently coded by multiple researchers. The audit also predates some of the later full-text retrieval, so the counts describe that version of the evidence table.
+The current construct table compares the capacity each paper claimed to study with what it actually measured. It contains 62 records; five clearly measured the capacity named in the paper, and 14 named a validated instrument in the text available at the time. I reviewed the model-assisted coding myself; it was not independently coded by multiple researchers. The table predates some later full-text retrieval, so its coding remains a dated project assessment rather than an independent rating exercise.
 
 The seven-study critical-thinking audit found studies using the same term for self-reported work behaviors, confidence ratings, essay recall, and coded argument quality. Several only show that two things occurred together; they cannot tell us whether AI caused the difference. Some do not test a person’s critical-thinking ability at all. The scope is narrower than the headline claim: a survey of how people feel about their thinking can describe their perception, but it cannot show whether their reasoning ability changed.
 
@@ -81,7 +81,7 @@ Self-report remains useful for experience: whether a system felt easy, demanding
 
 In two experiments using LSAT reasoning questions, AI improved performance and participants still overestimated how well they had done. The overestimation effect was large in both experiments (*d* = 0.93 and *d* = 1.17). In a separate study of 20 adults, participants said their workload fell when they used AI. Measures of brain activity, heart rate, heart-rate variability, and electrodermal activity did not show a corresponding change.
 
-Feeling more effort is not proof that more learning happened either. A meta-analysis of 25 articles and 3,135 participants found that making material harder to read increased learning time (*d* = 0.52) and made people think they had learned less (*d* = −0.43). Their recall (*d* = −0.01) and ability to transfer what they learned (*d* = 0.03) stayed the same. A task can feel easier without producing better learning, and it can feel harder without producing better learning.
+Feeling more effort is not proof that more learning happened either. A 2018 meta-analysis of 25 articles and 3,135 participants reported that making material harder to read increased learning time (*d* = 0.52) and made people think they had learned less (*d* = −0.43), while recall (*d* = −0.01) and transfer (*d* = 0.03) remained near zero. A later reproducibility critique found that the near-zero transfer result survived plausible reanalysis but identified coding and effect-size problems that make the recall estimate less secure. A task can feel easier without producing better learning, and it can feel harder without producing better learning.
 
 How hard a task feels tells us too little about what a person will remember. Effort remains an unproven mechanism, not an explanation for the mixed AI results. Future studies need to record what the person generated, what they retrieved from memory, what they practiced, and what they knew they would need to do later.
 
@@ -99,11 +99,11 @@ Baseline ability may be a moderator, meaning it changes who benefits from the sa
 
 *Sources: [Etkin et al. 2025](https://doi.org/10.3389/feduc.2025.1506752); [Brynjolfsson, Li, and Raymond 2025](https://doi.org/10.1093/qje/qjae044).*
 
-## AI can produce durable changes in belief
+## AI can shift reported beliefs beyond the interaction
 
 The clearest delayed effects in this review concern what people believe.
 
-In a study of 2,190 participants, a personalized evidence-based dialogue with GPT-4 Turbo reduced belief in a chosen conspiracy theory by about 20%. The reduction remained at the two-month follow-up. A later preregistered experiment with 955 participants found that short conversations reduced confidence in conspiracy theories and other unsupported beliefs whether the speaker was presented as an AI or a human expert.
+In a study of 2,190 participants, a personalized evidence-based dialogue with GPT-4 Turbo reduced belief in a chosen conspiracy theory by about 20%, and the reduction remained at the two-month follow-up. *Science* published an [expression of concern](https://doi.org/10.1126/science.aej2383) after extra spliced rows were found in the public dataset and screening criteria were applied inconsistently between the manuscript and published analysis pipeline. The authors submitted a corrected analysis and report that the results remain similar in direction, statistical significance, and substantive size; *Science* is evaluating it. A later preregistered experiment with 955 participants found that short conversations reduced confidence in conspiracy theories and other unsupported beliefs whether the speaker was presented as an AI or a human expert.
 
 Other studies found that AI could also move beliefs toward slanted or false claims. An opinionated writing assistant shifted the views participants expressed in their writing and in a later attitude survey, with a treatment effect of *d* = 0.34. In three large experiments covering 19 language models and 707 political issues, prompting and post-training methods increased persuasion while systematically lowering factual accuracy. An information-dense prompt raised the average persuasive effect from 8.34 to 10.60 percentage points.
 

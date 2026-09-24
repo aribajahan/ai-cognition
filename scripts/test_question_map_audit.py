@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import tempfile
 import unittest
+import re
 from pathlib import Path
 
 from question_map_audit import MAP_PATH, audit
@@ -51,6 +52,46 @@ class QuestionMapAuditPositiveControls(unittest.TestCase):
 
     def test_missing_hidden_state_is_caught(self) -> None:
         self.check_mutation("[hidden]{display:none!important}", "[hidden]{display:block}", "hidden")
+
+    def test_missing_source_basis_is_caught(self) -> None:
+        self.check_mutation("<dt>Source basis</dt>", "<dt>Retrieval basis</dt>", "source-basis disclosures")
+
+    def test_missing_review_status_is_caught(self) -> None:
+        self.check_mutation('class="reviewing"', 'class="neutral"', "corrected-analysis-under-review")
+
+    def test_reversed_vasconcelos_takeaway_is_caught(self) -> None:
+        source = (REPO / MAP_PATH).read_text(encoding="utf-8")
+        current = "Harder tasks, easier-to-check explanations, and larger accuracy incentives reduced overreliance"
+        stale = "Incentives increased overreliance"
+        self.assertIn(current, source)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "map.html"
+            path.write_text(source.replace(current, stale, 1), encoding="utf-8")
+            self.assertTrue(any("superseded map copy" in error for error in audit(path)))
+
+    def test_missing_filter_label_is_caught(self) -> None:
+        self.check_mutation(
+            '<label class="sr-only" for="role">Evidence role</label>',
+            "",
+            "missing audited correction",
+        )
+
+    def test_empty_unanswered_section_is_caught(self) -> None:
+        source = (REPO / MAP_PATH).read_text(encoding="utf-8")
+        emptied = re.sub(
+            r'(<section class="unanswered"><h3>Questions still unanswered</h3><ul>).*?(</ul></section>)',
+            r"\1\2",
+            source,
+            count=1,
+        )
+        self.assertNotEqual(source, emptied)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "map.html"
+            path.write_text(emptied, encoding="utf-8")
+            self.assertTrue(any("at least one question" in error for error in audit(path)))
+
+    def test_internal_process_takeaway_is_caught(self) -> None:
+        self.check_mutation("Watching a crime video", "verified in analysis 13", "internal process language")
 
 
 if __name__ == "__main__":

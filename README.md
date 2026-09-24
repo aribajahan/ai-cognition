@@ -109,7 +109,7 @@ The process also changed how I thought about trust in research tools. Claude Sci
 
 ## Source access and verification
 
-Full text is available for all 24 records in the benefit-side table and 37 of the 45 records in the first-pass table. Eight first-pass records remain abstract-only.
+Full text is available for 21 of the 24 records in the benefit-side table and 37 of the 45 records in the first-pass table. Three benefit-side records and eight first-pass records remain abstract-only.
 
 “Not reported” in the evidence tables means that a detail was absent from the text retrieved for this project. The paper itself may contain additional information that the research environment could not access.
 

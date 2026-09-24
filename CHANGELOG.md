@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.0.1 — September 24, 2026
+
+- Corrected or narrowed ten question-map summaries after an independent audit of the published work,
+  including the Vasconcelos, Pardos, Gerlich, Kosmyna, Subramanya, Xie, Costello, Melanou,
+  Zöller, and Fernandes records.
+- Replaced 36 process-style or incomplete takeaways such as “verified in analysis” and “moved from” with
+  self-contained findings that state the result, conditions, and material interpretive limit.
+- Verified those 36 takeaways against the maintained evidence, applied six precision edits, and
+  corrected the Teng record to include its previously omitted neutral-agent control condition.
+- Added the Costello corrected-analysis review status, later correction notices, three delayed-
+  measurement timing fields, updated publication details, and a source-basis disclosure to every
+  map card.
+- Corrected numerical units and comparison language in five card descriptions and the field notes
+  without changing the 110-source corpus census.
+- Restored the unanswered-question lists in all nine branches, improved filter labels and color
+  contrast, and repaired the Cognitive Endurance essay link.
+- Expanded the automated map audit so these corrections cannot silently regress.
+
 ## 1.0.0 — September 23, 2026
 
 - Published a combined corpus of 110 unique source records found through Claude Science and

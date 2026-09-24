@@ -39,7 +39,7 @@ The construct map adds a second layer of coding: the task participants completed
 
 Source access varied. Many publisher pages were unavailable to the research environments, leaving some records based on abstracts or accessible summaries. “Not reported” in the tables means the detail was absent from the text retrieved for this project; it does not establish that the paper itself omitted the detail.
 
-The public tool-specific and combined tables identify the access basis for every record. The synthesis describes the current evidence and its limits and is updated as individual sources are checked further.
+The two Claude Science tables identify the access basis for every record: 21 of 24 benefit-side records and 37 of 45 first-pass records were read in full text. The combined table retains that basis where it was recorded. Forty-eight Perplexity-only records do not yet have a standardized access field, so an empty combined-table value means the access basis has not been normalized for public release. The synthesis describes the current evidence and its limits and is updated as individual sources are checked further.
 
 ## Tool workflow
 

@@ -104,7 +104,7 @@ I caught myself making two different mistakes: treating Claude Science's organiz
 
 ### How each system responded to the framing
 
-Claude Science's first pass leaned toward harm. A corrective benefit-side search surfaced 24 studies the first sweep had missed. Perplexity challenged both the harm and benefit framings without being prompted to do so. The literature is genuinely mixed, and the two retrieval systems responded differently to the same opening question. This project cannot tell me exactly why.
+Claude Science's first pass leaned toward harm. A corrective benefit-side search produced 24 records, including 17 additional unique sources after seven overlaps were reconciled. Perplexity challenged both the harm and benefit framings without being prompted to do so. The literature is genuinely mixed, and the two retrieval systems responded differently to the same opening question. This project cannot tell me exactly why.
 
 ### Asking the same reflective question
 
@@ -118,7 +118,7 @@ Both readings were defensible against the evidence, and they sounded like descri
 
 Their lists of next questions converged on the withdrawal trial (run a real long-horizon removal study, because nobody has), on causal identification for the critical-thinking claim, and on measurement standardization. Perplexity additionally named practice-schedule instrumentation and persuasion durability as safety questions. Claude Science named neuroscience at scale and interface-design moderators. Despite the differences between the corpora, the open questions were similar.
 
-Full responses are preserved in `research/synthesis/reflective-comparison.md`.
+The full responses are preserved in the private research record.
 
 
 ## What I wanted from the research workspace

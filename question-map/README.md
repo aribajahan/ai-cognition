@@ -35,11 +35,12 @@ the people, task, duration, form of assistance, and outcome each source examined
 
 ## Audit applied September 23, 2026
 
-Every source was reviewed against the question and sub-question where it appears. The audit checked
-whether the study actually answers that question, whether the wording matches the measured outcome,
-and whether the visible finding preserves the study's limits. The published HTML is also checked for
-the 110-source census, 111 appearances, nine branches, 50 collapsible sub-questions, evidence-view
-counts, study descriptions, unanswered-question sections, and interaction behavior.
+Every source was reviewed against the question and sub-question where it appears. The editorial
+review checked whether the source answers that question, whether the wording matches the measured
+outcome, and whether the visible finding preserves the source's limits. The automated audit is a
+structural check: it verifies the 110-source census, 111 appearances, nine branches, 50 collapsible
+sub-questions, evidence-view counts, study descriptions, unanswered-question sections, and required
+interaction markup. It does not independently verify the interpretation of a paper.
 
 The earlier 50-source Claude Science map is preserved as a dated snapshot in the private research
 repository. The current public map represents the combined project.
