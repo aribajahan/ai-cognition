@@ -26,7 +26,7 @@ I also examined 51 older studies on GPS, cockpit automation, calculators, spell-
 
 Most of the AI studies involve adults. I also included a small number of studies with younger participants when they directly addressed the question, including the high-school mathematics experiment discussed later. A result from one high school, one profession, or one laboratory task should not be assumed to apply to everyone.
 
-Full text is available for 21 of the 24 benefit-side records and 37 of the 45 first-pass records. Three benefit-side records and eight first-pass records remain abstract-only. The [methods](methods.md) and [public data tables](data/) preserve the access basis where it was recorded and identify the gap for Perplexity-only records.
+Claude Science retrieved full text for 53 of its 62 unique sources; nine were extracted from abstracts. Later checks returned to several of those nine through primary publication pages and other source materials. The 48 Perplexity-only records have not yet been consistently labeled by whether the review used the full paper, an abstract, or another source. The [methods](methods.md) and [public data tables](data/) preserve the recorded access basis.
 
 ## What counts as evidence of cognition
 

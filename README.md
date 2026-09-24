@@ -109,7 +109,7 @@ The process also changed how I thought about trust in research tools. Claude Sci
 
 ## Source access and verification
 
-Full text is available for 21 of the 24 records in the benefit-side table and 37 of the 45 records in the first-pass table. Three benefit-side records and eight first-pass records remain abstract-only.
+Claude Science retrieved full text for 53 of its 62 unique sources; nine were extracted from abstracts. Later checks returned to several of those nine through primary publication pages and other source materials. The 48 Perplexity-only records have not yet been consistently labeled by whether the review used the full paper, an abstract, or another source.
 
 “Not reported” in the evidence tables means that a detail was absent from the text retrieved for this project. The paper itself may contain additional information that the research environment could not access.
 
@@ -121,7 +121,7 @@ A corpus audit now checks the current row counts, duplicate records, and cross-t
 
 The current census and combined map data were verified on **September 23, 2026**. The [machine-readable census](data/corpus_census.json) preserves those counts.
 
-## Questions I want to keep following
+## What I want to know next
 
 The baseline gives me a way to see how the evidence changes as AI use becomes more frequent, sustained, and embedded in everyday work.
 
