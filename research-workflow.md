@@ -6,7 +6,7 @@ I gave Claude Science and Perplexity the same opening question: map the empirica
 
 I then used the tools differently. Claude Science became the main research workbench: it assembled the initial corpus, extracted study-level fields, and produced the question map. I used Perplexity in agentic computer mode as an independent route through the same question, then for targeted checks where the first corpus was thin or uncertain.
 
-This was not a controlled head-to-head. Claude Science received more follow-up work over a longer period, and the tools had different source access and output surfaces. The comparison records how they behaved in this project.
+Claude Science received more follow-up work over a longer period, and the environments had different source access and output surfaces. This document records how evidence moved through each environment, where gaps appeared, and what still required human review.
 
 ## What each tool made possible
 

@@ -4,7 +4,7 @@
 
 This project asks what current research can establish about the effects of AI use on memory, learning, judgment, attention, and skill. It separates two questions that are often treated as one: what people can do while an AI tool is available, and what they can do later without it.
 
-The project also records how two AI research systems handled the same evidence question. That work is a bounded case study of a real research workflow, not a controlled benchmark of either product.
+The project also records how evidence moved through two AI research environments. That context matters because source access, output structure, follow-up questions, and correction all shaped the resulting corpus.
 
 ## Corpus
 
@@ -45,7 +45,7 @@ The public tool-specific and combined tables identify the access basis for every
 
 Claude Science produced the initial corpus, structured extraction tables, and an interactive question map. Perplexity was given the same opening question independently and later used for targeted checks, including construct definitions, delayed-retention studies, and older offloading research. The systems surfaced overlapping and non-overlapping studies.
 
-The comparison has an important limit: the tools received unequal follow-up effort. Claude Science received a longer sequence of investigative prompts, while Perplexity’s early work was much lighter. The project therefore treats the comparison as evidence about coverage, access, output form, and workflow behavior in this project. It does not assign a general winner.
+The environments received unequal follow-up effort. Claude Science received a longer sequence of investigative prompts, while Perplexity’s early work was much lighter. The workflow notes preserve what each contributed to this project. They do not support general claims about which tool is better.
 
 ## Limits
 

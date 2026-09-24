@@ -6,7 +6,7 @@ Cognitive Endurance is a two-part framework for developing stronger human-AI loo
 
 I used Claude Science and Perplexity to build a structured review of research on memory, learning and skill, judgment, attention, self-assessment, and related brain and physiological measures. I then examined what each study had measured, whether AI was still available when the outcome was tested, and how far the findings could support the claims being made about cognition.
 
-The project also became a record of what it was like to use two AI research environments for the same investigation. Each tool surfaced a different body of sources. Each made some parts of the work easier to see and left other gaps that only became apparent through comparison, follow-up searches, and source checking.
+The project also became a record of what it was like to work across two AI research environments. Each surfaced a different body of sources. Some gaps became visible only after I brought the corpora together, ran follow-up searches, and checked the underlying sources.
 
 ## Explore A Question Map
 
@@ -103,7 +103,7 @@ Claude Science became the main research workbench. It assembled the initial corp
 
 Perplexity became an independent route through the question. It surfaced additional studies, reached some sources that were unavailable in the first environment, identified a retracted meta-analysis, and found delayed-retention studies in an area the first corpus had described as empty.
 
-The comparison has an important limit: Claude Science received more prompts and more iterative development. I worked with Perplexity in a mix of ways, including retrieval, verification, and analysis. The project documents how the tools behaved during this process and I also documented my own observations and behaviors.
+Claude Science received more prompts and more iterative development. I worked with Perplexity in a mix of ways, including retrieval, verification, and analysis. The project documents what each environment contributed to this investigation, along with my own observations and behaviors while working across them.
 
 The process also changed how I thought about trust in research tools. Claude Science’s large, polished evidence map initially made the corpus feel more complete. Watching Perplexity visit sources made its work feel more transparent before I had evaluated its rigor. In both cases, the interface affected my perception of the output.
 

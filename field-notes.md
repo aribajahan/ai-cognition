@@ -61,7 +61,7 @@ Prose analysis isn't saved by default. Claude Science saves artifacts that are f
 
 ### Setting it up
 
-The opening prompt was identical to what Claude Science received. I started in Research mode because that's what I'd used before. After one run, I switched to Computer (agentic) mode for the remaining 8 inquiries, and the difference was large enough to reshape how I thought about the comparison.
+The opening prompt was identical to what Claude Science received. I started in Research mode because that's what I'd used before. After one run, I switched to Computer (agentic) mode for the remaining 8 inquiries, and the difference changed what I could retrieve and inspect during the investigation.
 
 ### What I noticed using it
 
@@ -81,7 +81,7 @@ In the construct audit, Perplexity reached a primary-text copy of the Gerlich pa
 
 The consolidated Perplexity evidence table contains 64 records. 16 also appear in the Claude Science corpus, leaving 48 records unique to Perplexity.
 
-After the initial Claude Science pull and the first Perplexity comparison, I asked Perplexity to go broader. I wanted to know whether AI was producing a new pattern or whether similar questions had appeared around GPS, calculators, aviation automation, spell-check, and internet search. I also asked it to examine the cognitive psychology behind the explanations emerging from the AI studies, including the generation effect, testing effect, and desirable difficulties.
+After the initial Claude Science pull and the first Perplexity corpus, I asked Perplexity to go broader. I wanted to know whether AI was producing a new pattern or whether similar questions had appeared around GPS, calculators, aviation automation, spell-check, and internet search. I also asked it to examine the cognitive psychology behind the explanations emerging from the AI studies, including the generation effect, testing effect, and desirable difficulties.
 
 Those inquiries added thirteen pre-AI technology records and ten cognitive-psychology and theory records to the combined corpus. The Perplexity runs also surfaced AI studies absent from the Claude Science corpus, including Etkin's finding that baseline ability reverses the direction of the effect (AI helps weaker performers and hurts stronger ones) and Russell's fNIRS null (subjective effort drops with AI, but the brain shows nothing).
 
@@ -92,7 +92,7 @@ The later runs (3 through 9) weren't adding many new studies. They were re-exami
 
 ### The corpora only partly overlap
 
-16 of Perplexity's 64 records also appear in the Claude Science corpus. My first corpus looked complete until I put it beside the second. Neither research environment showed me that gap on its own; the comparison did.
+16 of Perplexity's 64 records also appear in the Claude Science corpus. My first corpus looked complete until I put it beside the second. Neither research environment showed me that gap on its own; bringing the corpora together did.
 
 Claude Science found the automation-bias reliance work (Dratsch, Jabbour, Gaube) and the belief-change cluster (Costello, Hackenburg, Danry, Jakesch) that Perplexity missed. Perplexity found delayed-retention studies in the gap the initial Claude Science map described as empty, including a published 45-day RCT, a one-week working paper, and a published six-week nursing pilot. The universal claim that no adult study tests recall after a delay had to be narrowed. The studies use different interventions and report mixed results, while none follows ordinary AI use over months or years.
 
